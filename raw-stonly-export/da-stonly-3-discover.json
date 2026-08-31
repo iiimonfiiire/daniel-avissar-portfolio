@@ -1,0 +1,540 @@
+{
+    "result": true,
+    "content": {
+        "guides": [
+            {
+                "guideId": "MLSUlPHDdI",
+                "title": {
+                    "en": {
+                        "title": "Discover",
+                        "consoleTitle": "Discover"
+                    }
+                },
+                "firstStepId": 3497000,
+                "type": "GUIDE",
+                "additionalOptions": {
+                    "teamId": 0,
+                    "folderId": 409231,
+                    "copyOfGuideId": null,
+                    "logo": null,
+                    "buttonColor": null,
+                    "whiteLabel": null,
+                    "currentVersion": 11,
+                    "latestVersion": 11,
+                    "pending": 0,
+                    "fromTemplateId": null,
+                    "isTemplate": false,
+                    "updateDate": 1757835205950,
+                    "lastTranslationDate": null,
+                    "showLinks": false,
+                    "displayAds": true
+                },
+                "options": {
+                    "allowComments": false,
+                    "bpaEnabled": false,
+                    "defaultLanguage": "en",
+                    "displayStepTitle": "true",
+                    "encrypted": false,
+                    "languageList": "en",
+                    "metaDescription": {},
+                    "status": "published",
+                    "titleTag": {},
+                    "ttsEnabled": false,
+                    "increasedContrastEnabled": false,
+                    "contentRatingMode": "DISABLED",
+                    "contentRatingSettings": {},
+                    "accessRights": 1000
+                },
+                "access": 5000,
+                "draftMeta": {},
+                "stepNext": [
+                    {
+                        "stepId": 3497000,
+                        "stepNextId": 22267518,
+                        "ordering": 0,
+                        "followingStepId": 3497191,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Acme AI Assistant 🆕",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "9ef34529-866d-42c1-a84d-c5f4fdd79d4e",
+                                "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc61d3e5efd4f1601955dfac2ffc0261a6229ed747b3e1242285b7d764a40b122f38376f0f57247fe3a559c729025b061f"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3497000,
+                        "stepNextId": 22267519,
+                        "ordering": 1,
+                        "followingStepId": 3497192,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Classic Search",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "5c35de5a-334e-442a-8889-79cf224bde56",
+                                "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc4937d6ef802d5adf3430503ccb629c0c306843283fbb1d35decec2c0bb7839d138376f0f57247fe3a559c729025b061f"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3497000,
+                        "stepNextId": 22267520,
+                        "ordering": 2,
+                        "followingStepId": 3497193,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "User Guide",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "89fb3b57-417a-418b-b7b0-e250bd1f222b",
+                                "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc167d7dbe96022642472158c291e6aed82206393fb7c653b47e9a0852f7e4b6a638376f0f57247fe3a559c729025b061f"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3497000,
+                        "stepNextId": 22267702,
+                        "ordering": 3,
+                        "followingStepId": 3497310,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "FAQ",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "a3458651-ceca-451f-8665-c6e6c5b277f5",
+                                "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abccb5d42d55a07ec506139d509528b0cbd47adb592b0766481264d18f1770d15fe38376f0f57247fe3a559c729025b061f"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    }
+                ],
+                "steps": [
+                    {
+                        "stepId": 3497000,
+                        "guideId": "MLSUlPHDdI",
+                        "mediaType": "icon",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "iconName": "search",
+                                    "iconColor": "#ffb22c",
+                                    "iconThickness": 10,
+                                    "backgroundColor": "#292f4c"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "3b61a076-14ed-11ef-a9d4-06cb0cb2a85e",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Find your risk data with Acme Discover",
+                                        "content": "<p>Acme's <b>Discover</b> features a robust search capability that allows you to quickly access your risk and compliance data. Through advanced, structured search querying, you can discover, analyze, and make informed decisions about non-compliance risks in your organization. Newly upgraded with generative AI technology, Acme now offers unparalleled access to your data through natural conversation.</p><aside class=\"tip\"><p>Choose a topic below to learn more about Acme Discover.</p></aside>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3b61cfcf-14ed-11ef-a9d4-06cb0cb2a85e",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "SINGLE_COLUMN",
+                                    "tileImageSize": "SMALL",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "LEFT"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497191,
+                        "guideId": "MLSUlPHDdI",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Ask the new Shield AI Assistant a question in natural, conversational English.",
+                                    "imageId": "b039e72a-4d7e-40f1-8108-77a3b1a9a220",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#292f4c",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc1b4b842e8c34f9145a0f8f7002d459d411c54f5081dac2a6b1f98929208e273638376f0f57247fe3a559c729025b061f"
+                                },
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "The assistant provides actionable responses to help follow up on your request.",
+                                    "imageId": "d99a00ac-4b86-41ca-beab-eaa503702cd4",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#292f4c",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc9aacbe51d856007d85baef2789aaac0ee5d237b9438ad45cad24d63287e738bb38376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "fb9be002-aaec-41a0-b383-350db08637b4",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "✨ Acme AI Assistant",
+                                        "content": "<p><b>Acme AI Assistant</b> is a new assistant in the Acme platform that helps you query your data by writing in free, conversational language, as easily as you would with any assistant. It simplifies the search process, giving you quicker access to the data you need, no matter how complex your query may be.</p><p>To get started with Acme AI Assistant, follow these steps:</p><ol><li><p>Navigate to the Home page in the Acme platform.</p></li><li><p>Under the <b>Conduct </b>tab, go to the new <b>Acme AI Assistant</b> module at the right of the dashboard.</p></li><li><p>Enter your question or request.</p></li></ol><p>The assistant will respond in conversational English, occasionally offering additional steps you can take to pinpoint your search. You can provide it feedback, or refine your prompt to create even more pinpointed searches.</p><aside class=\"tip\"><p>💡 <b>Tip:</b> The assistant works best with natural-language prompts. Feel free to write as naturally as you would in a conversation. For example:</p><ul><li><p><i>Show me my most critical non-compliance risks.</i></p></li><li><p><i>I want to see instances of market abuse in our org from 2020-2022.</i></p></li><li><p><i>Can you find my new high-alert hits?</i></p></li></ul></aside><p></p><aside class=\"warning\"><p>☝️ <b>Note: </b>Acme AI Assistant is only available for the <b>Enterprise Plan</b>. <a href=\"https://link-to.pricing\" target=\"_blank\">Learn more.</a></p></aside>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "6efba677-66fd-4566-918a-1588b7ced927",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497192,
+                        "guideId": "MLSUlPHDdI",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "090c578d-b290-4202-8888-88416ccee6d6",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#292f4c",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc60bda3f17f017c892b52bb8393c3e90a1512da407c5207fa53ab26e7b25d756338376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "dbd406fd-6c41-4ca8-91e0-8a546f15cd57",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Classic query-based search",
+                                        "content": "<p>[Insert existing documentation of the \"structured search query\" feature here]</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "4fd8e183-9f0e-4cb0-885c-663072e8b0ae",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497193,
+                        "guideId": "MLSUlPHDdI",
+                        "mediaType": "code",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "mode": "javascript",
+                                    "content": "/* Examples: */\n\n// Helps you find... \nPrice NEAR 2S 'Favor'\n\n// Another example\nEmail CONTAINS 'acmecorporation.com'"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "4a01da72-cac1-41fb-9de7-118875a61da7",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Search with Acme Discover",
+                                        "content": "<p>Searching with Acme's Discover is easy. To get started... [add existing documentation here]</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "406fb5e0-9e18-45eb-996f-fad2e7154629",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497310,
+                        "guideId": "MLSUlPHDdI",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "de7bdd91-a2ef-451d-b64e-d5e2d9da06f5",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#292f4c",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abcef980728a8067eb6a15ccf9e96af95b36856d0163443718ed4e89a302468a21638376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "60cee32d-5c88-4b99-91a1-948dffc6a8bd",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Frequently asked questions",
+                                        "content": "<h4><b>How would a user access the user guide?</b></h4><p>Users can access the guide in a variety of ways:</p><ul><li><p><b>In-app</b>, by clicking on a widget trigger within the context of the app (e.g., next to the search bar or within the Assistant UI). The widget guides users directly to how they should interact with the Acme app's UI, while providing tips on how best to leverage this feature.</p></li><li><p><b>Web-based</b>, by visiting the KB's subdomain on the Acme platform (e.g., https://app.a me.com/help).</p></li><li><p><b>In-platform release notes</b>, which will announce the deployed feature with a summary and helpful links.</p></li></ul><h4><b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">What approach would you take to ensure the documentation is structured logically and easy to navigate?</span></b></h4><ul><li><p><b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">Short answer:</span></b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\"> Through rigorous writing, rewriting, reviewing, and more rewriting.</span></p></li><li><p><b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">Long answer:</span></b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\"> We should establish a content style guide that clearly defines the Acme tone and voice and provides guidelines for content creation in the Knowledge Base.</span></p></li></ul><h4><b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">How would you validate the [guide] is searchable? </span></b></h4><p>We can ensure the guide is searchable by implementing common SEO practices and effectively applying search tags.</p><p>Furthermore, I think it would be an excellent idea to develop an AI assistant with access to the KB, and use it to determine whether it can successfully generate helpful user-facing content. If the AI is confused or hallucinates, there is a good chance that the language in the KB needs to be reviewed.</p><h4><b><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">How would you measure the effectiveness of the user guide?</span></b></h4><p><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">This can be achieved through data-driven practices. For example, we can track adoption and monitor user behavior between two test segments of beta users—those with and without access to the KB content (both in-app and web-based).</span></p><p><span style=\"background-color:transparent;color:rgb(0, 0, 0)\">We can also monitor the guide's usage data to determine the amount of engagement. Here are some common KPIs we could look out for:</span></p><ul><li><p>View count, number of active sessions</p></li><li><p>Session duration, drop-off times, bounce rate</p></li><li><p>User flow and drop-off steps (i.e., how far into the guide users go)</p></li><li><p>Obsolescence (i.e., content age vs. traffic)</p></li><li><p>Common search terms, search success rate (i.e., whether users who search for the topic successfully land on the guide)</p></li></ul>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "d1717a4e-9307-4a1f-8225-97309e2e8966",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3500396,
+                        "guideId": "MLSUlPHDdI",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Click on AI Discover to access the new assistant.",
+                                    "imageId": "ce10591e-516b-4b0c-861e-cb3db5330bda",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#292f4c",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abccf0a0a0fdf02b7a52baf16e9dbae6c765494827a765b9130bb2e40982841ac9c38376f0f57247fe3a559c729025b061f"
+                                },
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Your search query is automatically generated in the background.",
+                                    "imageId": "a702b40d-bb21-4ba9-908d-00e7d9dda365",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#292f4c",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abcc893d367506a0df6ddcad0f238f0b2e0305bacab152e5f0e77ef27e72477835538376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "18bca729-5b77-4330-b329-c435ceeac3fa",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "[Backup - original] ✨ AI Discover",
+                                        "content": "<p><b>AI Discover</b> is a new assistant in Shield Discover that helps you query your data by writing in free, conversational language, as easily as you would with any assistant. It simplifies the search process, giving you quicker access to the data you need, no matter how complex your query may be.</p><p>To get started with AI Discover, follow these steps:</p><ol><li><p>Navigate to <a href=\"https://app.shieldfc.com/search\" target=\"_blank\">Search</a> in the Shield platform.</p></li><li><p>Click on <b><span style=\"color:rgb(24, 201, 142)\">✨ AI Discover</span></b> at the right of the search bar to open the new assistant.</p></li><li><p>Enter your question or request in conversational English.</p></li></ol><p>AI Discover will then offer a short explanation and display the classic search query, while automatically searching and filtering your communications list in the background. You can offer it feedback, or refine your prompt to create even more pinpointed searches.</p><aside class=\"tip\"><p>💡 <b>Tip:</b> AI Discover works best with natural-language prompts. Feel free to write as naturally as you would in a conversation. For example:</p><ul><li><p><i>Show me my most critical non-compliance risks.</i></p></li><li><p><i>I want to see instances of Acme's market abuse in 2020-2022.</i></p></li><li><p><i>Can you find my new high-alert hits?</i></p></li></ul></aside><p></p><aside class=\"warning\"><p>☝️ <b>Tip: </b>AI Discover is available for the <b>Enterprise Plan</b>. <a href=\"https://link-to.pricing\" target=\"_blank\">Learn more.</a></p></aside>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "89ca0f32-b9ce-465a-b9ac-dbf05f3ce8f9",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    }
+                ],
+                "contentSnippets": []
+            }
+        ],
+        "contributors": [
+            {
+                "userId": "bc561587-7b1f-4984-ab4c-f0ebcda003c0",
+                "firstName": "Daniel",
+                "lastName": "Avissar",
+                "picture": null
+            }
+        ],
+        "knowledgeBaseUrl": "",
+        "stepsCommentsCount": []
+    }
+}

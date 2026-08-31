@@ -1,0 +1,49 @@
+site_name: Daniel Avissar — AI Knowledge Architect
+site_description: Good documentation is a product in its own right — an interactive portfolio of knowledge architecture, technical writing, and UX writing case studies
+repo_name: daniel-avissar-portfolio
+
+theme:
+  name: material
+  palette:
+    # slate (dark) is kept as the base scheme -- Carcharias is dark-by-default
+    # (the Abyss ramp), so we build the brand retrofit on top of slate rather
+    # than switching to Material's light "default" scheme. The primary/accent
+    # names below are Material enum placeholders only: every actual color
+    # they'd normally drive is overridden in
+    # stylesheets/carcharias-material-overrides.css.
+    - scheme: slate
+      primary: red
+      accent: red
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+extra_css:
+  - stylesheets/carcharias.css
+  - stylesheets/carcharias-material-overrides.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Case Studies:
+      - Acme (2024):
+          - Overview: case-studies/acme-2024/index.md
+          - Release Notes: case-studies/acme-2024/release-notes.md
+          - Discover: case-studies/acme-2024/discover.md
+      - Website API (2021): case-studies/webapi-2021/index.md
+      - Secyra (2025):
+          - Overview: case-studies/secyra-2025/index.md
+          - Knowledge Base Article: case-studies/secyra-2025/knowledge-base.md
+          - Release Note: case-studies/secyra-2025/release-note.md
+          - Microcopy: case-studies/secyra-2025/microcopy.md
+          - Troubleshooting Guide: case-studies/secyra-2025/troubleshooting-guide.md
+  - Extras:
+      - Perf & Vero Board: extras/perf-vero-board.md

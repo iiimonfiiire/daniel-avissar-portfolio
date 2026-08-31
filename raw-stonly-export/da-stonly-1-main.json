@@ -1,0 +1,1001 @@
+{
+    "result": true,
+    "content": {
+        "guides": [
+            {
+                "guideId": "6JWalPfceq",
+                "title": {
+                    "en": {
+                        "title": "Daniel Avissar – Portfolio",
+                        "consoleTitle": "Daniel Avissar – Portfolio"
+                    }
+                },
+                "firstStepId": 3496518,
+                "type": "GUIDE",
+                "additionalOptions": {
+                    "teamId": 0,
+                    "folderId": 409231,
+                    "copyOfGuideId": null,
+                    "logo": null,
+                    "buttonColor": null,
+                    "whiteLabel": null,
+                    "currentVersion": 10,
+                    "latestVersion": 10,
+                    "pending": 0,
+                    "fromTemplateId": null,
+                    "isTemplate": false,
+                    "updateDate": 1757852956358,
+                    "lastTranslationDate": null,
+                    "showLinks": false,
+                    "displayAds": true
+                },
+                "options": {
+                    "allowComments": false,
+                    "bpaEnabled": false,
+                    "defaultLanguage": "en",
+                    "displayStepTitle": "true",
+                    "displayFlowchart": false,
+                    "displayTreeView": true,
+                    "expandTOCEnabled": false,
+                    "overlayTOCEnabled": true,
+                    "encrypted": false,
+                    "languageList": "en",
+                    "metaDescription": {},
+                    "status": "published",
+                    "titleTag": {},
+                    "ttsEnabled": false,
+                    "increasedContrastEnabled": false,
+                    "contentRatingMode": "DISABLED",
+                    "contentRatingSettings": {},
+                    "accessRights": 1000
+                },
+                "access": 5000,
+                "draftMeta": {},
+                "stepNext": [
+                    {
+                        "stepId": 3496518,
+                        "stepNextId": 22273609,
+                        "ordering": 0,
+                        "followingStepId": 3500325,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Acme: New feature documentation (example assignment)",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "551dd3f3-677d-4ede-92b9-e3149822efd2",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43ce22e53f967c597a8ed143b1b15491d14d627ef2d1bfbc1b1f2543435d9dd5a3cf48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496518,
+                        "stepNextId": 22266559,
+                        "ordering": 1,
+                        "followingStepId": 3496582,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Knowledge architecture",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "cdc1a917-bb59-4287-9cf4-2bee9320d39b",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c84beabc3272a7cbe71531922520c3c69e6ca76403008751f1b0f534e4d90db8bf48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496518,
+                        "stepNextId": 22266561,
+                        "ordering": 2,
+                        "followingStepId": 3496583,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Feature development",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "40fcae27-09d2-4f71-91de-8309bcb7e213",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c856448b69cea653f6a0cd8adb0b2e53eb42c1bc6ba276eb6cf3c83594d64f1a1f48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496518,
+                        "stepNextId": 22266562,
+                        "ordering": 3,
+                        "followingStepId": 3496584,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "UX writing",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "8cbf432f-42d3-45cb-88c7-958f99f9cf5a",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c33c4f1a0705706f6cb0a5ffce3b53a3ca8e6042a1e8b9b3ae8b4a46e6f516038f48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496518,
+                        "stepNextId": 22266563,
+                        "ordering": 4,
+                        "followingStepId": 3496586,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Technical versatility",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "2639b583-e1d1-4b3b-aef6-550e4b7c2c9b",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43ca01deaf900698bcab8198123ebb057b00324d41043ddd530595291b3d5073a28f48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496518,
+                        "stepNextId": 22266638,
+                        "ordering": 5,
+                        "followingStepId": 3496655,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Writing sample (blog)",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "c5a36674-c403-45a8-81a4-e07458ee9b64",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43cb7ac3743d0a6b47479a14bf60b8bce81589461f8e91e8d003fac46bc9dcff210f48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496582,
+                        "stepNextId": 22267712,
+                        "ordering": 0,
+                        "followingStepId": 3496583,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Next",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496583,
+                        "stepNextId": 22266567,
+                        "ordering": 0,
+                        "followingStepId": 3496584,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Next",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496584,
+                        "stepNextId": 22266568,
+                        "ordering": 0,
+                        "followingStepId": 3496586,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Next",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496586,
+                        "stepNextId": 22266637,
+                        "ordering": 0,
+                        "followingStepId": 3496656,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Finish",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    }
+                ],
+                "steps": [
+                    {
+                        "stepId": 3496518,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "jpg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "7a842fec-f00d-4e69-97f7-5bcc9ccda03a",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "4:3",
+                                    "focalPointX": 60,
+                                    "focalPointY": 36,
+                                    "backgroundColor": "#0f101f",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c7e0f4b2293de752a556913ce9a012e700052011be850858d09403f76432db8b6f48f2704126ee57416201419d4080792"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "c4a87674-1481-11ef-a9d4-06cb0cb2a85e",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "👋 Hi,  I'm Daniel.",
+                                        "content": "<p>I believe that your product documentation is a product in itself. You need someone to build, manage, and own that product.</p><h5><i>I am that someone.</i></h5><p>This guide serves as an interactive portfolio demonstrating my capabilities in AI knowledge architecture, technical and UX microcopy writing, and product management. </p><aside class=\"tip\"><p>💡 Select an option below to browse my portfolio.</p></aside>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "c4a8aae4-1481-11ef-a9d4-06cb0cb2a85e",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "SINGLE_COLUMN",
+                                    "tileImageSize": "SMALL",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "LEFT"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3496582,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "89410651-000c-44fe-8f2d-2665eee9ac93",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "4:3",
+                                    "focalPointX": 48,
+                                    "focalPointY": 0,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c5418314628955558501bf7fadb050873cedcc9f427d32d9e1e64b25ca34dfd58f48f2704126ee57416201419d4080792"
+                                },
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Knowledge integrated in-app",
+                                    "imageId": "34401c19-edbe-4682-8ee8-bab0b4a4eba9",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "4:3",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#0f101f",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c3d5e004b2b323132229d03a68e3669ec3a63c78b077d78bff04be95bb55d00d3f48f2704126ee57416201419d4080792"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "f23c30bb-aa3a-40bb-a63b-712e7e4cf0bb",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Knowledge architecture",
+                                        "content": "<p>I create and manage the knowledge base infrastructure, tailoring it to match the needs and complexity of your product.</p><ul><li><p>Identifying and organizing content corresponding to logical product areas</p></li><li><p>Helping users find the information they need by ensuring searchability</p></li><li><p>Providing assistance when and where it is needed most by integrating knowledge features with your platform</p></li><li><p>Optimizing content for multiple formats—web, guides, announcements, banners, etc.</p></li></ul>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "d2ecb8f0-c9e5-4c13-b66a-fa969d84d90c",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3496583,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "1ce8b840-80a9-46f1-872a-e96e3210830d",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#0f101f",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c6858e3274a33ddbf8a3deb1dabf120930ac63642a035a6aab408e34cfd1a4e35f48f2704126ee57416201419d4080792"
+                                },
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "819297f4-ba3a-4b24-855c-8e12d74b3d35",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#0f101f",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c4ff6daba2db9f66b011262153f8180822be58781cd7ab715f54e88e4cab08e4ef48f2704126ee57416201419d4080792"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "edc65fcf-b300-4b55-8c91-5bcdfe318d47",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Feature development",
+                                        "content": "<p>Interdepartmental collaborations delivering exciting new features:</p><ul><li><p><b>Ask KB:</b> Building and maintaining a RAG-based agent that provides answers directly from the knowledge base; automation script design for processing JSON exported from third-party platform into machine-readable documentation; prompt definition; usage analysis </p></li><li><p><b>AI Search:</b> Translation agent that converts user-entered natural language prompts into proprietary querying language syntax (CyQL); prompt engineering; KB optimization; usage data analysis and model improvement</p></li><li><p><b>YEDA:</b> Internal Slackbot that accesses knowledge silos across entire organization and provides a unified answer to any employee about any internal knowledge</p></li><li><p><b>Help menu: </b>In-app help menu project with Support team fully integrates with their Zendesk-based platform. 3-month KPIs included:</p><ul><li><p>Reduced email-based ticket submissions from 30% to 19%</p></li><li><p>Increased customer engagement (+11% total guide views)</p></li><li><p>More frequent user interaction with help resources (+8% active sessions)</p></li></ul></li></ul>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "968e6f6d-dea4-413a-83ba-841db64c2570",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3496584,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "70aca079-dcca-4456-b2bd-2e4f9c4da1dc",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "4:3",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#0f101f",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c5ad1380e23cdb3215e22f80431208d057643f3b073defc3e512527299c417eeef48f2704126ee57416201419d4080792"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "4f948a62-3a39-4444-99fe-b9f16300641a",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "UX writing",
+                                        "content": "<p>Writing smart, helpful UX microcopy, focused on engaging and empowering users to adopt features more quickly.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "9a4d9dd4-c764-42df-96f2-75a3fa49912b",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3496586,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "CyCognito API reference",
+                                    "imageId": "42a2d38b-54b7-4bdb-b4f8-79e993f6aabc",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "4:3",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#0f101f",
+                                    "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43cc8cc3c48c25e0b4f49da63fc509c93deeca5f1033ca47aa50255ab9edcf23564f48f2704126ee57416201419d4080792"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "c8fbfc61-4a1e-4586-adfb-fcbd58741bdc",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Technical versatility",
+                                        "content": "<p>I engage my creative and engineering backgrounds equally in executing my product vision. Whether writing for APIs, product guides, or AI assistants, I dive into highly diverse technical subjects with enthusiasm and a hunger to learn, which I always try to relay to colleagues and users.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "e31cfa4d-4396-4491-8073-e2dccdabd596",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3496655,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "bdffc678-8925-42b7-b3f3-3658125fbda4",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "How to Make Custom Layouts on Perf and Vero Board",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "47dec067-d253-4e57-9a97-34355fed2952",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "GWcp64Aqpl",
+                                    "title": {
+                                        "en": {
+                                            "title": "How to make custom layouts on perf and vero board",
+                                            "consoleTitle": "How to make custom layouts on perf and vero board"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "17cb8de8-e3a2-4f90-b147-20c6058ded81",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3496656,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "icon",
+                        "stepType": "contactForm",
+                        "media": {
+                            "en": [
+                                {
+                                    "iconName": "reply",
+                                    "iconColor": "#292f4c",
+                                    "iconThickness": 10,
+                                    "backgroundColor": "#ffb22c"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "c53cbd80-edec-45c6-af5a-a67736d412dd",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Thank you for viewing!",
+                                        "content": "<p>If you have any questions or comments, feel free to contact me. </p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "7d6e712a-b4af-4880-931d-c13c0c25ad66",
+                                "type": "FORM",
+                                "properties": {
+                                    "emailKey": "email",
+                                    "subjectKey": "subject",
+                                    "descriptionKey": "description",
+                                    "receivingEmail": "daniel.avissar@gmail.com",
+                                    "sessionTransfer": 1,
+                                    "guidesSuggestion": 0,
+                                    "emailSessionDetails": 1,
+                                    "inputsExcludedFromBody": []
+                                },
+                                "content": {
+                                    "en": {
+                                        "submitLabel": "Send",
+                                        "successMessage": "<p>Thanks for reaching out! </p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "c94cbb4d-a4d0-4fdc-9e5c-51890f92f2cb",
+                                "type": "INPUT",
+                                "properties": {
+                                    "key": "email",
+                                    "subtype": "email",
+                                    "ordering": 0,
+                                    "isRequired": true,
+                                    "contentType": "placeholder",
+                                    "isRecordingUserInput": false,
+                                    "isInputSavedAsLocalVariable": false
+                                },
+                                "content": {
+                                    "en": {
+                                        "label": "Email address",
+                                        "optionList": [],
+                                        "placeholder": "",
+                                        "errorMessage": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "eb74575b-3c2e-4f03-a44c-9cf8fdef0ecd",
+                                "type": "INPUT",
+                                "properties": {
+                                    "key": "subject",
+                                    "subtype": "text",
+                                    "ordering": 1,
+                                    "isRequired": true,
+                                    "contentType": "hiddenValue",
+                                    "isRecordingUserInput": false,
+                                    "isInputSavedAsLocalVariable": false
+                                },
+                                "content": {
+                                    "en": {
+                                        "label": "Subject",
+                                        "optionList": [],
+                                        "hiddenValue": "[DA_Portfolio] Someone left you a message on your portfolio",
+                                        "errorMessage": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "826c288e-e8d8-4997-a4a6-9de0d48800bc",
+                                "type": "INPUT",
+                                "properties": {
+                                    "key": "description",
+                                    "subtype": "longText",
+                                    "ordering": 2,
+                                    "isRequired": true,
+                                    "contentType": "placeholder",
+                                    "isRecordingUserInput": false,
+                                    "isInputSavedAsLocalVariable": false
+                                },
+                                "content": {
+                                    "en": {
+                                        "label": "Comment",
+                                        "optionList": [],
+                                        "placeholder": "",
+                                        "errorMessage": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "a073a58b-cd52-49cf-b8c1-627c9b17dc29",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3500320,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "678dabe5-3e4c-4df9-a0cf-170a8c9708b2",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Technical Writer Assignment",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "8c16f784-1164-45b6-b92b-c725663375be",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "aUOqYoEbJ0",
+                                    "title": {
+                                        "en": {
+                                            "title": "Technical Writer Assignment",
+                                            "consoleTitle": "Technical Writer Assignment"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "8a00a582-315d-4a4e-8cde-9854889da122",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3500325,
+                        "guideId": "6JWalPfceq",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "3d4a14b5-1851-4ee6-946a-6a2a4340fbe0",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Release Notes",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "7de37ec1-2e30-4949-be5b-dd5988b21cec",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "FTF6V590vJ",
+                                    "title": {
+                                        "en": {
+                                            "title": "Release Notes",
+                                            "consoleTitle": "Release Notes"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "bffdbd2a-7d32-4433-908b-e43f3a99f6f4",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    }
+                ],
+                "contentSnippets": []
+            }
+        ],
+        "contributors": [
+            {
+                "userId": "bc561587-7b1f-4984-ab4c-f0ebcda003c0",
+                "firstName": "Daniel",
+                "lastName": "Avissar",
+                "picture": null
+            }
+        ],
+        "knowledgeBaseUrl": "",
+        "stepsCommentsCount": []
+    }
+}

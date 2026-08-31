@@ -1,0 +1,18 @@
+# September 2025
+
+The following is a summary of new and noteworthy updates to the Acme platform for the month of September 2025.
+
+#### **Features**
+
+**✨ Acme AI Assistant** – Easily search your communications data using natural language! [Read more.](https://edit.me)
+
+#### **Bug fixes**
+
+- Fixed several minor visual bugs.
+- Updated microcopy in Compliance > Rule management.
+- Improved knowledge base guide about Discovery
+
+## Release Notes archive
+
+!!! note "TODO (placeholder from original guide)"
+    [This is where older release notes go]

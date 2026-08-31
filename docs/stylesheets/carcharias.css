@@ -1,0 +1,292 @@
+@import "https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap";
+
+/* src/tokens/fonts.css */
+
+/* src/tokens/colors.css */
+:root {
+  --abyss-900:#05080A;
+  --abyss-850:#080C0F;
+  --abyss-800:#0D1418;
+  --abyss-700:#141D22;
+  --abyss-600:#1C272D;
+  --abyss-500:#26343B;
+  --abyss-400:#33444C;
+  --chrome-500:#5B6B73;
+  --chrome-400:#7C8D95;
+  --chrome-300:#9FAEB4;
+  --chrome-200:#C3CFD3;
+  --chrome-100:#DFE7E9;
+  --chrome-050:#F2F5F6;
+  --chrome-000:#FFFFFF;
+  --signal-700:#B33C08;
+  --signal-600:#E5510D;
+  --signal-500:#FF6B1A;
+  --signal-400:#FF8B4D;
+  --signal-100:#FFE3D2;
+  --tide-700:#0E7A6E;
+  --tide-600:#15A395;
+  --tide-500:#2ED3C0;
+  --tide-400:#6BE3D5;
+  --tide-100:#D3F7F2;
+  --clip-700:#A32218;
+  --clip-600:#C92E22;
+  --clip-500:#E84334;
+  --clip-100:#FBDDDA;
+  --bias-600:#C98600;
+  --bias-500:#FFB020;
+  --bias-100:#FFEECC;
+  --sonar-600:#2C7DB8;
+  --sonar-500:#4EA8DE;
+  --sonar-100:#DCEDF9;
+  --surface-page:var(--abyss-900);
+  --surface-panel:var(--abyss-800);
+  --surface-card:var(--abyss-700);
+  --surface-raised:var(--abyss-600);
+  --surface-inset:var(--abyss-850);
+  --surface-enclosure:var(--abyss-700);
+  --surface-invert:var(--chrome-050);
+  --surface-overlay:rgba(5,8,10,.78);
+  --text-display:var(--chrome-000);
+  --text-body:var(--chrome-200);
+  --text-muted:var(--chrome-400);
+  --text-faint:var(--chrome-500);
+  --text-legend:var(--chrome-300);
+  --text-on-signal:#1A0800;
+  --text-on-tide:#04211E;
+  --text-on-invert:var(--abyss-900);
+  --text-link:var(--tide-500);
+  --text-link-hover:var(--tide-400);
+  --line-hairline:rgba(195,207,211,.14);
+  --line-strong:rgba(195,207,211,.28);
+  --line-signal:var(--signal-500);
+  --line-focus:var(--tide-500);
+  --intent-primary:var(--signal-500);
+  --intent-primary-hover:var(--signal-400);
+  --intent-primary-press:var(--signal-600);
+  --intent-engaged:var(--tide-500);
+  --intent-danger:var(--clip-500);
+  --intent-warn:var(--bias-500);
+  --intent-info:var(--sonar-500);
+  --intent-success:var(--tide-500);
+  --led-on:0 0 0 1px rgba(46,211,192,.5), 0 0 12px rgba(46,211,192,.55);
+  --led-signal:0 0 0 1px rgba(255,107,26,.5), 0 0 14px rgba(255,107,26,.5);
+}
+.cfx-light {
+  --surface-page:var(--chrome-050);
+  --surface-panel:var(--chrome-000);
+  --surface-card:var(--chrome-000);
+  --surface-raised:var(--chrome-000);
+  --surface-inset:var(--chrome-100);
+  --surface-invert:var(--abyss-800);
+  --surface-overlay:rgba(13,20,24,.6);
+  --text-display:var(--abyss-900);
+  --text-body:var(--abyss-600);
+  --text-muted:var(--chrome-500);
+  --text-faint:var(--chrome-400);
+  --text-legend:var(--chrome-500);
+  --text-on-invert:var(--chrome-000);
+  --text-link:var(--signal-600);
+  --text-link-hover:var(--signal-500);
+  --line-hairline:rgba(13,20,24,.12);
+  --line-strong:rgba(13,20,24,.28);
+}
+
+/* src/tokens/typography.css */
+:root {
+  --font-legend:"Barlow Condensed","DIN 2014 Narrow","Oswald",sans-serif;
+  --font-core:"Barlow","DIN 2014","Helvetica Neue",sans-serif;
+  --font-prose:"Golos Text","Barlow",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+  --text-2xs:11px;
+  --text-xs:12px;
+  --text-sm:13px;
+  --text-md:15px;
+  --text-lg:17px;
+  --text-xl:21px;
+  --text-2xl:27px;
+  --text-3xl:34px;
+  --text-4xl:46px;
+  --text-5xl:62px;
+  --text-6xl:84px;
+  --text-7xl:116px;
+  --leading-flat:1;
+  --leading-tight:1.08;
+  --leading-snug:1.28;
+  --leading-body:1.55;
+  --leading-prose:1.68;
+  --weight-light:300;
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+  --track-legend:.16em;
+  --track-display:.005em;
+  --track-tight:-.01em;
+  --track-normal:0;
+  --track-mono:.02em;
+  --type-eyebrow:var(--weight-semibold) var(--text-2xs)/var(--leading-flat) var(--font-legend);
+  --type-display-xl:var(--weight-700,700) var(--text-7xl)/var(--leading-tight) var(--font-legend);
+  --type-display:var(--weight-bold) var(--text-5xl)/var(--leading-tight) var(--font-legend);
+  --type-h2:var(--weight-bold) var(--text-3xl)/var(--leading-tight) var(--font-legend);
+  --type-h3:var(--weight-semibold) var(--text-xl)/var(--leading-snug) var(--font-core);
+  --type-body:var(--weight-regular) var(--text-md)/var(--leading-body) var(--font-core);
+  --type-prose:var(--weight-regular) var(--text-lg)/var(--leading-prose) var(--font-prose);
+  --type-label:var(--weight-semibold) var(--text-xs)/var(--leading-flat) var(--font-legend);
+  --type-value:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-mono);
+}
+
+/* src/tokens/spacing.css */
+:root {
+  --space-0:0px;
+  --space-px:1px;
+  --space-1:2px;
+  --space-2:4px;
+  --space-3:6px;
+  --space-4:8px;
+  --space-5:12px;
+  --space-6:16px;
+  --space-7:20px;
+  --space-8:24px;
+  --space-9:32px;
+  --space-10:40px;
+  --space-11:56px;
+  --space-12:72px;
+  --space-13:96px;
+  --space-14:128px;
+  --space-15:176px;
+  --gap-inline:var(--space-4);
+  --gap-stack:var(--space-5);
+  --gap-group:var(--space-8);
+  --gap-section:var(--space-13);
+  --pad-control:var(--space-5);
+  --pad-card:var(--space-8);
+  --pad-panel:var(--space-9);
+  --gutter-page:var(--space-9);
+  --measure-prose:66ch;
+  --width-content:1240px;
+  --width-narrow:760px;
+  --control-sm:28px;
+  --control-md:36px;
+  --control-lg:46px;
+  --control-xl:58px;
+  --hit-min:44px;
+}
+
+/* src/tokens/radius.css */
+:root {
+  --radius-none:0px;
+  --radius-xs:2px;
+  --radius-sm:3px;
+  --radius-md:6px;
+  --radius-lg:10px;
+  --radius-pill:999px;
+  --radius-circle:50%;
+  --border-hair:1px;
+  --border-thick:2px;
+  --border-stencil:3px;
+}
+
+/* src/tokens/elevation.css */
+:root {
+  --shadow-none:none;
+  --shadow-rim:inset 0 0 0 1px var(--line-hairline);
+  --shadow-sm:0 1px 0 rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.05);
+  --shadow-md:0 2px 0 rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);
+  --shadow-panel:0 8px 24px -12px rgba(0,0,0,.85), inset 0 0 0 1px var(--line-hairline);
+  --shadow-dialog:0 32px 64px -24px rgba(0,0,0,.9), inset 0 0 0 1px var(--line-strong);
+  --shadow-press:inset 0 2px 4px rgba(0,0,0,.55);
+  --shadow-knob:inset 0 -6px 10px rgba(0,0,0,.5),
+    inset 0 4px 6px rgba(255,255,255,.08),
+    0 2px 0 rgba(0,0,0,.6);
+  --scrim-bottom:linear-gradient(
+      to top,rgba(5,8,10,.92) 0%,rgba(5,8,10,.6) 40%,rgba(5,8,10,0) 100%);
+  --scrim-top:linear-gradient(
+      to bottom,rgba(5,8,10,.85),rgba(5,8,10,0));
+  --scrim-flat:rgba(5,8,10,.62);
+  --texture-hairline:repeating-linear-gradient(
+      90deg,rgba(195,207,211,.05) 0 1px,transparent 1px 4px);
+  --texture-grid:linear-gradient(rgba(195,207,211,.045) 1px,transparent 1px) 0 0/100% 24px,linear-gradient(
+      90deg,rgba(195,207,211,.045) 1px,transparent 1px) 0 0/24px 100%;
+  --blur-glass:saturate(140%) blur(14px);
+}
+
+/* src/tokens/motion.css */
+:root {
+  --ease-snap:cubic-bezier(.2,0,0,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-inout:cubic-bezier(.6,0,.4,1);
+  --ease-linear:linear;
+  --dur-instant:80ms;
+  --dur-fast:130ms;
+  --dur-base:200ms;
+  --dur-slow:320ms;
+  --dur-vamp:1200ms;
+  --transition-control:background-color var(--dur-fast) var(--ease-snap),border-color var(--dur-fast) var(--ease-snap),color var(--dur-fast) var(--ease-snap),box-shadow var(--dur-fast) var(--ease-snap);
+  --transition-surface:transform var(--dur-base) var(--ease-out),opacity var(--dur-base) var(--ease-out);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-instant:0ms;
+    --dur-fast:0ms;
+    --dur-base:0ms;
+    --dur-slow:0ms;
+    --dur-vamp:0ms;
+  }
+}
+
+/* src/tokens/keyframes.css */
+@keyframes cfx-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cfx-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes cfx-toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes cfx-led-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .45;
+  }
+}
+@keyframes cfx-scan {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 24px;
+  }
+}
+
+/* src/tokens/a11y.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:focus-visible {
+  outline: 2px solid var(--line-focus);
+  outline-offset: 2px;
+}
+
+/* src/tokens/index.css */
+/*# sourceMappingURL=carcharias.css.map */

@@ -1,0 +1,352 @@
+{
+    "result": true,
+    "content": {
+        "guides": [
+            {
+                "guideId": "aUOqYoEbJ0",
+                "title": {
+                    "en": {
+                        "title": "Technical Writer Assignment",
+                        "consoleTitle": "Technical Writer Assignment"
+                    }
+                },
+                "firstStepId": 3496998,
+                "type": "GUIDE",
+                "additionalOptions": {
+                    "teamId": 0,
+                    "folderId": 409231,
+                    "copyOfGuideId": null,
+                    "logo": null,
+                    "buttonColor": null,
+                    "whiteLabel": null,
+                    "currentVersion": 5,
+                    "latestVersion": 5,
+                    "pending": 0,
+                    "fromTemplateId": null,
+                    "isTemplate": false,
+                    "updateDate": 1716204891904,
+                    "lastTranslationDate": null,
+                    "showLinks": false,
+                    "displayAds": true
+                },
+                "options": {
+                    "allowComments": false,
+                    "bpaEnabled": false,
+                    "defaultLanguage": "en",
+                    "displayStepTitle": "true",
+                    "encrypted": false,
+                    "languageList": "en",
+                    "metaDescription": {},
+                    "status": "published",
+                    "titleTag": {},
+                    "ttsEnabled": false,
+                    "increasedContrastEnabled": false,
+                    "contentRatingMode": "DISABLED",
+                    "contentRatingSettings": {},
+                    "accessRights": 1000
+                },
+                "access": 5000,
+                "draftMeta": {},
+                "stepNext": [
+                    {
+                        "stepId": 3496998,
+                        "stepNextId": 22267678,
+                        "ordering": 0,
+                        "followingStepId": 3497293,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Release Notes",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "c6162219-46d6-44da-a5cc-3f6f77e9f836",
+                                "imageIdSecureHash": "04f9e9cd0505fafd3cc11d82d57bfe2285ce869dc57dbff22363a6b32148822d8452acea2a39d1003f2fc00ebb8e8083a0e42163abf7826bb9772eecec4a056f9c8330dde932a25138a2ebe378de1f33e4ad32ff8c522e177cdf4fa0fb47a82dbd32bc7a222dc183ea484f07165d36e2"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496998,
+                        "stepNextId": 22273315,
+                        "ordering": 1,
+                        "followingStepId": 3500239,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Discover",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    }
+                ],
+                "steps": [
+                    {
+                        "stepId": 3496998,
+                        "guideId": "aUOqYoEbJ0",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "svg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "34216091-ba1e-4375-ab38-a26f8db0ea1e",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#F8F8F9",
+                                    "imageIdSecureHash": "04f9e9cd0505fafd3cc11d82d57bfe2285ce869dc57dbff22363a6b32148822d8452acea2a39d1003f2fc00ebb8e8083a0e42163abf7826bb9772eecec4a056f74d8208bc3bfd219709b643ff1694ee751b67bf6d26c57e96adaf63b5812a853bd32bc7a222dc183ea484f07165d36e2"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "ff1fe0c7-14ea-11ef-a9d4-06cb0cb2a85e",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Introduction",
+                                        "content": "<p>This guide provides an interactive experience fulfilling the requirements for the assignment for Shield's Technical Writer position. </p><aside class=\"tip\"><p>💡 Select an option below to view the assignment or to browse my portfolio.</p></aside>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "ff200131-14ea-11ef-a9d4-06cb0cb2a85e",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "SINGLE_COLUMN",
+                                    "tileImageSize": "SMALL",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "LEFT"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497292,
+                        "guideId": "aUOqYoEbJ0",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "37964428-b155-48c6-a359-9af8f112cf4e",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Daniel Avissar – Portfolio",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "8763e179-8b60-4d00-b51a-d6b50c3e1fac",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "6JWalPfceq",
+                                    "title": {
+                                        "en": {
+                                            "title": "Daniel Avissar – Portfolio",
+                                            "consoleTitle": "Daniel Avissar – Portfolio"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "0cfabe00-cf41-48c2-ad48-d88d111d8fbb",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497293,
+                        "guideId": "aUOqYoEbJ0",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "4f68e189-b3c5-4fbe-aefc-98f06d72de40",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Release Notes",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "94ef687e-b228-4fb3-8d8f-7328c230f56d",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "FTF6V590vJ",
+                                    "title": {
+                                        "en": {
+                                            "title": "Release Notes",
+                                            "consoleTitle": "Release Notes"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "2a3bbe16-6c3f-445e-ad7d-5d6d5389c9b7",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3500239,
+                        "guideId": "aUOqYoEbJ0",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "ef56f145-3ca8-4240-8cea-123d0694e7c5",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Discover",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "875051ac-7044-4052-bd7a-bf5601602d8a",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "df538a52-6981-4a19-95d0-870ab707fd63",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "MLSUlPHDdI",
+                                    "title": {
+                                        "en": {
+                                            "title": "Discover",
+                                            "consoleTitle": "Discover"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            }
+                        ],
+                        "tags": []
+                    }
+                ],
+                "contentSnippets": []
+            }
+        ],
+        "contributors": [
+            {
+                "userId": "bc561587-7b1f-4984-ab4c-f0ebcda003c0",
+                "firstName": "Daniel",
+                "lastName": "Avissar",
+                "picture": null
+            }
+        ],
+        "knowledgeBaseUrl": "",
+        "stepsCommentsCount": []
+    }
+}

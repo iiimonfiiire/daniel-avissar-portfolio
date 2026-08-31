@@ -1,0 +1,1316 @@
+{
+    "result": true,
+    "content": {
+        "guides": [
+            {
+                "guideId": "GWcp64Aqpl",
+                "title": {
+                    "en": {
+                        "title": "How to make custom layouts on perf and vero board",
+                        "consoleTitle": "How to make custom layouts on perf and vero board"
+                    }
+                },
+                "firstStepId": 2679602,
+                "type": "GUIDE",
+                "additionalOptions": {
+                    "teamId": 0,
+                    "folderId": 409231,
+                    "copyOfGuideId": null,
+                    "logo": null,
+                    "buttonColor": null,
+                    "whiteLabel": null,
+                    "currentVersion": 10,
+                    "latestVersion": 10,
+                    "pending": 0,
+                    "fromTemplateId": null,
+                    "isTemplate": false,
+                    "updateDate": 1757835894470,
+                    "lastTranslationDate": null,
+                    "showLinks": false,
+                    "displayAds": true
+                },
+                "options": {
+                    "allowComments": false,
+                    "bpaEnabled": false,
+                    "defaultLanguage": "en",
+                    "displayStepTitle": "true",
+                    "encrypted": false,
+                    "languageList": "en",
+                    "metaDescription": {},
+                    "status": "published",
+                    "titleTag": {},
+                    "ttsEnabled": false,
+                    "increasedContrastEnabled": false,
+                    "contentRatingMode": "DISABLED",
+                    "contentRatingSettings": {},
+                    "accessRights": 1000
+                },
+                "access": 5000,
+                "draftMeta": {},
+                "stepNext": [
+                    {
+                        "stepId": 2679602,
+                        "stepNextId": 20987891,
+                        "ordering": 0,
+                        "followingStepId": 2680197,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Part 1: Planning",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2679602,
+                        "stepNextId": 22267174,
+                        "ordering": 1,
+                        "followingStepId": 2680199,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Part 2: Populating the layout",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2679602,
+                        "stepNextId": 22267175,
+                        "ordering": 2,
+                        "followingStepId": 2680202,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Part 3: Finishing",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680192,
+                        "stepNextId": 20987901,
+                        "ordering": 0,
+                        "followingStepId": 2680201,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680193,
+                        "stepNextId": 20987897,
+                        "ordering": 0,
+                        "followingStepId": 2680198,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680194,
+                        "stepNextId": 20987900,
+                        "ordering": 0,
+                        "followingStepId": 2680192,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680196,
+                        "stepNextId": 20987893,
+                        "ordering": 0,
+                        "followingStepId": 2680204,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680197,
+                        "stepNextId": 22267173,
+                        "ordering": 0,
+                        "followingStepId": 2680204,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Next",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680198,
+                        "stepNextId": 20987898,
+                        "ordering": 0,
+                        "followingStepId": 2680199,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Next",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680199,
+                        "stepNextId": 20987899,
+                        "ordering": 0,
+                        "followingStepId": 2680194,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Potentiometers",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680199,
+                        "stepNextId": 22266634,
+                        "ordering": 1,
+                        "followingStepId": 2680192,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Capacitors",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680199,
+                        "stepNextId": 22266635,
+                        "ordering": 2,
+                        "followingStepId": 2680201,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Resistors",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680199,
+                        "stepNextId": 22266636,
+                        "ordering": 3,
+                        "followingStepId": 2680200,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Noise filtering and voltage protection",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680200,
+                        "stepNextId": 20987903,
+                        "ordering": 0,
+                        "followingStepId": 2680202,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680201,
+                        "stepNextId": 20987902,
+                        "ordering": 0,
+                        "followingStepId": 2680200,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680202,
+                        "stepNextId": 20987904,
+                        "ordering": 0,
+                        "followingStepId": 2680203,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680204,
+                        "stepNextId": 20987894,
+                        "ordering": 0,
+                        "followingStepId": 2680205,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 2680205,
+                        "stepNextId": 22266633,
+                        "ordering": 0,
+                        "followingStepId": 2680193,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 0,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": null,
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    }
+                ],
+                "steps": [
+                    {
+                        "stepId": 2679602,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "jpg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "abb9fb36-b59b-4490-929f-35528388e2d3",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc94eea9774bb1b8a317fc4209b112d935a467b0e67a8ddea47f0c19f16b7de22938376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "3ed98152-3306-11ee-a0af-0a52ff1ec764",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Designing your own DIY PCBs for prototyping pedals",
+                                        "content": "<p>I've been asked several times if I could share how I make custom layouts, i.e., what is my approach to breadboarding and then laying out a circuit on vero or perf board. Like a lot of DIY pedal builders, I like to use the software <a href=\"http://diy-fever.com/software/diylc/\" target=\"_blank\">DIY Layout Creator</a>—it is a great tool for those of us small-timers working on a pretty minimal budget. It is free, open-source, multi-platform, and I also like to participate in the development process, i.e., submitting bug reports, and also feature requests. It's pretty cool when you get to see a feature that you've requested get implemented and rolled out, especially when it facilitates your workflow.</p><p>Anyway, in this blog post, I would like to outline my process, motivations, and strategies in creating layouts. I'll use the example of the Bazz Fuss--an ultra-simple circuit originally designed by Christian Hemmo (you can read up about it <a href=\"http://home-wrecker.com/bazz.html\" target=\"_blank\">here</a>). This circuit only has <b>six</b> components, so it is perfect for breadboarding and modding, and I've done many layouts of it already, so it will be a great place to start. I've included some images to assist in the process.</p><h3>Are you ready?</h3>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "37135d33-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "SINGLE_COLUMN",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "LEFT"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680192,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "jpg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Note that some of those green mylar film capacitors are pretty big.",
+                                    "imageId": "897d1556-3ed8-42b9-8cf8-eeb9193a9a14",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 53,
+                                    "focalPointY": 26,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc5b2ebae3d0dd751e8afb333e75c3bc3b2dea8661a8ae2c707cca61f21a62b70238376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "01ba5b5e-436d-4eb6-8a8c-09dfd094d6a0",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Leave room for capacitors",
+                                        "content": "<p>Save enough room for <b>capacitors</b>, particularly the green polyester caps and the radial electrolytic capacitors. I'd put a 1-space buffer between these caps and any other component. Measure the components you are working with. I've got a digital calipher at home, and it has been incredibly useful.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a104-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680193,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "The perf board with wire pads laid out",
+                                    "imageId": "64f0719b-a8f8-4c49-afc1-a1a5493c146b",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc479e8c2a6355f50980b135790fc75b64e3f5a7470276a3a4c207515a88c3857738376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "8e37dd0e-58fc-4332-b1c4-eacdfdcb9e58",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Pad placement",
+                                        "content": "<p>Now you should be ready to start building your layout. First thing's first, understand where your <b>input</b>, <b>ground</b>, and <b>output (IGO)</b> pads should be positioned, and place them on the side of the board that is closest to your on/off (e.g., 3PDT) switch. For my builds, I typically place them at the bottom of the board and in the indicated order from left to right. Accordingly, the 9V pad typically gets placed at the top of the board, but it's basically as close as possible to where I'm planning to drill the 9V jack. Some people like to place the 9V jack on the side of the enclosure. I prefer the top. Different strokes.</p><p>If I'm doing this on vero, and I'm looking at the strips horizontally, then the IGO pads will be on the left side of the board, and 9V on the right; then I put the finished circuit in the enclosure 90 degrees counterclockwise so that IGO are at the bottom (making them closer to the switch and jacks) and the 9V up top again (making it closer to the 9V jack). This obviously depends on the wiring layout I've chosen. The point is, do a little bit of planning and make sure that the board you are laying out fits the type of enclosure you want to use and the type of wiring that you want to do.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a225-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680194,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "jpg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Pots are soldered directly onto the board in this layout.",
+                                    "imageId": "75d74289-909e-4077-8507-734d08586f9c",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 56,
+                                    "focalPointY": 31,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc7bbc9a40d7638ce50f34382603953c8c7bf2b13d4047cd74236e8fae29df2d6738376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "f662d5a8-e847-44d5-be79-57a80919f986",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Potentiometers: off-board or on-board?",
+                                        "content": "<p>Because I always prefer minimal off-board wiring, I like to connect my pots directly to the board. I do this either with standing pots, or by reusing old capacitor/diode/resistor leads as connectors between pot lugs and the board. This is useful for two stages of testing my build: (1) I first solder the leads to the board <b>before</b> soldering the pot lugs to the leads. I do this to to first test the entire circuit and make changes as necessary. (2) Once the circuit has been verified working, <b>now</b> you can solder the pots to their connectors.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a32d-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680196,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "b9c23bb8-6c9a-40d3-bb35-608f5e714437",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#F8F8F9",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc1cd6d3d991e8cffb74bd8eae3991509825e45e19b5a24ae293be6398c40946c238376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "017dc4de-f852-4f32-8b02-989f731d6bf1",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Create a new project in DIYLC",
+                                        "content": "<p>Next, open DIYLC on your computer, but before starting to layout a clean perf or vero board, take some time to do a few preparations. The first thing you should do is create a new project and then start <b>creating all of the components</b> you will need, and start naming them according to my schematic. This keeps components in your layout coordinated by <b>number</b> and <b>value</b> with the components in the schematic which I've downloaded.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a52e-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680197,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Original Bazz Fuss circuit found on the Homewrecker site",
+                                    "imageId": "211c174b-fd94-42dd-b0be-9112ccc89f0e",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#F8F8F9",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc37b72de4e0bdf1761704b4ed2c1c50ac3757b6141c632948a9b503e7c86caa5c38376f0f57247fe3a559c729025b061f"
+                                },
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Bazz Fuss circuit post-breadboarding, with notes",
+                                    "imageId": "31c3ab60-f5a0-4d41-92c9-cb4e6a9d0b6d",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#F8F8F9",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc2b94fd831eb81b46582f3d294e181c5dfbdc47c1c60106e5917327a31decee9638376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "e36bbdbd-48e3-44a1-bacf-7e8578a912ff",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Breadboard your schematic",
+                                        "content": "<p>Start by choosing a schematic and breadboarding it. If you like how it sounds, go ahead and build it. Why waste the extra hours and materials soldering something that you're just not in love with? That said, take what you hear on the breadboard with a grain of salt, because breadboard builds are typically noisier than a relatively cleaner build on a PCB—the traces are shorter which drastically reduces the chances for noise interference.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a632-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680198,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Adding larger and more critical components to the layout",
+                                    "imageId": "06bd1caa-d7e4-4372-bfcf-4f43bfc0e7fd",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc0535ca9a5142b8d891044efad95447e0ad3526979a1d9bf94d8018c092c81f4a38376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "956bdea0-5654-4860-bf67-1f81b72dda5f",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Component placement",
+                                        "content": "<p>Take a look at the <b>schematic</b> again, and plan out the placement of your major components (transistors, IC's, etc.) accordingly. Also plan out where you want your external controls—i.e., potentiometers—in order to <b>keep offboard wiring to an absolute minimum</b>. This honestly might be a matter of personal preference, but in my experience this has also reduced the chance for noise—particularly on high-gain overdrives and fuzzes (like the Super-Fuzz, in my experience), where long cables tend to act as antennae and might create high-pitched squealing. Beyond that, aesthetically and practically speaking, there's nothing quite as satisfying as plunking your ready-made circuit into the enclosure without any of that annoying spaghetti wiring mucking up your build and making the inside of your enclosure look messy.</p><p>After adding the pads, I started planning out where my major components were going to be. Note that the pot will be soldered with its back to the solder-side of the perf board, shaft facing away. Also note that C2 has a one-row buffer so as not to crowd the components too closely together.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a735-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680199,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "none",
+                        "stepType": "regular",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "6b40cff0-775a-417d-81f1-63023d4d4216",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Populate the layout",
+                                        "content": "<p>Now you can start populating your layout by copying and pasting from your schematic. This keeps the component numbering consistent to the schematic. Copy and paste the colored traces as well, so that you can keep track of your progress more easily.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a830-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680200,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "The finished perf board layout",
+                                    "imageId": "a1029e62-59e7-4401-97c5-470b9dfdf1e5",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#F8F8F9",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc0074fb9909d3dbf53a7137380d367e880e8b3caec6a6f271d6ea1c78b5746f2e38376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "be82faef-1c15-404b-8196-4ad0cb49a8d3",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Noise filtering and voltage protection",
+                                        "content": "<p>Noise-filtering caps and voltage-protecting diodes (not shown in the Bazz Fuss). It's good to include these, especially if the schematics call for them. They should both ideally be placed as close as possible to where your 9V pad is.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716a9bc-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680201,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "jpg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Note the standing resistors on this layout.",
+                                    "imageId": "a28f7171-bbcf-450f-8b73-43c653883e03",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc07b1c737c11b651c0191af0a7cd43277459ab4eae9552f0c821dd789c99e690c38376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "5b462951-4b3c-499a-b79f-311100bb8eba",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Resistors: standing or laying?",
+                                        "content": "<p>I'm okay with them. Others do not like them for aesthetic reasons. But I prefer saving space, especially if that means the circuit will fit in a smaller enclosure. The smaller the enclosure, the better, IMO.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716aacc-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680202,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "The finished layout with solder-side mirrored on the right.",
+                                    "imageId": "f30d27ce-fe8b-4bb5-9b0b-7f4cb261e7c0",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abcb1a26e67da4a3e4c31074dd3fb37882696f65bcf0f31120250ec47b2d1fe531438376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "d18981bb-a167-4f10-abb5-bcedea6138b1",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Create the solder-side layout",
+                                        "content": "<p>When you've finished your layout, copy and paste only the board and traces (you can do this by <b>locking</b> all the other components and text from the <b>Layers</b> menu in DIYLC), and then create small dots to mark where your components will be soldered on the underside of the perf board. Then flip this copy horizontally. This will be your corresponding underside (solder-side) of the perf board, which will help you as you are populating your build in the real world.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716abd7-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680203,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "icon",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "iconName": "rocket",
+                                    "iconColor": "#ffb22c",
+                                    "iconThickness": 10,
+                                    "backgroundColor": "#292f4c"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "24f5638e-efc8-491b-a42a-c869d4335242",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "That's it!",
+                                        "content": "<p>Well, that's all I can think of for now. If you've got any tips or strategies that you use, feel free to post them in the comments below.</p><p>Happy building!</p><aside class=\"tip\"><p>💡 If you're interested in getting a production-ready version of the Bazz Fuss PCB, you can get one <a href=\"/product/bazz-fuss-v2-pcb-diy\" target=\"_blank\">here</a>.</p></aside>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716d364-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680204,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Opening a new project in DIYLC ",
+                                    "imageId": "3e3ac70e-d806-47d1-949d-0d73b8b79191",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abcd77d5c75fec19131bf9a1f1565b708e3c38d3377b9d029952f64876e2b1be90b38376f0f57247fe3a559c729025b061f"
+                                },
+                                {
+                                    "ext": "png",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "Bazz Fuss schematic after I've drawn it up in DIYLC",
+                                    "imageId": "dea37ff4-d1f0-4086-a400-50fce6866839",
+                                    "stretch": "FIT",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 50,
+                                    "focalPointY": 50,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc891ca0e4cc21eafcdc4fc0bed05765a57e2e8a26cfdc3e908846e75bf4ee7bbf38376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "7feb58ee-12ce-4114-a90c-179e04f42028",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Recreate the schematic in DIYLC",
+                                        "content": "<p>Next, open DIYLC on your computer, but before starting to layout a clean perf or vero board, take some time to do a few preparations. The first thing you should do is create a new project, and start <b>add all of the components</b> you will need. </p><aside class=\"tip\"><p>💡 This is a good time to fill in the <b>names</b> and <b>values</b> of the components corresponding to the schematic. This ensures your layout will be coordinated with the original schematic, making it easier to debug.</p></aside><p>Once you've added all your components to the new DIYLC layout, <b>recreate the original schematic</b> in DIYLC. This is an important step because it allows you to <b>color-code</b> all the different traces in the schematic, which helps debugging once the layout is finished. It may seem like an unnecessary step, but if you are an extremely visual learner like I am, then it really helps to have both the schematic and your PCB layout coordinated by color. Double-check that the original schematic and your new schematic are 1:1 before moving on.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716d5bf-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 2680205,
+                        "guideId": "GWcp64Aqpl",
+                        "mediaType": "image",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "ext": "jpg",
+                                    "path": "media/images",
+                                    "altText": "",
+                                    "caption": "",
+                                    "imageId": "da577318-3f43-4c99-856f-54ec9cc3555e",
+                                    "stretch": "FILL",
+                                    "aspectRatio": "16:9",
+                                    "focalPointX": 63,
+                                    "focalPointY": 51,
+                                    "backgroundColor": "#fff",
+                                    "imageIdSecureHash": "828a0d629d0c5cf95852c5ab18431fbf0136cf6475e4efe08fa1daa61a5024454158cbc2c43526728b5e191c383edd64cffa688712830726d92ca2d44b855abc6cd259ad10cfa7091acff2af2294ba1c57efa9141e4d3e6d906744ef00f5efcf38376f0f57247fe3a559c729025b061f"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "11589f4e-c679-446f-8ad3-18468e1affc0",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Plan hardware integration",
+                                        "content": "<p>Next, <b>measure</b> the dimensions of your enclosure ahead of time, and make sure that your board will fit. Making the board as small as possible is partly an aesthetic motivation and partly practical—it will save you a headache if you make your board too big to fit the enclosure.</p><p>You should then plan the placement of enclosure hardware relative to where your board will be. You will mainly want to know where your 9V jack and your on/off switch will be, but if you're planning on building something with a small footprint (e.g., anything in a 1590A, 1590B, or 125B enclosure), it helps to consider the board size relative to where the input and output jacks will be as well—as in builds that include top-mounted or side-mounted jacks.</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "3716d723-67f6-11ee-a0af-0a52ff1ec764",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    }
+                ],
+                "contentSnippets": []
+            }
+        ],
+        "contributors": [
+            {
+                "userId": "bc561587-7b1f-4984-ab4c-f0ebcda003c0",
+                "firstName": "Daniel",
+                "lastName": "Avissar",
+                "picture": null
+            }
+        ],
+        "knowledgeBaseUrl": "",
+        "stepsCommentsCount": []
+    }
+}

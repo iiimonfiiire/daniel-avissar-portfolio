@@ -1,0 +1,290 @@
+{
+    "result": true,
+    "content": {
+        "guides": [
+            {
+                "guideId": "FTF6V590vJ",
+                "title": {
+                    "en": {
+                        "title": "Release Notes",
+                        "consoleTitle": "Release Notes"
+                    }
+                },
+                "firstStepId": 3496999,
+                "type": "GUIDE",
+                "additionalOptions": {
+                    "teamId": 0,
+                    "folderId": 409231,
+                    "copyOfGuideId": null,
+                    "logo": null,
+                    "buttonColor": null,
+                    "whiteLabel": null,
+                    "currentVersion": 12,
+                    "latestVersion": 12,
+                    "pending": 0,
+                    "fromTemplateId": null,
+                    "isTemplate": false,
+                    "updateDate": 1757835187301,
+                    "lastTranslationDate": null,
+                    "showLinks": false,
+                    "displayAds": true
+                },
+                "options": {
+                    "allowComments": false,
+                    "bpaEnabled": false,
+                    "defaultLanguage": "en",
+                    "displayStepTitle": "true",
+                    "encrypted": false,
+                    "languageList": "en",
+                    "metaDescription": {},
+                    "status": "published",
+                    "titleTag": {},
+                    "ttsEnabled": false,
+                    "increasedContrastEnabled": false,
+                    "contentRatingMode": "DISABLED",
+                    "contentRatingSettings": {},
+                    "accessRights": 1000
+                },
+                "access": 5000,
+                "draftMeta": {},
+                "stepNext": [
+                    {
+                        "stepId": 3496999,
+                        "stepNextId": 22267604,
+                        "ordering": 0,
+                        "followingStepId": 3497242,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Acme AI Assistant",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "8f3769bd-f405-4ff6-8c35-c73f14054aa7",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c11cea3c82673dad9b9c371ce3272c642051723845e079563d2fb1ae38ed9e9e0f48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    },
+                    {
+                        "stepId": 3496999,
+                        "stepNextId": 22267605,
+                        "ordering": 1,
+                        "followingStepId": 3497241,
+                        "condition": null,
+                        "navigationType": null,
+                        "navigationSettings": {
+                            "isTextHidden": 0,
+                            "buttonEnabled": 1,
+                            "newTabEnabled": 1,
+                            "tourNavigation": [],
+                            "buttonHighlighted": 1,
+                            "conditionsToEnableRequired": 0
+                        },
+                        "label": {
+                            "en": {
+                                "label": "Older Release Notes",
+                                "linkUrl": ""
+                            }
+                        },
+                        "action": null,
+                        "staticValue": null,
+                        "conditionParam": "ALWAYS",
+                        "externalCondition": null,
+                        "conditionType": "VISIBILITY",
+                        "aiStepNextType": null,
+                        "media": {
+                            "en": {
+                                "ext": "svg",
+                                "path": "media/images",
+                                "imageId": "d014a45b-5670-4940-9ff6-2a599d0780b6",
+                                "imageIdSecureHash": "b249295ed9825da96832abf2723bf45e4354e25a523efa3a84aa24a8862742eb3ef7c1b4d75a63c2167488276d9da359e0fcedccb0ab55dd39d82eee1d91c43c41fbff7dd4bf62b8f2fe1c5f730072522b14fc716f29b828b6a6de5c8f3a8465f48f2704126ee57416201419d4080792"
+                            }
+                        },
+                        "isHidden": null,
+                        "linkReferenceId": null
+                    }
+                ],
+                "steps": [
+                    {
+                        "stepId": 3496999,
+                        "guideId": "FTF6V590vJ",
+                        "mediaType": "icon",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "iconName": "write",
+                                    "iconColor": "#292f4c",
+                                    "iconThickness": 10,
+                                    "backgroundColor": "#ffb22c"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "9aa44344-14eb-11ef-a9d4-06cb0cb2a85e",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "September 2025",
+                                        "content": "<p>The following is a summary of new and noteworthy updates to the Acme platform for the month of September 2025.</p><h4><b>Features</b></h4><p><b>✨ Acme AI Assistant </b>– Easily search your communications data using natural language! <a href=\"https://edit.me\" target=\"_self\">Read more.</a></p><h4><b>Bug fixes</b></h4><ul><li><p>Fixed several minor visual bugs.</p></li><li><p>Updated microcopy in Compliance &gt; Rule management.</p></li><li><p>Improved knowledge base guide about Discovery</p></li></ul>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "9aa479ef-14eb-11ef-a9d4-06cb0cb2a85e",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "SINGLE_COLUMN",
+                                    "tileImageSize": "SMALL",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "LEFT"
+                                },
+                                "content": {}
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497241,
+                        "guideId": "FTF6V590vJ",
+                        "mediaType": "icon",
+                        "stepType": "regular",
+                        "media": {
+                            "en": [
+                                {
+                                    "iconName": "library",
+                                    "iconColor": "#ffb22c",
+                                    "iconThickness": 10,
+                                    "backgroundColor": "#292f4c"
+                                }
+                            ]
+                        },
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "6e76666f-c6ca-4aca-b5d6-f09f14426ddf",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Release Notes archive",
+                                        "content": "<p>[This is where older release notes go]</p>"
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "c151b074-1843-4c3e-9a2c-9b545bdc1ed0",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "tileLayout": "GRID",
+                                    "tileImageSize": "MEDIUM",
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "tiles",
+                                    "tileImagePosition": "NO_IMAGES"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    },
+                    {
+                        "stepId": 3497242,
+                        "guideId": "FTF6V590vJ",
+                        "mediaType": "none",
+                        "stepType": "guide",
+                        "modificationDates": {},
+                        "stepModule": [
+                            {
+                                "stepModuleStaticId": "66841951-ceb6-4f6e-955c-566c19cdd7c6",
+                                "type": "CONTENT",
+                                "properties": {},
+                                "content": {
+                                    "en": {
+                                        "title": "Discover",
+                                        "content": ""
+                                    }
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "e502af68-fc76-433b-9c37-32d11b216246",
+                                "type": "EMBEDDED_GUIDE",
+                                "properties": {
+                                    "guideType": "GUIDE",
+                                    "guideId": "MLSUlPHDdI",
+                                    "title": {
+                                        "en": {
+                                            "title": "Discover",
+                                            "consoleTitle": "Discover"
+                                        }
+                                    },
+                                    "stepStartType": "FIRST_STEP"
+                                },
+                                "content": {},
+                                "options": {
+                                    "languageList": "en",
+                                    "defaultLanguage": "en"
+                                }
+                            },
+                            {
+                                "stepModuleStaticId": "58820a2a-7cc0-448a-b380-5b9f8e046085",
+                                "type": "BUTTON_SETTINGS",
+                                "properties": {
+                                    "showBackButton": 1,
+                                    "nextStepSelector": "button"
+                                },
+                                "content": {
+                                    "en": {
+                                        "placeholderText": "",
+                                        "nextStepButtonText": ""
+                                    }
+                                }
+                            }
+                        ],
+                        "tags": []
+                    }
+                ],
+                "contentSnippets": []
+            }
+        ],
+        "contributors": [
+            {
+                "userId": "bc561587-7b1f-4984-ab4c-f0ebcda003c0",
+                "firstName": "Daniel",
+                "lastName": "Avissar",
+                "picture": null
+            }
+        ],
+        "knowledgeBaseUrl": "",
+        "stepsCommentsCount": []
+    }
+}

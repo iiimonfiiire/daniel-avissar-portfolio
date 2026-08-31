@@ -1,0 +1,171 @@
+/*
+ * Carcharias -> mkdocs-material bridge
+ * ---------------------------------------------------------------
+ * mkdocs-material owns its own CSS custom-property system
+ * (--md-primary-fg-color, --md-default-bg-color, --md-typeset-a-color,
+ * etc.) and scopes almost all of its real typography inside
+ * `.md-typeset` / component classes rather than raw `body` / `a` /
+ * `h1-h4` tag selectors. Carcharias's own carcharias-base.css tag
+ * resets would lose that specificity fight everywhere content
+ * actually renders (Material's `.md-typeset h1` etc. beat a bare
+ * `h1` rule) and only leak randomly into whatever unscoped chrome
+ * happens to use raw tags -- so base.css is deliberately NOT copied
+ * into this site. This file re-implements the same visual intent
+ * (link treatment, heading voice, selection color) against
+ * Material's real selectors instead, which is the only way to get a
+ * predictable result.
+ *
+ * Selectors below match [data-md-color-scheme=slate] with a bare
+ * [data-md-color-primary] / [data-md-color-accent] attribute
+ * presence (not a specific named value) so these overrides always
+ * win regardless of which built-in Material palette name
+ * mkdocs.yml declares -- Material ships its own higher-specificity
+ * rules keyed to specific primary/accent names (e.g.
+ * [data-md-color-scheme=slate][data-md-color-primary=teal]) that
+ * would otherwise silently outrank a plain :root override for some
+ * palette choices but not others.
+ */
+
+:root,
+[data-md-color-scheme="slate"],
+[data-md-color-scheme="slate"][data-md-color-primary],
+[data-md-color-scheme="slate"][data-md-color-accent] {
+  color-scheme: dark;
+
+  /* Surfaces -> Abyss ramp. Two values carry a screen: page + inset. */
+  --md-default-bg-color: var(--surface-page);
+  --md-default-bg-color--light: var(--surface-panel);
+  --md-default-bg-color--lighter: var(--surface-card);
+  --md-default-bg-color--lightest: var(--surface-raised);
+
+  --md-default-fg-color: var(--text-body);
+  --md-default-fg-color--light: var(--text-muted);
+  --md-default-fg-color--lighter: var(--text-faint);
+  --md-default-fg-color--lightest: var(--line-hairline);
+
+  /*
+   * NOTE on primary: Material uses --md-primary-fg-color as a
+   * *solid background fill* for .md-header / .md-tabs. Signal
+   * orange is explicitly rationed in the brand spec ("never a
+   * background wash") -- painting the sticky header orange on
+   * every page would violate that outright. So primary here maps
+   * to a translucent Abyss panel (the header is spec'd as
+   * "translucent + blur" anyway), and orange is applied narrowly,
+   * below, to the one place brand calls for it: the primary
+   * button.
+   */
+  --md-primary-fg-color: var(--surface-panel);
+  --md-primary-fg-color--light: var(--surface-raised);
+  --md-primary-fg-color--dark: var(--surface-inset);
+  --md-primary-bg-color: var(--text-display);
+  --md-primary-bg-color--light: var(--text-muted);
+
+  /* Accent = "a circuit is live": tide teal for hover/active/highlight states. */
+  --md-accent-fg-color: var(--tide-500);
+  --md-accent-fg-color--transparent: rgba(46, 211, 192, 0.16);
+  --md-accent-bg-color: var(--text-on-tide);
+  --md-accent-bg-color--light: var(--text-on-tide);
+
+  /* In-content type & links */
+  --md-typeset-color: var(--text-body);
+  --md-typeset-a-color: var(--text-link);
+  --md-typeset-mark-color: rgba(255, 107, 26, 0.3);
+
+  /* Code */
+  --md-code-fg-color: var(--chrome-200);
+  --md-code-bg-color: var(--surface-inset);
+  --md-code-hl-color: var(--tide-500);
+  --md-code-hl-color--light: rgba(46, 211, 192, 0.12);
+
+  /* Admonitions */
+  --md-admonition-fg-color: var(--text-body);
+  --md-admonition-bg-color: var(--surface-card);
+
+  /* Footer */
+  --md-footer-bg-color: var(--abyss-850);
+  --md-footer-bg-color--dark: var(--abyss-900);
+  --md-footer-fg-color: var(--text-body);
+  --md-footer-fg-color--light: var(--text-muted);
+
+  /*
+   * Fonts: Material builds --md-text-font-family / --md-code-font-family
+   * from these two variables (this is Material's own documented
+   * self-hosted-font mechanism, not a hack). Barlow (font-core) is
+   * the UI/short-body voice; Golos Text is applied to article prose
+   * specifically, below.
+   */
+  --md-text-font: var(--font-core);
+  --md-code-font: var(--font-mono);
+}
+
+/* Sticky header: translucent Abyss panel + blur, per brand's header spec,
+   instead of Material's default solid-fill primary color. */
+.md-header {
+  background-color: rgba(13, 20, 24, 0.86);
+  -webkit-backdrop-filter: var(--blur-glass);
+  backdrop-filter: var(--blur-glass);
+  border-bottom: 1px solid var(--line-hairline);
+}
+
+/* Article prose runs Golos Text; headings get their own legend treatment below. */
+.md-typeset {
+  font-family: var(--font-prose);
+}
+
+/* Headings: Barlow Condensed, bold, tight tracking -- the silkscreen-legend voice. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: var(--font-legend);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--track-tight);
+  color: var(--text-display);
+}
+
+/* Nav / tabs / header title: uppercase, .16em tracking -- the loudest brand signature. */
+.md-nav__title,
+.md-nav__link,
+.md-tabs__link,
+.md-header__title {
+  font-family: var(--font-legend);
+  text-transform: uppercase;
+  letter-spacing: var(--track-legend);
+  font-weight: var(--weight-semibold);
+}
+
+/* Links inside prose: teal underline-on-hover, matches the cfx link pattern. */
+.md-typeset a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(46, 211, 192, 0.35);
+  transition: var(--transition-control);
+}
+.md-typeset a:hover {
+  border-bottom-color: var(--text-link-hover);
+}
+
+::selection {
+  background: var(--signal-500);
+  color: var(--text-on-signal);
+}
+
+/*
+ * Primary button: the one place signal orange is allowed as a fill,
+ * matching "one primary button per view" in the brand spec. Ghost
+ * buttons pick up --md-primary-fg-color (now an Abyss surface) for
+ * their border/text, which is correct -- they should read as UI
+ * chrome, not as the loud color.
+ */
+.md-typeset .md-button--primary {
+  background-color: var(--signal-500);
+  border-color: var(--signal-500);
+  color: var(--text-on-signal);
+}
+.md-typeset .md-button--primary:hover {
+  background-color: var(--signal-400);
+  border-color: var(--signal-400);
+}
+.md-typeset .md-button:not(.md-button--primary):hover {
+  color: var(--chrome-000);
+  border-color: var(--line-strong);
+}
