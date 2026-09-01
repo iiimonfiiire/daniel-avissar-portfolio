@@ -7,7 +7,6 @@
 </head>
 <body>
 <x-dc>
-
 <helmet>
   <meta name="design_doc_mode" content="canvas">
   <link rel="stylesheet" href="_ds/carcharias-design-system-c8a7503b-4fce-4cac-92f6-712b4ff2f70d/tokens/fonts.css">
@@ -24,7 +23,6 @@
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   <style>
     body { margin: 0; background: #010203; font-family: var(--font-ui); }
-    .cs-heading { text-transform: uppercase; letter-spacing: 0.05em; }
     .cs-nav-item::-webkit-scrollbar { display: none; }
     a { color: var(--text-link); text-decoration: none; }
     a:hover { color: var(--text-link-hover); text-decoration: underline; }
@@ -35,10 +33,10 @@
 
   <div style="display:flex; gap:12px; align-items:baseline;">
     <span style="font:var(--type-h2); color:var(--text-display); text-transform:uppercase; letter-spacing:.06em;">AI Knowledge Architect — Portfolio Site</span>
-    <span style="font:var(--type-caption); color:var(--text-faint);">MkDocs + Material · dark, light, and system modes · placeholder content for layout/sizing</span>
+    <span style="font:var(--type-caption); color:var(--text-faint);">MkDocs + Material · dark, light, and system modes · round 2 — real copy</span>
   </div>
 
-  <div style="display:flex; gap:16px; align-items:center;">
+  <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
     <div style="display:flex; gap:4px; padding:4px; background:var(--surface-inset); border:1px solid var(--line-strong); border-radius:var(--radius-sm);">
       <button style="{{ darkBtnStyle }}" onClick="{{ setDark }}">Dark</button>
       <button style="{{ lightBtnStyle }}" onClick="{{ setLight }}">Light</button>
@@ -47,6 +45,17 @@
     <div style="display:flex; gap:4px; padding:4px; background:var(--surface-inset); border:1px solid var(--line-strong); border-radius:var(--radius-sm);">
       <button style="{{ tealBtnStyle }}" onClick="{{ setTeal }}">Teal accent</button>
       <button style="{{ signalBtnStyle }}" onClick="{{ setSignal }}">Signal accent</button>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:6px;">
+      <span style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;">Site icon — pick one to preview</span>
+      <div style="display:flex; flex-direction:row; gap:8px; flex-wrap:wrap;">
+        <sc-for list="{{ iconOptions }}" as="opt" hint-placeholder-count="6">
+          <button style="{{ opt.btnStyle }}" onClick="{{ opt.select }}" title="{{ opt.label }}">
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ opt.name }}" size="18" color="{{ opt.color }}" hint-size="18px,18px"></x-import>
+            <span style="font:var(--type-caption); white-space:nowrap;">{{ opt.label }}</span>
+          </button>
+        </sc-for>
+      </div>
     </div>
   </div>
 
@@ -60,9 +69,9 @@
         <!-- Header -->
         <div style="height:60px; display:flex; align-items:center; gap:24px; padding:0 32px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong); position:sticky; top:0;">
           <div style="display:flex; align-items:center; gap:10px;">
-            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="scan-search" size="22" color="var(--intent-primary)" hint-size="22px,22px"></x-import>
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ logoIconName }}" size="26" color="var(--intent-primary)" hint-size="26px,26px"></x-import>
             <div style="display:flex; flex-direction:column; line-height:1.1;">
-              <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.04em;">Daniel Avissar</span>
+              <span style="font:var(--type-h3); color:var(--text-display); letter-spacing:-.012em;">Daniel Avissar</span>
               <span style="font:var(--type-caption); color:var(--text-faint);">AI Knowledge Architect</span>
             </div>
           </div>
@@ -76,31 +85,36 @@
 
         <div style="display:flex;">
           <!-- Sidebar -->
-          <div style="width:260px; flex-shrink:0; background:var(--surface-panel); border-right:1px solid var(--line-strong); padding:20px 0; display:flex; flex-direction:column; gap:2px; min-height:1400px;">
+          <div style="width:260px; flex-shrink:0; background:var(--surface-panel); border-right:1px solid var(--line-strong); padding:20px 0; display:flex; flex-direction:column; gap:2px; min-height:1700px;">
             <div style="display:flex; align-items:center; gap:10px; padding:8px 20px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);">
               <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="home" size="16" color="var(--intent-primary)" hint-size="16px,16px"></x-import>
               <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Home</span>
             </div>
 
             <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Case studies</div>
-            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent;">
+
+            <div style="display:flex; align-items:center; gap:8px; padding:7px 20px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--text-muted)" hint-size="14px,14px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
+            </div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Overview</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Knowledge base article</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Troubleshooting guide</span></div>
+
+            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent; margin-top:6px;">
               <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
               <span style="font:var(--type-body-sm); color:var(--text-body);">Acme (2024)</span>
             </div>
+
             <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
               <span style="font:var(--type-body-sm); color:var(--text-body);">Website API (2021)</span>
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent;">
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
-              <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
             </div>
 
             <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Extras</div>
             <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
-              <span style="font:var(--type-body-sm); color:var(--text-body);">Perf</span>
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
-              <span style="font:var(--type-body-sm); color:var(--text-body);">Vero board</span>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Perf &amp; vero board</span>
             </div>
           </div>
 
@@ -108,73 +122,117 @@
           <div style="flex:1; padding:64px 72px; display:flex; flex-direction:column; gap:56px; max-width:1180px;">
 
             <!-- Hero -->
-            <div style="display:flex; flex-direction:column; gap:16px;">
-              <h1 style="font:var(--weight-semibold) 44px/1.15 var(--font-ui); color:var(--text-display); text-transform:uppercase; letter-spacing:-.01em; margin:0; max-width:820px;">👋 Hi, I'm Daniel — AI Knowledge Architect.</h1>
-              <p style="font:var(--type-lg,18px)/1.6 var(--font-prose); color:var(--text-body); max-width:640px; margin:0; font-size:18px;">Good documentation is a product in its own right, and I build the systems, skills, and plugins that make it work.</p>
-              <div style="margin-top:8px;">
-                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Button" icon="arrow-down" hint-size="auto,44px">View case studies</x-import>
+            <div style="display:flex; gap:28px; align-items:flex-start;">
+              <div style="width:132px; height:132px; border-radius:50%; overflow:hidden; flex-shrink:0;">
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.ImagePlate" label="Headshot" ratio="1 / 1" dark="{{ true }}" hint-size="100%,100%"></x-import>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:16px;">
+                <h1 style="font:var(--weight-semibold) 44px/1.15 var(--font-ui); color:var(--text-display); letter-spacing:-.015em; margin:0; max-width:820px;">👋 Hi, I'm Daniel — AI Knowledge Architect.</h1>
+                <p style="font-family:var(--font-prose); font-size:18px; line-height:1.6; color:var(--text-body); max-width:680px; margin:0;">Good documentation is a product in its own right, and I build the systems, skills, and plugins that make it work. This site is an interactive portfolio demonstrating my capabilities in AI knowledge architecture, technical and UX microcopy writing, and product management.</p>
+                <div style="margin-top:8px;">
+                  <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Button" icon="arrow-down" hint-size="auto,44px">View case studies</x-import>
+                </div>
               </div>
             </div>
 
-            <!-- Skill cards -->
-            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+            <!-- Skill cards — variable height by content, not forced into a fixed 4-up grid -->
+            <div style="display:grid; grid-template-columns:repeat(12,1fr); gap:16px; align-items:start;">
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" hint-size="100%,180px">
-                <div style="display:flex; flex-direction:column; gap:10px; padding:20px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 5;" hint-size="100%,150px">
+                <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="network" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
-                  <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.02em; font-size:14px;">Knowledge architecture</span>
-                  <span style="font:var(--type-body-sm); color:var(--text-muted);">Organising content, searchability, and multi-format optimisation — web, guides, announcements, banners.</span>
+                  <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">Knowledge architecture</span>
+                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">I create and manage the knowledge base infrastructure, tailoring it to match the needs and complexity of your product.</span>
+                  <details style="margin-top:2px;">
+                    <summary style="cursor:pointer; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; padding:4px 0;">Details</summary>
+                    <ul style="margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:6px; font:var(--type-body-sm); color:var(--text-muted); line-height:1.5;">
+                      <li>Identifying and organising content corresponding to logical product areas</li>
+                      <li>Helping users find the information they need by ensuring searchability</li>
+                      <li>Providing assistance when and where it is needed most by integrating knowledge features with your platform</li>
+                      <li>Optimising content for multiple formats — web, guides, announcements, banners, etc.</li>
+                    </ul>
+                  </details>
                 </div>
               </x-import>
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" hint-size="100%,180px">
-                <div style="display:flex; flex-direction:column; gap:10px; padding:20px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 7;" hint-size="100%,170px">
+                <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="git-merge" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
-                  <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.02em; font-size:14px;">Feature development</span>
-                  <span style="font:var(--type-body-sm); color:var(--text-muted);">Cross-functional work shipping docs alongside new product features — AI search tools, internal knowledge bots, in-app help.</span>
+                  <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">Feature development</span>
+                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">Interdepartmental collaborations delivering exciting new features:</span>
+                  <details style="margin-top:2px;">
+                    <summary style="cursor:pointer; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; padding:4px 0;">Details</summary>
+                    <ul style="margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:10px; font:var(--type-body-sm); color:var(--text-muted); line-height:1.5;">
+                      <li><strong style="color:var(--text-body);">AI-powered knowledge search:</strong> building and maintaining a RAG-based agent that provides answers directly from the knowledge base; automation script design for processing JSON exported from third-party platforms into machine-readable documentation; prompt definition; usage analysis.</li>
+                      <li><strong style="color:var(--text-body);">AI search:</strong> translation agent that converts user-entered natural language prompts into proprietary querying language syntax; prompt engineering; KB optimisation; usage data analysis and model improvement.</li>
+                      <li><strong style="color:var(--text-body);">Internal knowledge bot:</strong> an internal Slackbot that accesses knowledge silos across an entire organisation and provides a unified answer to any employee about any internal knowledge.</li>
+                      <li>
+                        <strong style="color:var(--text-body);">Help menu:</strong> an in-app help menu project with the Support team, fully integrated with a Zendesk-based platform. 3-month KPIs included:
+                        <ul style="margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:4px;">
+                          <li>Reduced email-based ticket submissions from 30% to 19%</li>
+                          <li>Increased customer engagement (+11% total guide views)</li>
+                          <li>More frequent user interaction with help resources (+8% active sessions)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </details>
                 </div>
               </x-import>
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" hint-size="100%,180px">
-                <div style="display:flex; flex-direction:column; gap:10px; padding:20px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 5;" hint-size="100%,120px">
+                <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="pen-tool" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
-                  <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.02em; font-size:14px;">UX writing</span>
-                  <span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy that helps users adopt features faster.</span>
+                  <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">UX writing</span>
+                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">Writing smart, helpful UX microcopy, focused on engaging and empowering users to adopt features more quickly.</span>
                 </div>
               </x-import>
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" hint-size="100%,180px">
-                <div style="display:flex; flex-direction:column; gap:10px; padding:20px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 7;" hint-size="100%,150px">
+                <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="code-2" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
-                  <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.02em; font-size:14px;">Technical versatility</span>
-                  <span style="font:var(--type-body-sm); color:var(--text-muted);">Writing across APIs, product guides, and AI assistants.</span>
+                  <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">Technical versatility</span>
+                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">I engage my creative and engineering backgrounds equally in executing my product vision. Whether writing for APIs, product guides, or AI assistants, I dive into highly diverse technical subjects with enthusiasm and a hunger to learn, which I always try to relay to colleagues and users.</span>
                 </div>
               </x-import>
             </div>
 
             <!-- Case studies -->
             <div style="display:flex; flex-direction:column; gap:20px;">
-              <h2 style="font:var(--weight-semibold) 22px/1.2 var(--font-ui); color:var(--text-display); text-transform:uppercase; letter-spacing:.02em; margin:0;">Case studies</h2>
+              <h2 style="font:var(--weight-semibold) 22px/1.2 var(--font-ui); color:var(--text-display); letter-spacing:-.012em; margin:0;">Case studies</h2>
 
               <div style="display:flex; flex-direction:column; gap:2px;">
                 <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px 0; border-top:1px solid var(--line-strong);">
                   <div style="display:flex; flex-direction:column; gap:4px;">
-                    <span style="font:var(--type-h3); color:var(--text-display); font-size:17px;">Acme (2024)</span>
-                    <span style="font:var(--type-body-sm); color:var(--text-muted);">Technical Writer — user guide and release notes for a new AI search feature on a compliance and eDiscovery platform.</span>
+                    <span style="font:var(--type-h3); color:var(--text-display); font-size:17px;">Secyra (2025)</span>
+                    <span style="font:var(--type-body-sm); color:var(--text-muted);">Senior Technical Writer — knowledge base article, release note, microcopy, and troubleshooting guide for a data-security platform.</span>
                   </div>
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="18" color="var(--intent-primary)" hint-size="18px,18px"></x-import>
                 </a>
                 <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px 0; border-top:1px solid var(--line-strong);">
+                  <div style="display:flex; flex-direction:column; gap:4px;">
+                    <span style="font:var(--type-h3); color:var(--text-display); font-size:17px;">Acme (2024)</span>
+                    <span style="font:var(--type-body-sm); color:var(--text-muted);">Technical Writer — user guide and release notes for a new AI-powered search feature on a compliance and eDiscovery platform.</span>
+                  </div>
+                  <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="18" color="var(--intent-primary)" hint-size="18px,18px"></x-import>
+                </a>
+                <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px 0; border-top:1px solid var(--line-strong); border-bottom:1px solid var(--line-strong);">
                   <div style="display:flex; flex-direction:column; gap:4px;">
                     <span style="font:var(--type-h3); color:var(--text-display); font-size:17px;">Website API (2021)</span>
                     <span style="font:var(--type-body-sm); color:var(--text-muted);">A blog-style explainer on how APIs work, using a website-builder platform's scrollTo() function as the worked example.</span>
                   </div>
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="18" color="var(--intent-primary)" hint-size="18px,18px"></x-import>
                 </a>
+              </div>
+            </div>
+
+            <!-- Extras -->
+            <div style="display:flex; flex-direction:column; gap:20px;">
+              <h2 style="font:var(--weight-semibold) 22px/1.2 var(--font-ui); color:var(--text-display); letter-spacing:-.012em; margin:0;">Extras</h2>
+              <div style="display:flex; flex-direction:column; gap:2px;">
                 <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px 0; border-top:1px solid var(--line-strong); border-bottom:1px solid var(--line-strong);">
                   <div style="display:flex; flex-direction:column; gap:4px;">
-                    <span style="font:var(--type-h3); color:var(--text-display); font-size:17px;">Secyra (2025)</span>
-                    <span style="font:var(--type-body-sm); color:var(--text-muted);">Senior Technical Writer — KB article, release note, microcopy, and troubleshooting guide for a data-security platform.</span>
+                    <span style="font:var(--type-h3); color:var(--text-display); font-size:17px;">How to make custom layouts on perf and vero board</span>
+                    <span style="font:var(--type-body-sm); color:var(--text-muted);">A guide from building guitar pedals, on laying out custom circuits on perfboard and vero board.</span>
                   </div>
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="18" color="var(--intent-primary)" hint-size="18px,18px"></x-import>
                 </a>
@@ -188,14 +246,14 @@
 
     <!-- ============ ARTBOARD 2: CASE STUDY OVERVIEW ============ -->
     <div style="display:flex; flex-direction:column; gap:14px;">
-      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">02 · Case study overview — Acme (2024)</div>
+      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">02 · Case study overview — Secyra (2025)</div>
       <div class="{{ themeClass }}" style="width:1440px; background:var(--surface-page); border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-panel); {{ accentVars }}">
 
         <div style="height:60px; display:flex; align-items:center; gap:24px; padding:0 32px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong);">
           <div style="display:flex; align-items:center; gap:10px;">
-            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="scan-search" size="22" color="var(--intent-primary)" hint-size="22px,22px"></x-import>
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ logoIconName }}" size="26" color="var(--intent-primary)" hint-size="26px,26px"></x-import>
             <div style="display:flex; flex-direction:column; line-height:1.1;">
-              <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.04em;">Daniel Avissar</span>
+              <span style="font:var(--type-h3); color:var(--text-display); letter-spacing:-.012em;">Daniel Avissar</span>
               <span style="font:var(--type-caption); color:var(--text-faint);">AI Knowledge Architect</span>
             </div>
           </div>
@@ -208,7 +266,7 @@
         </div>
 
         <div style="display:flex;">
-          <div style="width:260px; flex-shrink:0; background:var(--surface-panel); border-right:1px solid var(--line-strong); padding:20px 0; display:flex; flex-direction:column; gap:2px; min-height:900px;">
+          <div style="width:260px; flex-shrink:0; background:var(--surface-panel); border-right:1px solid var(--line-strong); padding:20px 0; display:flex; flex-direction:column; gap:2px; min-height:1000px;">
             <div style="display:flex; align-items:center; gap:10px; padding:8px 20px; border-left:2px solid transparent;">
               <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="home" size="16" color="var(--text-muted)" hint-size="16px,16px"></x-import>
               <span style="font:var(--type-body-sm); color:var(--text-body);">Home</span>
@@ -218,53 +276,60 @@
 
             <div style="display:flex; align-items:center; gap:8px; padding:8px 20px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);">
               <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import>
-              <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Acme (2024)</span>
+              <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Secyra (2025)</span>
             </div>
-            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px; border-left:2px solid transparent;">
-              <span style="font:var(--type-body-sm); color:var(--text-muted);">Release notes</span>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);">
+              <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Overview</span>
             </div>
-            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px; border-left:2px solid transparent;">
-              <span style="font:var(--type-body-sm); color:var(--text-muted);">Discover</span>
-            </div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Knowledge base article</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Troubleshooting guide</span></div>
 
+            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent; margin-top:6px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Acme (2024)</span>
+            </div>
             <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
               <span style="font:var(--type-body-sm); color:var(--text-body);">Website API (2021)</span>
-            </div>
-            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px; border-left:2px solid transparent;">
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
-              <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
             </div>
 
             <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Extras</div>
             <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
-              <span style="font:var(--type-body-sm); color:var(--text-body);">Perf</span>
-            </div>
-            <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
-              <span style="font:var(--type-body-sm); color:var(--text-body);">Vero board</span>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Perf &amp; vero board</span>
             </div>
           </div>
 
           <div style="flex:1; padding:64px 72px; display:flex; flex-direction:column; gap:32px; max-width:900px;">
             <div style="display:flex; align-items:center; gap:12px;">
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Badge" tone="info" hint-size="auto,22px">Technical writer</x-import>
-              <span style="font:var(--type-value); color:var(--text-faint); letter-spacing:.01em;">2024</span>
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Badge" tone="info" hint-size="auto,22px">Senior technical writer</x-import>
+              <span style="font:var(--type-value); color:var(--text-faint); letter-spacing:.01em;">2025</span>
             </div>
-            <h1 style="font:var(--weight-semibold) 36px/1.15 var(--font-ui); color:var(--text-display); text-transform:uppercase; letter-spacing:-.01em; margin:0;">Acme (2024)</h1>
-            <p style="font-family:var(--font-prose); font-size:18px; line-height:1.65; color:var(--text-body); max-width:68ch; margin:0;">Acme is a compliance and eDiscovery platform used by legal teams to review and produce records. As the assigned technical writer, I shipped the user guide and release notes for a new AI-powered search feature, working directly with product and engineering to translate a complex retrieval model into instructions a non-technical reviewer could act on immediately.</p>
+            <h1 style="font:var(--weight-semibold) 36px/1.15 var(--font-ui); color:var(--text-display); letter-spacing:-.015em; margin:0;">Secyra (2025)</h1>
+            <p style="font-family:var(--font-prose); font-size:18px; line-height:1.65; color:var(--text-body); max-width:68ch; margin:0;">A Senior Technical Writer take-home assignment for a data-security platform ("Secyra"/the InsightEdge Platform below), covering a real feature end-to-end across four documentation formats: a knowledge base article, a release note, UX microcopy, and a troubleshooting guide.</p>
 
-            <div style="display:flex; gap:32px; border-bottom:1px solid var(--line-strong); margin-top:8px;">
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid var(--intent-primary);">
-                <a href="#" style="font:var(--type-body); color:var(--intent-primary); font-weight:600;">Release notes</a>
+            <div style="display:flex; gap:32px; border-bottom:1px solid var(--line-strong); margin-top:8px; overflow-x:auto;">
+              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid var(--intent-primary); flex-shrink:0;">
+                <a href="#" style="font:var(--type-body); color:var(--intent-primary); font-weight:600; white-space:nowrap;">Overview</a>
               </div>
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent;">
-                <a href="#" style="font:var(--type-body); color:var(--text-muted);">Discover</a>
+              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
+                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Knowledge base article</a>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
+                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Release note</a>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
+                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Microcopy</a>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
+                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Troubleshooting guide</a>
               </div>
             </div>
 
             <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
               <span style="font:var(--type-label); color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;">On this page</span>
               <div style="display:flex; flex-direction:column; gap:6px; padding-left:16px; border-left:1px solid var(--line-hairline);">
-                <span style="font:var(--type-body-sm); color:var(--text-muted);">Placeholder — release notes content compiled separately.</span>
+                <span style="font:var(--type-body-sm); color:var(--text-muted);">Placeholder — overview body content compiled separately.</span>
               </div>
             </div>
           </div>
@@ -277,8 +342,8 @@
       <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">03 · Left sidebar — full nav tree</div>
       <div class="{{ themeClass }}" style="width:300px; background:var(--surface-page); border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-panel); {{ accentVars }}">
         <div style="height:60px; display:flex; align-items:center; gap:10px; padding:0 20px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong);">
-          <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="scan-search" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
-          <span style="font:var(--type-h3); color:var(--text-display); text-transform:uppercase; letter-spacing:.04em; font-size:15px;">Daniel Avissar</span>
+          <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ logoIconName }}" size="24" color="var(--intent-primary)" hint-size="24px,24px"></x-import>
+          <span style="font:var(--type-h3); color:var(--text-display); letter-spacing:-.012em; font-size:15px;">Daniel Avissar</span>
         </div>
 
         <div style="padding:20px 0; display:flex; flex-direction:column; gap:2px;">
@@ -291,42 +356,26 @@
 
           <div style="display:flex; align-items:center; gap:8px; padding:7px 20px;">
             <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--text-muted)" hint-size="14px,14px"></x-import>
+            <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
+          </div>
+          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Overview</span></div>
+          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Knowledge base article</span></div>
+          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
+          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span></div>
+          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Troubleshooting guide</span></div>
+
+          <div style="display:flex; align-items:center; gap:8px; padding:7px 20px; margin-top:4px;">
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-muted)" hint-size="14px,14px"></x-import>
             <span style="font:var(--type-body-sm); color:var(--text-body);">Acme (2024)</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;">
-            <span style="font:var(--type-body-sm); color:var(--text-muted);">Release notes</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;">
-            <span style="font:var(--type-body-sm); color:var(--text-muted);">Discover</span>
           </div>
 
           <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;">
             <span style="font:var(--type-body-sm); color:var(--text-body);">Website API (2021)</span>
           </div>
 
-          <div style="display:flex; align-items:center; gap:8px; padding:7px 20px;">
-            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--text-muted)" hint-size="14px,14px"></x-import>
-            <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;">
-            <span style="font:var(--type-body-sm); color:var(--text-muted);">KB article</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;">
-            <span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;">
-            <span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;">
-            <span style="font:var(--type-body-sm); color:var(--text-muted);">Troubleshooting guide</span>
-          </div>
-
           <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:18px 20px 6px;">Extras</div>
           <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;">
-            <span style="font:var(--type-body-sm); color:var(--text-body);">Perf</span>
-          </div>
-          <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;">
-            <span style="font:var(--type-body-sm); color:var(--text-body);">Vero board</span>
+            <span style="font:var(--type-body-sm); color:var(--text-body);">Perf &amp; vero board</span>
           </div>
         </div>
       </div>
@@ -338,7 +387,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { mode: 'dark', systemDark: true, accent: 'teal' };
+  state = { mode: 'dark', systemDark: true, accent: 'teal', logoIcon: 'fluent:brain-circuit-32-regular' };
 
   componentDidMount() {
     this.mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -351,24 +400,17 @@ class Component extends DCLogic {
     if (this.mq) this.mq.removeEventListener('change', this.onSchemeChange);
   }
 
-  setMode(m) {
-    this.setState({ mode: m });
-  }
-
-  setAccent(a) {
-    this.setState({ accent: a });
-  }
+  setMode(m) { this.setState({ mode: m }); }
+  setAccent(a) { this.setState({ accent: a }); }
+  setLogoIcon(name) { this.setState({ logoIcon: name }); }
 
   renderVals() {
-    const { mode, systemDark, accent } = this.state;
+    const { mode, systemDark, accent, logoIcon } = this.state;
     const isLight = mode === 'light' || (mode === 'system' && !systemDark);
-    const btnStyle = (active, dotColor) =>
+    const btnStyle = (active) =>
       `display:flex; align-items:center; gap:6px; padding:6px 14px; border-radius:var(--radius-sm); border:none; cursor:pointer; font:var(--type-button); background:${active ? 'var(--intent-primary)' : 'transparent'}; color:${active ? 'var(--text-on-tide)' : 'var(--text-muted)'};`;
 
     const isSignal = accent === 'signal';
-    // In light mode the primary token darkens (tide-700 / signal-700) to hold contrast against
-    // a white page, but that leaves the dark text-on-tide/text-on-signal ink unreadable on top
-    // of it — force white text on the primary fill whenever we're in light mode.
     const lightTextFix = isLight ? '--text-on-tide:var(--chrome-000); --text-on-signal:var(--chrome-000);' : '';
     const accentVars = isSignal
       ? (isLight
@@ -376,9 +418,30 @@ class Component extends DCLogic {
           : '--intent-primary:var(--signal-500); --intent-primary-hover:var(--signal-400); --intent-active:var(--signal-500); --text-link:var(--signal-500); --text-link-hover:var(--signal-400); --text-on-tide:var(--text-on-signal); --line-focus:var(--signal-500); --ring-focus:0 0 0 3px rgba(255,107,26,.2);')
       : lightTextFix;
 
+    const ICONS = [
+      { name: 'scan-search', label: 'Scan search' },
+      { name: 'mdi:book-open-page-variant', label: 'Book (MDI)' },
+      { name: 'mdi:brain', label: 'Brain (MDI)' },
+      { name: 'fluent:brain-circuit-32-regular', label: 'Brain circuit (Fluent)' },
+      { name: 'fluent:brain-sparkle-16-regular', label: 'Brain sparkle (Fluent)' },
+      { name: 'fluent-emoji-high-contrast:shark', label: 'Shark (brand mark)' },
+    ];
+    const iconOptions = ICONS.map(o => {
+      const active = o.name === logoIcon;
+      return {
+        name: o.name,
+        label: o.label,
+        color: active ? 'var(--text-on-tide)' : 'var(--text-muted)',
+        select: () => this.setLogoIcon(o.name),
+        btnStyle: `display:flex; align-items:center; gap:6px; padding:6px 10px; border-radius:var(--radius-sm); border:1px solid ${active ? 'transparent' : 'var(--line-strong)'}; cursor:pointer; background:${active ? 'var(--intent-primary)' : 'var(--surface-inset)'}; color:${active ? 'var(--text-on-tide)' : 'var(--text-muted)'};`,
+      };
+    });
+
     return {
       themeClass: isLight ? 'cfx-light' : '',
       accentVars,
+      logoIconName: logoIcon,
+      iconOptions,
       setDark: () => this.setMode('dark'),
       setLight: () => this.setMode('light'),
       setSystem: () => this.setMode('system'),
@@ -392,6 +455,7 @@ class Component extends DCLogic {
     };
   }
 }
+
 </script>
 </body>
 </html>

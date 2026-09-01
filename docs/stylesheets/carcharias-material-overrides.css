@@ -225,19 +225,71 @@
 }
 
 /*
- * Home page "What I do" skill cards. The mockup ships these as a
- * fixed-height 4-up grid with one-line placeholder blurbs; the real
- * copy runs much longer (the Feature development card in particular
- * carries a nested KPI list), so this keeps the mockup's bordered,
- * uppercase-label card identity but lets cards size to their own
- * content instead of clipping it, and wraps to fewer columns on
- * narrower viewports instead of holding a strict 4-up row.
+ * Home page hero: circular headshot + name/title/intro, per the round-2
+ * mockup (artboard 1). Stacks to a single column below the card's own
+ * narrow breakpoint so the photo never crowds the text on small screens.
+ */
+.cs-hero {
+  display: flex;
+  gap: var(--space-9, 28px);
+  align-items: flex-start;
+  margin-bottom: var(--space-6, 16px);
+}
+
+.cs-hero__photo {
+  width: 132px;
+  height: 132px;
+  flex-shrink: 0;
+  border-radius: var(--radius-circle, 50%);
+  object-fit: cover;
+  border: 1px solid var(--line-hairline);
+}
+
+.cs-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6, 16px);
+  min-width: 0;
+}
+
+.cs-hero__text h1 {
+  margin: 0;
+}
+
+.cs-hero__text > p {
+  margin: 0;
+  max-width: 68ch;
+}
+
+@media (max-width: 640px) {
+  .cs-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*
+ * Home page "What I do" skill cards. Real copy varies a lot in length --
+ * "UX writing" is one sentence, "Feature development" carries a nested
+ * KPI list -- so each card shows its one-line summary up front and tucks
+ * the full breakdown behind a "Details" disclosure (a plain <details>
+ * element) instead of forcing every card to a uniform height. Cards sit
+ * in a 12-column grid with explicit spans (asymmetric widths, matching
+ * the round-2 mockup) above the breakpoint, and stack to one column
+ * below it.
  */
 .cs-skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(12, 1fr);
   gap: var(--space-6, 16px);
   margin: var(--space-8, 24px) 0;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .cs-skill-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cs-skill-card {
@@ -248,6 +300,16 @@
   background: var(--surface-card);
   border: 1px solid var(--line-hairline);
   border-radius: var(--radius-md);
+  grid-column: span 12;
+}
+
+@media (min-width: 901px) {
+  .cs-skill-card--span-5 {
+    grid-column: span 5;
+  }
+  .cs-skill-card--span-7 {
+    grid-column: span 7;
+  }
 }
 
 .cs-skill-card__title {
@@ -269,6 +331,80 @@
   margin: 0;
   padding-left: 1.1em;
   color: var(--text-muted);
+}
+
+/*
+ * Material treats any bare <details> inside .md-typeset as a full "note"
+ * admonition (blue border, tinted background, a masked note icon before
+ * the summary, 2rem icon gutter) via `.md-typeset details` / `.md-typeset
+ * summary` -- those rules run (0,2,1)/(0,1,1) specificity, so a plain
+ * `.cs-skill-card details`/`summary` pair loses the fight. The selectors
+ * below add the extra `.md-typeset` + `details` terms needed to
+ * out-specify Material's rules and fully reset that admonition chrome
+ * back to a plain, minimal "+ Details" disclosure.
+ */
+.md-typeset .cs-skill-card details {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.md-typeset .cs-skill-card details > * {
+  padding: 0;
+}
+
+.md-typeset .cs-skill-card details summary {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: var(--space-2, 4px) 0;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--intent-primary);
+  list-style: none;
+}
+
+.md-typeset .cs-skill-card details summary::marker,
+.md-typeset .cs-skill-card details summary::-webkit-details-marker {
+  display: none;
+  content: "";
+}
+
+.md-typeset .cs-skill-card details summary::before {
+  background: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+  position: static;
+  width: auto;
+  height: auto;
+  content: "+ ";
+}
+
+.md-typeset .cs-skill-card details[open] summary::before {
+  content: "\2212 ";
+}
+
+.md-typeset .cs-skill-card details ul {
+  margin: var(--space-4, 8px) 0 0;
+  padding-left: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5, 12px);
+  color: var(--text-muted);
+}
+
+.md-typeset .cs-skill-card details ul ul {
+  margin-top: var(--space-3, 6px);
+  gap: var(--space-2, 4px);
+}
+
+.md-typeset .cs-skill-card details strong {
+  color: var(--text-body);
 }
 
 /*
@@ -322,4 +458,45 @@
 
 .cs-case-list a:hover::after {
   transform: translateX(4px);
+}
+
+/*
+ * Case-study intro meta line: a role badge + year, sitting above the h1
+ * on each case-study overview page -- matches the round-2 mockup's
+ * artboard 2 ("Senior technical writer" · "2025").
+ */
+.cs-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5, 12px);
+  margin-bottom: var(--space-5, 12px);
+}
+
+/* Colors/sizing match the design system's real Badge component
+   (tone="info") exactly -- see carcharias-design-system's
+   src/components/core/Badge.tsx, which hardcodes these as translucent
+   rgba tints rather than named tokens. */
+.cs-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 7px;
+  background: rgba(78, 168, 222, 0.14);
+  color: var(--info-500);
+  border: 1px solid rgba(78, 168, 222, 0.4);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-ui);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.cs-meta__year {
+  font-family: var(--font-mono);
+  font: var(--type-value);
+  color: var(--text-faint);
+  letter-spacing: var(--track-mono);
 }

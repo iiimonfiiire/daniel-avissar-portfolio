@@ -4,6 +4,8 @@ repo_name: daniel-avissar-portfolio
 
 theme:
   name: material
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
   palette:
     # slate (dark) is kept as the base scheme -- Carcharias is dark-by-default
     # (the Abyss ramp), so we build the brand retrofit on top of slate rather
