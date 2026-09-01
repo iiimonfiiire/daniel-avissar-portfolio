@@ -27,10 +27,14 @@ I create and manage the knowledge base infrastructure, tailoring it to match the
 <details markdown>
 <summary>Details</summary>
 
+![A knowledge base homepage with a search bar and category tiles for Getting Started, Product Areas, and Updates and Releases](assets/images/home/knowledge-base-overview.png)
+
 - Identifying and organizing content corresponding to logical product areas
 - Helping users find the information they need by ensuring searchability
 - Providing assistance when and where it is needed most by integrating knowledge features with your platform
 - Optimizing content for multiple formats—web, guides, announcements, banners, etc.
+
+![Knowledge integrated in-app: an overview panel with interactive KPIs, explained in a contextual help tooltip](assets/images/home/kb-integrated-in-app.png)
 
 </details>
 </div>
@@ -42,6 +46,10 @@ Interdepartmental collaborations delivering exciting new features:
 
 <details markdown>
 <summary>Details</summary>
+
+![An AI search assistant translating a natural-language question into a structured query, with an explanation of the query logic](assets/images/home/ai-search-query.png)
+
+![A contextual help-center menu offering What's New, Search the Knowledge Base, Support, and other options](assets/images/home/help-center-menu.png)
 
 - **AI-powered knowledge search:** Building and maintaining a RAG-based agent that provides answers directly from the knowledge base; automation script design for processing JSON exported from third-party platforms into machine-readable documentation; prompt definition; usage analysis
 - **AI search:** Translation agent that converts user-entered natural language prompts into proprietary querying language syntax; prompt engineering; KB optimization; usage data analysis and model improvement
@@ -58,12 +66,16 @@ Interdepartmental collaborations delivering exciting new features:
 <span class="cs-skill-card__title">UX writing</span>
 
 Writing smart, helpful UX microcopy, focused on engaging and empowering users to adopt features more quickly.
+
+![A setup wizard for adding a new cloud connector, with plain-language instructions and inline field help](assets/images/home/ux-writing-wizard.png)
 </div>
 
 <div class="cs-skill-card cs-skill-card--span-7" markdown>
 <span class="cs-skill-card__title">Technical versatility</span>
 
 I engage my creative and engineering backgrounds equally in executing my product vision. Whether writing for APIs, product guides, or AI assistants, I dive into highly diverse technical subjects with enthusiasm and a hunger to learn, which I always try to relay to colleagues and users.
+
+![API reference documentation listing response codes and descriptions](assets/images/home/api-reference.png)
 </div>
 
 </div>

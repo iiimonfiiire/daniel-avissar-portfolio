@@ -414,6 +414,17 @@
   color: var(--text-body);
 }
 
+/* Screenshots inside skill cards: contained, rounded, hairline border --
+   matches the card's own treatment so a screenshot reads as supporting
+   evidence, not a random inline image. */
+.cs-skill-card img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-hairline);
+  margin: var(--space-3, 6px) 0;
+}
+
 /*
  * Home page case-study list: a stack of full-width rows separated by
  * hairlines, title + one-line teaser on the left and an arrow that
