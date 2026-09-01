@@ -253,16 +253,18 @@
   :root{--dur-instant:0ms;/* @kind other */--dur-fast:0ms;/* @kind other */--dur-base:0ms;/* @kind other */--dur-slow:0ms;/* @kind other */}
 }
 
-/* tokens/base.css */
+/* tokens/base.css -- only the box-sizing reset and .cfx-* utility classes
+   are pulled in here. The raw tag resets from the source file (body, a,
+   h1-h4, p, ::selection) are deliberately dropped: mkdocs-material scopes
+   its own typography inside .md-typeset / component classes rather than
+   bare tag selectors, so an unscoped `p{margin:0}` etc has nothing of
+   equal-or-higher specificity to lose to and just silently wins
+   everywhere -- see carcharias-material-overrides.css's own docstring on
+   why base.css isn't applied wholesale. (This exact class of bug shipped
+   once already: a previous version of this file collapsed all paragraph
+   spacing site-wide via this route.) */
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body);letter-spacing:var(--track-normal);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-a{color:var(--text-link);text-decoration:none;border-bottom:1px solid rgba(46,211,192,.35);transition:var(--transition-control)}
-a:hover{color:var(--text-link-hover);border-bottom-color:var(--text-link-hover)}
 :focus-visible{outline:2px solid var(--line-focus);outline-offset:2px}
-::selection{background:var(--tide-500);color:var(--text-on-tide)}
-h1,h2,h3,h4{margin:0;color:var(--text-display);font-family:var(--font-ui);font-weight:var(--weight-semibold);line-height:var(--leading-tight);letter-spacing:var(--track-heading)}
-h1{font-size:var(--text-3xl)}h2{font-size:var(--text-2xl)}h3{font-size:var(--text-lg)}h4{font-size:var(--text-md)}
-p{margin:0;text-wrap:pretty}
 .cfx-overline{font:var(--type-caption);font-weight:var(--weight-medium);color:var(--text-muted)}
 .cfx-label{font:var(--type-label);color:var(--text-legend)}
 .cfx-value{font:var(--type-value);letter-spacing:var(--track-mono);color:var(--text-display);font-variant-numeric:tabular-nums}

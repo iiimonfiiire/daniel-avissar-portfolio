@@ -6,7 +6,7 @@ Anyway, in this blog post, I would like to outline my process, motivations, and 
 
 Are you ready?
 
-<!-- SHIELD-IMAGE: caption="" step=2679602 imageId=abb9fb36-b59b-4490-929f-35528388e2d3 -->
+![](../assets/images/perf-vero/intro-mascot.webp)
 
 ## Leave room for capacitors
 
@@ -58,7 +58,7 @@ Now you can start populating your layout by copying and pasting from your schema
 
 Noise-filtering caps and voltage-protecting diodes (not shown in the Bazz Fuss). It's good to include these, especially if the schematics call for them. They should both ideally be placed as close as possible to where your 9V pad is.
 
-<!-- SHIELD-IMAGE: caption="The finished perf board layout" step=2680200 imageId=a1029e62-59e7-4401-97c5-470b9dfdf1e5 -->
+![The finished perf board layout](../assets/images/perf-vero/bazz-fuss-finished-layout.png)
 
 ## Resistors: standing or laying?
 
@@ -90,7 +90,7 @@ Next, open DIYLC on your computer, but before starting to layout a clean perf or
 
 Once you've added all your components to the new DIYLC layout, **recreate the original schematic** in DIYLC. This is an important step because it allows you to **color-code** all the different traces in the schematic, which helps debugging once the layout is finished. It may seem like an unnecessary step, but if you are an extremely visual learner like I am, then it really helps to have both the schematic and your PCB layout coordinated by color. Double-check that the original schematic and your new schematic are 1:1 before moving on.
 
-<!-- SHIELD-IMAGE: caption="Opening a new project in DIYLC " step=2680204 imageId=3e3ac70e-d806-47d1-949d-0d73b8b79191 -->
+![Opening a new project in DIYLC](../assets/images/perf-vero/diylc-new-project.png)
 
 <!-- SHIELD-IMAGE: caption="Bazz Fuss schematic after I've drawn it up in DIYLC" step=2680204 imageId=dea37ff4-d1f0-4086-a400-50fce6866839 -->
 
@@ -100,4 +100,4 @@ Next, **measure** the dimensions of your enclosure ahead of time, and make sure 
 
 You should then plan the placement of enclosure hardware relative to where your board will be. You will mainly want to know where your 9V jack and your on/off switch will be, but if you're planning on building something with a small footprint (e.g., anything in a 1590A, 1590B, or 125B enclosure), it helps to consider the board size relative to where the input and output jacks will be as well—as in builds that include top-mounted or side-mounted jacks.
 
-<!-- SHIELD-IMAGE: caption="" step=2680205 imageId=da577318-3f43-4c99-856f-54ec9cc3555e -->
+![](../assets/images/perf-vero/measuring-enclosure-mascot.webp)
