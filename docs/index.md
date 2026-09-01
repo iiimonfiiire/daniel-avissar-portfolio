@@ -3,7 +3,9 @@
 
 <div class="cs-hero__text" markdown>
 
-# 👋 Hi, I'm Daniel — AI Knowledge Architect.
+# 👋 Hi, I'm Daniel — AI Knowledge Architect
+
+<span class="cs-hero__kicker">AI Enablement · Knowledge Systems · Product Documentation</span>
 
 Good documentation is a product in its own right, and I build the systems, skills, and plugins that make it work. This site is an interactive portfolio demonstrating my capabilities in AI knowledge architecture, technical and UX microcopy writing, and product management.
 

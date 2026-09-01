@@ -256,6 +256,17 @@
   margin: 0;
 }
 
+.cs-hero__kicker {
+  display: block;
+  margin-top: -8px;
+  font-family: var(--font-ui);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
 .cs-hero__text > p {
   margin: 0;
   max-width: 68ch;
