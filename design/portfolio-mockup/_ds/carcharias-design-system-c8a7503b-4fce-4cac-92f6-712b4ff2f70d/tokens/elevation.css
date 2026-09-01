@@ -1,0 +1,25 @@
+:root{
+  /* Restrained: hairline rims carry most structure; shadows only where something
+     genuinely floats above the page. */
+  --shadow-none:none;
+  --shadow-rim:inset 0 0 0 1px var(--line-hairline);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.35);
+  --shadow-md:0 2px 6px -1px rgba(0,0,0,.45);
+  --shadow-panel:0 8px 24px -12px rgba(0,0,0,.7);
+  --shadow-dialog:0 24px 56px -20px rgba(0,0,0,.85);
+  --shadow-press:inset 0 1px 2px rgba(0,0,0,.35);
+
+  /* Protection gradients — behind text over imagery only, never decoration */
+  --scrim-bottom:linear-gradient(to top,rgba(5,8,10,.92) 0%,rgba(5,8,10,.6) 40%,rgba(5,8,10,0) 100%);/* @kind other */
+  --scrim-top:linear-gradient(to bottom,rgba(5,8,10,.85),rgba(5,8,10,0));/* @kind other */
+  --scrim-flat:rgba(5,8,10,.62);/* @kind other */
+
+  /* Subtle ground textures — near-invisible, add tooth not pattern */
+  --texture-grid:linear-gradient(rgba(195,207,211,.035) 1px,transparent 1px) 0 0/100% 28px,linear-gradient(90deg,rgba(195,207,211,.035) 1px,transparent 1px) 0 0/28px 100%;/* @kind other */
+  --texture-hairline:repeating-linear-gradient(90deg,rgba(195,207,211,.04) 0 1px,transparent 1px 5px);/* @kind other */
+
+  --blur-glass:saturate(130%) blur(12px);/* @kind other */
+
+  /* Deprecated — hardware-flavoured, retained so old files still resolve */
+  --shadow-knob:var(--shadow-md);
+}

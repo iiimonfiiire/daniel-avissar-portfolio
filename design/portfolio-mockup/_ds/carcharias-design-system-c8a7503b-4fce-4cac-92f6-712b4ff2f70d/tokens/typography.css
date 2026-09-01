@@ -1,0 +1,51 @@
+:root{
+  /* Families — one grotesque does the work. No condensed face, no display face.
+     DIN 2014 stays listed first for consumers who license it; Barlow is the shipped
+     substitute and the two are metrically close enough to swap without relayout. */
+  --font-ui:"DIN 2014","Barlow",system-ui,-apple-system,"Helvetica Neue",sans-serif;
+  --font-prose:"Golos Text","Barlow",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+
+  /* Back-compat aliases (older files referenced these names) */
+  --font-core:var(--font-ui);/* @kind font */
+  --font-legend:var(--font-ui);/* @kind font */
+
+  /* Size scale */
+  --text-2xs:11px; --text-xs:12px; --text-sm:13px; --text-md:15px;
+  --text-lg:17px; --text-xl:20px; --text-2xl:24px; --text-3xl:30px;
+  --text-4xl:38px; --text-5xl:48px; --text-6xl:60px;
+
+  /* Line heights */
+  --leading-flat:1;/* @kind font */
+  --leading-tight:1.18;/* @kind font */
+  --leading-snug:1.35;/* @kind font */
+  --leading-body:1.55;/* @kind font */
+  --leading-prose:1.65;/* @kind font */
+
+  /* Weights */
+  --weight-regular:400;/* @kind font */
+  --weight-medium:500;/* @kind font */
+  --weight-semibold:600;/* @kind font */
+  --weight-bold:700;/* @kind font */
+
+  /* Tracking — near zero everywhere. Large text tightens slightly; small text
+     never opens up. Wide-tracked uppercase is not used in this system. */
+  --track-display:-.018em;/* @kind font */
+  --track-heading:-.011em;/* @kind font */
+  --track-normal:0;/* @kind font */
+  --track-label:.005em;/* @kind font */
+  --track-mono:.01em;/* @kind font */
+
+  /* Composed roles — all sentence case */
+  --type-display:var(--weight-semibold) var(--text-5xl)/var(--leading-tight) var(--font-ui);/* @kind font */
+  --type-h1:var(--weight-semibold) var(--text-3xl)/var(--leading-tight) var(--font-ui);/* @kind font */
+  --type-h2:var(--weight-semibold) var(--text-2xl)/var(--leading-tight) var(--font-ui);/* @kind font */
+  --type-h3:var(--weight-semibold) var(--text-lg)/var(--leading-snug) var(--font-ui);/* @kind font */
+  --type-body:var(--weight-regular) var(--text-md)/var(--leading-body) var(--font-ui);/* @kind font */
+  --type-body-sm:var(--weight-regular) var(--text-sm)/var(--leading-body) var(--font-ui);/* @kind font */
+  --type-label:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-ui);/* @kind font */
+  --type-caption:var(--weight-regular) var(--text-xs)/var(--leading-snug) var(--font-ui);/* @kind font */
+  --type-button:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-ui);/* @kind font */
+  --type-prose:var(--weight-regular) var(--text-lg)/var(--leading-prose) var(--font-prose);/* @kind font */
+  --type-value:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-mono);/* @kind font */
+}

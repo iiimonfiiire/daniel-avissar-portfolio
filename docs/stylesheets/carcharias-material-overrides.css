@@ -5,25 +5,38 @@
  * (--md-primary-fg-color, --md-default-bg-color, --md-typeset-a-color,
  * etc.) and scopes almost all of its real typography inside
  * `.md-typeset` / component classes rather than raw `body` / `a` /
- * `h1-h4` tag selectors. Carcharias's own carcharias-base.css tag
- * resets would lose that specificity fight everywhere content
- * actually renders (Material's `.md-typeset h1` etc. beat a bare
- * `h1` rule) and only leak randomly into whatever unscoped chrome
- * happens to use raw tags -- so base.css is deliberately NOT copied
- * into this site. This file re-implements the same visual intent
- * (link treatment, heading voice, selection color) against
- * Material's real selectors instead, which is the only way to get a
- * predictable result.
+ * `h1-h4` tag selectors. Carcharias's own base.css tag resets would
+ * lose that specificity fight everywhere content actually renders
+ * (Material's `.md-typeset h1` etc. beat a bare `h1` rule) and only
+ * leak randomly into whatever unscoped chrome happens to use raw
+ * tags -- so base.css is deliberately NOT applied wholesale. This
+ * file re-implements the same visual intent (link treatment, heading
+ * voice, nav structure) against Material's real selectors instead.
+ *
+ * Layout/voice below follows the Claude Design mockup
+ * ("Portfolio for AI Knowledge Architect/Portfolio Site Mockup.dc.html")
+ * signed off for this specific site. Two deliberate departures from
+ * the general Carcharias app-UI guidelines, both intentional per that
+ * mockup:
+ *   - Page/section headings (h1-h3, nav section titles, header title)
+ *     are uppercase with tightened tracking -- the base system's
+ *     "no uppercase display type" rule governs the *app* UI kit, not
+ *     this marketing/portfolio site, which the mockup treats as its
+ *     own voice.
+ *   - The active sidebar item uses a teal left rule + fill, where the
+ *     base system's "no left rule" guidance applies to the app's own
+ *     SideNav component -- Material's own nav markup makes a left
+ *     rule the natural "current page" signal for a docs site, and the
+ *     mockup draws it that way.
  *
  * Selectors below match [data-md-color-scheme=slate] with a bare
  * [data-md-color-primary] / [data-md-color-accent] attribute
  * presence (not a specific named value) so these overrides always
  * win regardless of which built-in Material palette name
  * mkdocs.yml declares -- Material ships its own higher-specificity
- * rules keyed to specific primary/accent names (e.g.
- * [data-md-color-scheme=slate][data-md-color-primary=teal]) that
- * would otherwise silently outrank a plain :root override for some
- * palette choices but not others.
+ * rules keyed to specific primary/accent names that would otherwise
+ * silently outrank a plain :root override for some palette choices
+ * but not others.
  */
 
 :root,
@@ -60,7 +73,7 @@
   --md-primary-bg-color: var(--text-display);
   --md-primary-bg-color--light: var(--text-muted);
 
-  /* Accent = "a circuit is live": tide teal for hover/active/highlight states. */
+  /* Accent = the tide teal that carries links, active nav, and focus. */
   --md-accent-fg-color: var(--tide-500);
   --md-accent-fg-color--transparent: rgba(46, 211, 192, 0.16);
   --md-accent-bg-color: var(--text-on-tide);
@@ -90,11 +103,10 @@
   /*
    * Fonts: Material builds --md-text-font-family / --md-code-font-family
    * from these two variables (this is Material's own documented
-   * self-hosted-font mechanism, not a hack). Barlow (font-core) is
-   * the UI/short-body voice; Golos Text is applied to article prose
-   * specifically, below.
+   * self-hosted-font mechanism, not a hack). Barlow is the UI/short-body
+   * voice; Golos Text is applied to article prose specifically, below.
    */
-  --md-text-font: var(--font-core);
+  --md-text-font: var(--font-ui);
   --md-code-font: var(--font-mono);
 }
 
@@ -107,34 +119,76 @@
   border-bottom: 1px solid var(--line-hairline);
 }
 
-/* Article prose runs Golos Text; headings get their own legend treatment below. */
+/* Article prose runs Golos Text; headings get their own treatment below. */
 .md-typeset {
   font-family: var(--font-prose);
 }
 
-/* Headings: Barlow Condensed, bold, tight tracking -- the silkscreen-legend voice. */
+/* Headings: Barlow semibold, uppercase, tight tracking -- the mockup's
+   hero/section-title voice (h1 "AI Knowledge Architect", h2 "Case studies",
+   h3 skill-card titles all render this way in the signed-off mockup). */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4 {
-  font-family: var(--font-legend);
-  font-weight: var(--weight-bold);
-  letter-spacing: var(--track-tight);
+  font-family: var(--font-ui);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--track-heading);
   color: var(--text-display);
 }
 
-/* Nav / tabs / header title: uppercase, .16em tracking -- the loudest brand signature. */
-.md-nav__title,
-.md-nav__link,
-.md-tabs__link,
-.md-header__title {
-  font-family: var(--font-legend);
+/* Header title ("Daniel Avissar"): uppercase, slightly wider tracking,
+   matching the mockup's top-bar wordmark treatment. */
+.md-header__title,
+.md-header__topic {
+  font-family: var(--font-ui);
   text-transform: uppercase;
-  letter-spacing: var(--track-legend);
+  letter-spacing: 0.04em;
   font-weight: var(--weight-semibold);
 }
 
-/* Links inside prose: teal underline-on-hover, matches the cfx link pattern. */
+/*
+ * Sidebar nav: the mockup draws a clear split between section titles
+ * ("Case studies", "Extras" -- uppercase, faint, wide tracking, not
+ * clickable) and the actual page links beneath them (sentence case,
+ * normal tracking -- these are what the reader actually clicks).
+ */
+.md-nav__title {
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: var(--weight-medium);
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+.md-nav__link {
+  font-family: var(--font-ui);
+  color: var(--text-body);
+  border-left: 2px solid transparent;
+  transition: var(--transition-control);
+}
+
+.md-nav__link:hover {
+  color: var(--text-display);
+}
+
+/* Current page: teal left rule + a soft teal wash, per the mockup's
+   active-nav-item treatment. Top-level section headers ("Case Studies",
+   "Extras") pick up `.md-nav__item--active` too whenever a page inside
+   them is open, but the mockup only marks the current *page* -- so
+   `.md-nav__item--section` (the section-header wrapper) is excluded. */
+.md-nav__link--active,
+.md-nav__item--active:not(.md-nav__item--section) > .md-nav__link {
+  color: var(--intent-primary);
+  font-weight: var(--weight-semibold);
+  border-left-color: var(--intent-primary);
+  background-color: var(--surface-selected);
+}
+
+/* Links inside prose: teal underline-on-hover, matches the Carcharias
+   link pattern. */
 .md-typeset a {
   text-decoration: none;
   border-bottom: 1px solid rgba(46, 211, 192, 0.35);
@@ -168,4 +222,104 @@
 .md-typeset .md-button:not(.md-button--primary):hover {
   color: var(--chrome-000);
   border-color: var(--line-strong);
+}
+
+/*
+ * Home page "What I do" skill cards. The mockup ships these as a
+ * fixed-height 4-up grid with one-line placeholder blurbs; the real
+ * copy runs much longer (the Feature development card in particular
+ * carries a nested KPI list), so this keeps the mockup's bordered,
+ * uppercase-label card identity but lets cards size to their own
+ * content instead of clipping it, and wraps to fewer columns on
+ * narrower viewports instead of holding a strict 4-up row.
+ */
+.cs-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-6, 16px);
+  margin: var(--space-8, 24px) 0;
+}
+
+.cs-skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5, 12px);
+  padding: var(--space-7, 20px);
+  background: var(--surface-card);
+  border: 1px solid var(--line-hairline);
+  border-radius: var(--radius-md);
+}
+
+.cs-skill-card__title {
+  display: block;
+  font-family: var(--font-ui);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--track-heading);
+  font-size: var(--text-md);
+  color: var(--text-display);
+}
+
+.cs-skill-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.cs-skill-card ul {
+  margin: 0;
+  padding-left: 1.1em;
+  color: var(--text-muted);
+}
+
+/*
+ * Home page case-study list: a stack of full-width rows separated by
+ * hairlines, title + one-line teaser on the left and an arrow that
+ * nudges right on hover -- matches the mockup's case-study list
+ * treatment (artboard 1).
+ */
+.cs-case-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-case-list li {
+  border-top: 1px solid var(--line-strong);
+}
+
+.cs-case-list li:last-child {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.cs-case-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8, 24px);
+  padding: var(--space-7, 20px) 0;
+  border-bottom: none;
+  color: var(--text-body);
+}
+
+.cs-case-list a:hover {
+  color: var(--text-body);
+}
+
+.cs-case-list a strong {
+  font-family: var(--font-ui);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--text-display);
+}
+
+.cs-case-list a::after {
+  content: "\2192";
+  flex-shrink: 0;
+  color: var(--intent-primary);
+  font-size: var(--text-xl);
+  transition: var(--transition-control), transform var(--dur-fast) var(--ease-standard);
+}
+
+.cs-case-list a:hover::after {
+  transform: translateX(4px);
 }

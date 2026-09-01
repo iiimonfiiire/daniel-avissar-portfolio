@@ -1,77 +1,95 @@
-@import "https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap";
+/* Carcharias — webfonts.
+   PREFERRED FACE: DIN 2014 (Monotype, commercial licence) — NOT bundled here.
+   Shipped substitute: Barlow, which is metrically close and swaps without relayout.
+   Golos Text handles long-form prose; JetBrains Mono handles numerics.
+   Served from Google Fonts; drop licensed .woff2 files into assets/fonts/ and
+   uncomment the @font-face block to switch. */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
-/* src/tokens/fonts.css */
+/* Local-file scaffold. Uncomment once licensed binaries exist in assets/fonts/.
+@font-face{font-family:"DIN 2014";src:url("../assets/fonts/DIN2014-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"DIN 2014";src:url("../assets/fonts/DIN2014-Demi.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"DIN 2014";src:url("../assets/fonts/DIN2014-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+*/
 
-/* src/tokens/colors.css */
-:root {
-  --abyss-900:#05080A;
-  --abyss-850:#080C0F;
-  --abyss-800:#0D1418;
-  --abyss-700:#141D22;
-  --abyss-600:#1C272D;
-  --abyss-500:#26343B;
-  --abyss-400:#33444C;
-  --chrome-500:#5B6B73;
-  --chrome-400:#7C8D95;
-  --chrome-300:#9FAEB4;
-  --chrome-200:#C3CFD3;
-  --chrome-100:#DFE7E9;
-  --chrome-050:#F2F5F6;
-  --chrome-000:#FFFFFF;
-  --signal-700:#B33C08;
-  --signal-600:#E5510D;
-  --signal-500:#FF6B1A;
-  --signal-400:#FF8B4D;
-  --signal-100:#FFE3D2;
-  --tide-700:#0E7A6E;
-  --tide-600:#15A395;
-  --tide-500:#2ED3C0;
-  --tide-400:#6BE3D5;
-  --tide-100:#D3F7F2;
-  --clip-700:#A32218;
-  --clip-600:#C92E22;
-  --clip-500:#E84334;
-  --clip-100:#FBDDDA;
-  --bias-600:#C98600;
-  --bias-500:#FFB020;
-  --bias-100:#FFEECC;
-  --sonar-600:#2C7DB8;
-  --sonar-500:#4EA8DE;
-  --sonar-100:#DCEDF9;
+/* tokens/colors.css */
+:root{
+  /* ---- Base ramp: ABYSS (cool near-black blues — every dark surface) ---- */
+  --abyss-900:#05080A; --abyss-850:#080C0F; --abyss-800:#0D1418; --abyss-700:#141D22;
+  --abyss-600:#1C272D; --abyss-500:#26343B; --abyss-400:#33444C;
+
+  /* ---- Base ramp: CHROME (neutral greys — borders and all text) ---- */
+  --chrome-500:#5B6B73; --chrome-400:#7C8D95; --chrome-300:#9FAEB4;
+  --chrome-200:#C3CFD3; --chrome-100:#DFE7E9; --chrome-050:#F2F5F6; --chrome-000:#FFFFFF;
+
+  /* ---- Accent: TIDE (teal — the primary brand colour) ---- */
+  --tide-700:#0E7A6E; --tide-600:#15A395; --tide-500:#2ED3C0; --tide-400:#6BE3D5; --tide-100:#D3F7F2;
+
+  /* ---- Accent: SIGNAL (orange — highlight, secondary emphasis, sparingly) ---- */
+  --signal-700:#B33C08; --signal-600:#E5510D; --signal-500:#FF6B1A; --signal-400:#FF8B4D; --signal-100:#FFE3D2;
+
+  /* ---- Status: DANGER ---- */
+  --danger-700:#A32218; --danger-600:#C92E22; --danger-500:#E84334; --danger-100:#FBDDDA;
+  /* ---- Status: WARNING ---- */
+  --warn-600:#C98600; --warn-500:#FFB020; --warn-100:#FFEECC;
+  /* ---- Status: INFO ---- */
+  --info-600:#2C7DB8; --info-500:#4EA8DE; --info-100:#DCEDF9;
+
+  /* Back-compat aliases for earlier token names */
+  --clip-500:var(--danger-500); --clip-600:var(--danger-600); --clip-700:var(--danger-700);
+  --bias-500:var(--warn-500); --bias-600:var(--warn-600);
+  --sonar-500:var(--info-500); --sonar-600:var(--info-600);
+
+  /* ---- Semantic surfaces (dark is the default mode) ---- */
   --surface-page:var(--abyss-900);
   --surface-panel:var(--abyss-800);
   --surface-card:var(--abyss-700);
   --surface-raised:var(--abyss-600);
   --surface-inset:var(--abyss-850);
-  --surface-enclosure:var(--abyss-700);
   --surface-invert:var(--chrome-050);
   --surface-overlay:rgba(5,8,10,.78);
+  --surface-selected:rgba(46,211,192,.1);
+
+  /* ---- Semantic text ---- */
   --text-display:var(--chrome-000);
   --text-body:var(--chrome-200);
   --text-muted:var(--chrome-400);
   --text-faint:var(--chrome-500);
   --text-legend:var(--chrome-300);
-  --text-on-signal:#1A0800;
   --text-on-tide:#04211E;
+  --text-on-signal:#1A0800;
   --text-on-invert:var(--abyss-900);
   --text-link:var(--tide-500);
   --text-link-hover:var(--tide-400);
+
+  /* ---- Semantic lines ---- */
   --line-hairline:rgba(195,207,211,.14);
   --line-strong:rgba(195,207,211,.28);
-  --line-signal:var(--signal-500);
   --line-focus:var(--tide-500);
-  --intent-primary:var(--signal-500);
-  --intent-primary-hover:var(--signal-400);
-  --intent-primary-press:var(--signal-600);
+  --line-accent:var(--tide-500);
+
+  /* ---- Semantic intent ---- */
+  --intent-primary:var(--tide-500);
+  --intent-primary-hover:var(--tide-400);
+  --intent-primary-press:var(--tide-600);
+  --intent-active:var(--tide-500);
   --intent-engaged:var(--tide-500);
-  --intent-danger:var(--clip-500);
-  --intent-warn:var(--bias-500);
-  --intent-info:var(--sonar-500);
+  --intent-highlight:var(--signal-500);
+  --intent-danger:var(--danger-500);
+  --intent-warn:var(--warn-500);
+  --intent-info:var(--info-500);
   --intent-success:var(--tide-500);
-  --led-on:0 0 0 1px rgba(46,211,192,.5), 0 0 12px rgba(46,211,192,.55);
-  --led-signal:0 0 0 1px rgba(255,107,26,.5), 0 0 14px rgba(255,107,26,.5);
+
+  /* ---- Rings ---- */
+  --ring-focus:0 0 0 3px rgba(46,211,192,.2);/* @kind shadow */
+  --ring-active:0 0 0 1px rgba(46,211,192,.45);/* @kind shadow */
+  --ring-danger:0 0 0 3px rgba(232,67,52,.2);/* @kind shadow */
+  --led-on:var(--ring-active);/* @kind shadow */
+  --led-signal:0 0 0 1px rgba(255,107,26,.45);/* @kind shadow */
 }
-.cfx-light {
+
+/* Light scope — documents, print, and light marketing sections. */
+.cfx-light{
   --surface-page:var(--chrome-050);
   --surface-panel:var(--chrome-000);
   --surface-card:var(--chrome-000);
@@ -79,214 +97,183 @@
   --surface-inset:var(--chrome-100);
   --surface-invert:var(--abyss-800);
   --surface-overlay:rgba(13,20,24,.6);
+  --surface-selected:rgba(21,163,149,.09);
   --text-display:var(--abyss-900);
   --text-body:var(--abyss-600);
   --text-muted:var(--chrome-500);
   --text-faint:var(--chrome-400);
   --text-legend:var(--chrome-500);
   --text-on-invert:var(--chrome-000);
-  --text-link:var(--signal-600);
-  --text-link-hover:var(--signal-500);
+  --text-link:var(--tide-700);
+  --text-link-hover:var(--tide-600);
   --line-hairline:rgba(13,20,24,.12);
-  --line-strong:rgba(13,20,24,.28);
+  --line-strong:rgba(13,20,24,.22);
+  --intent-primary:var(--tide-700);
+  --intent-primary-hover:var(--tide-600);
 }
 
-/* src/tokens/typography.css */
-:root {
-  --font-legend:"Barlow Condensed","DIN 2014 Narrow","Oswald",sans-serif;
-  --font-core:"Barlow","DIN 2014","Helvetica Neue",sans-serif;
+/* tokens/typography.css */
+:root{
+  /* Families — one grotesque does the work. No condensed face, no display face.
+     DIN 2014 stays listed first for consumers who license it; Barlow is the shipped
+     substitute and the two are metrically close enough to swap without relayout. */
+  --font-ui:"DIN 2014","Barlow",system-ui,-apple-system,"Helvetica Neue",sans-serif;
   --font-prose:"Golos Text","Barlow",system-ui,sans-serif;
   --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
-  --text-2xs:11px;
-  --text-xs:12px;
-  --text-sm:13px;
-  --text-md:15px;
-  --text-lg:17px;
-  --text-xl:21px;
-  --text-2xl:27px;
-  --text-3xl:34px;
-  --text-4xl:46px;
-  --text-5xl:62px;
-  --text-6xl:84px;
-  --text-7xl:116px;
-  --leading-flat:1;
-  --leading-tight:1.08;
-  --leading-snug:1.28;
-  --leading-body:1.55;
-  --leading-prose:1.68;
-  --weight-light:300;
-  --weight-regular:400;
-  --weight-medium:500;
-  --weight-semibold:600;
-  --weight-bold:700;
-  --track-legend:.16em;
-  --track-display:.005em;
-  --track-tight:-.01em;
-  --track-normal:0;
-  --track-mono:.02em;
-  --type-eyebrow:var(--weight-semibold) var(--text-2xs)/var(--leading-flat) var(--font-legend);
-  --type-display-xl:var(--weight-700,700) var(--text-7xl)/var(--leading-tight) var(--font-legend);
-  --type-display:var(--weight-bold) var(--text-5xl)/var(--leading-tight) var(--font-legend);
-  --type-h2:var(--weight-bold) var(--text-3xl)/var(--leading-tight) var(--font-legend);
-  --type-h3:var(--weight-semibold) var(--text-xl)/var(--leading-snug) var(--font-core);
-  --type-body:var(--weight-regular) var(--text-md)/var(--leading-body) var(--font-core);
-  --type-prose:var(--weight-regular) var(--text-lg)/var(--leading-prose) var(--font-prose);
-  --type-label:var(--weight-semibold) var(--text-xs)/var(--leading-flat) var(--font-legend);
-  --type-value:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-mono);
+
+  /* Back-compat aliases (older files referenced these names) */
+  --font-core:var(--font-ui);/* @kind font */
+  --font-legend:var(--font-ui);/* @kind font */
+
+  /* Size scale */
+  --text-2xs:11px; --text-xs:12px; --text-sm:13px; --text-md:15px;
+  --text-lg:17px; --text-xl:20px; --text-2xl:24px; --text-3xl:30px;
+  --text-4xl:38px; --text-5xl:48px; --text-6xl:60px;
+
+  /* Line heights */
+  --leading-flat:1;/* @kind font */
+  --leading-tight:1.18;/* @kind font */
+  --leading-snug:1.35;/* @kind font */
+  --leading-body:1.55;/* @kind font */
+  --leading-prose:1.65;/* @kind font */
+
+  /* Weights */
+  --weight-regular:400;/* @kind font */
+  --weight-medium:500;/* @kind font */
+  --weight-semibold:600;/* @kind font */
+  --weight-bold:700;/* @kind font */
+
+  /* Tracking — near zero everywhere. Large text tightens slightly; small text
+     never opens up. Wide-tracked uppercase is not used in this system. */
+  --track-display:-.018em;/* @kind font */
+  --track-heading:-.011em;/* @kind font */
+  --track-normal:0;/* @kind font */
+  --track-label:.005em;/* @kind font */
+  --track-mono:.01em;/* @kind font */
+
+  /* Composed roles — all sentence case */
+  --type-display:var(--weight-semibold) var(--text-5xl)/var(--leading-tight) var(--font-ui);/* @kind font */
+  --type-h1:var(--weight-semibold) var(--text-3xl)/var(--leading-tight) var(--font-ui);/* @kind font */
+  --type-h2:var(--weight-semibold) var(--text-2xl)/var(--leading-tight) var(--font-ui);/* @kind font */
+  --type-h3:var(--weight-semibold) var(--text-lg)/var(--leading-snug) var(--font-ui);/* @kind font */
+  --type-body:var(--weight-regular) var(--text-md)/var(--leading-body) var(--font-ui);/* @kind font */
+  --type-body-sm:var(--weight-regular) var(--text-sm)/var(--leading-body) var(--font-ui);/* @kind font */
+  --type-label:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-ui);/* @kind font */
+  --type-caption:var(--weight-regular) var(--text-xs)/var(--leading-snug) var(--font-ui);/* @kind font */
+  --type-button:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-ui);/* @kind font */
+  --type-prose:var(--weight-regular) var(--text-lg)/var(--leading-prose) var(--font-prose);/* @kind font */
+  --type-value:var(--weight-medium) var(--text-sm)/var(--leading-flat) var(--font-mono);/* @kind font */
 }
 
-/* src/tokens/spacing.css */
-:root {
-  --space-0:0px;
-  --space-px:1px;
-  --space-1:2px;
-  --space-2:4px;
-  --space-3:6px;
-  --space-4:8px;
-  --space-5:12px;
-  --space-6:16px;
-  --space-7:20px;
-  --space-8:24px;
-  --space-9:32px;
-  --space-10:40px;
-  --space-11:56px;
-  --space-12:72px;
-  --space-13:96px;
-  --space-14:128px;
-  --space-15:176px;
-  --gap-inline:var(--space-4);
-  --gap-stack:var(--space-5);
-  --gap-group:var(--space-8);
-  --gap-section:var(--space-13);
+/* tokens/spacing.css */
+:root{
+  --space-0:0px; --space-px:1px; --space-1:2px; --space-2:4px; --space-3:6px;
+  --space-4:8px; --space-5:12px; --space-6:16px; --space-7:20px; --space-8:24px;
+  --space-9:32px; --space-10:40px; --space-11:56px; --space-12:72px;
+  --space-13:96px; --space-14:128px;
+
+  /* Semantic spacing */
+  --gap-inline:var(--space-4);      /* icon to label */
+  --gap-stack:var(--space-5);       /* related lines */
+  --gap-group:var(--space-8);       /* field groups, card rows */
+  --gap-section:var(--space-12);    /* page sections */
   --pad-control:var(--space-5);
   --pad-card:var(--space-8);
   --pad-panel:var(--space-9);
   --gutter-page:var(--space-9);
-  --measure-prose:66ch;
-  --width-content:1240px;
-  --width-narrow:760px;
-  --control-sm:28px;
-  --control-md:36px;
-  --control-lg:46px;
-  --control-xl:58px;
+  --measure-prose:68ch;
+  --width-content:1200px;
+  --width-narrow:720px;
+
+  /* Control heights */
+  --control-sm:28px; --control-md:36px; --control-lg:44px; --control-xl:52px;
   --hit-min:44px;
 }
 
-/* src/tokens/radius.css */
-:root {
+/* tokens/radius.css */
+:root{
+  /* Soft, quiet, consistent. Nothing sharp, nothing pill-shaped except tags. */
   --radius-none:0px;
-  --radius-xs:2px;
-  --radius-sm:3px;
-  --radius-md:6px;
-  --radius-lg:10px;
+  --radius-xs:4px;    /* badges, checkboxes, small chips */
+  --radius-sm:6px;    /* inputs, buttons */
+  --radius-md:8px;    /* cards, panels */
+  --radius-lg:12px;   /* dialogs, feature tiles */
   --radius-pill:999px;
   --radius-circle:50%;
-  --border-hair:1px;
-  --border-thick:2px;
-  --border-stencil:3px;
+
+  --border-hair:1px;/* @kind spacing */
+  --border-thick:2px;/* @kind spacing */
 }
 
-/* src/tokens/elevation.css */
-:root {
+/* tokens/elevation.css */
+:root{
+  /* Restrained: hairline rims carry most structure; shadows only where something
+     genuinely floats above the page. */
   --shadow-none:none;
   --shadow-rim:inset 0 0 0 1px var(--line-hairline);
-  --shadow-sm:0 1px 0 rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.05);
-  --shadow-md:0 2px 0 rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);
-  --shadow-panel:0 8px 24px -12px rgba(0,0,0,.85), inset 0 0 0 1px var(--line-hairline);
-  --shadow-dialog:0 32px 64px -24px rgba(0,0,0,.9), inset 0 0 0 1px var(--line-strong);
-  --shadow-press:inset 0 2px 4px rgba(0,0,0,.55);
-  --shadow-knob:inset 0 -6px 10px rgba(0,0,0,.5),
-    inset 0 4px 6px rgba(255,255,255,.08),
-    0 2px 0 rgba(0,0,0,.6);
-  --scrim-bottom:linear-gradient(
-      to top,rgba(5,8,10,.92) 0%,rgba(5,8,10,.6) 40%,rgba(5,8,10,0) 100%);
-  --scrim-top:linear-gradient(
-      to bottom,rgba(5,8,10,.85),rgba(5,8,10,0));
-  --scrim-flat:rgba(5,8,10,.62);
-  --texture-hairline:repeating-linear-gradient(
-      90deg,rgba(195,207,211,.05) 0 1px,transparent 1px 4px);
-  --texture-grid:linear-gradient(rgba(195,207,211,.045) 1px,transparent 1px) 0 0/100% 24px,linear-gradient(
-      90deg,rgba(195,207,211,.045) 1px,transparent 1px) 0 0/24px 100%;
-  --blur-glass:saturate(140%) blur(14px);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.35);
+  --shadow-md:0 2px 6px -1px rgba(0,0,0,.45);
+  --shadow-panel:0 8px 24px -12px rgba(0,0,0,.7);
+  --shadow-dialog:0 24px 56px -20px rgba(0,0,0,.85);
+  --shadow-press:inset 0 1px 2px rgba(0,0,0,.35);
+
+  /* Protection gradients — behind text over imagery only, never decoration */
+  --scrim-bottom:linear-gradient(to top,rgba(5,8,10,.92) 0%,rgba(5,8,10,.6) 40%,rgba(5,8,10,0) 100%);/* @kind other */
+  --scrim-top:linear-gradient(to bottom,rgba(5,8,10,.85),rgba(5,8,10,0));/* @kind other */
+  --scrim-flat:rgba(5,8,10,.62);/* @kind other */
+
+  /* Subtle ground textures — near-invisible, add tooth not pattern */
+  --texture-grid:linear-gradient(rgba(195,207,211,.035) 1px,transparent 1px) 0 0/100% 28px,linear-gradient(90deg,rgba(195,207,211,.035) 1px,transparent 1px) 0 0/28px 100%;/* @kind other */
+  --texture-hairline:repeating-linear-gradient(90deg,rgba(195,207,211,.04) 0 1px,transparent 1px 5px);/* @kind other */
+
+  --blur-glass:saturate(130%) blur(12px);/* @kind other */
+
+  /* Deprecated — hardware-flavoured, retained so old files still resolve */
+  --shadow-knob:var(--shadow-md);
 }
 
-/* src/tokens/motion.css */
-:root {
-  --ease-snap:cubic-bezier(.2,0,0,1);
-  --ease-out:cubic-bezier(.16,1,.3,1);
-  --ease-inout:cubic-bezier(.6,0,.4,1);
-  --ease-linear:linear;
-  --dur-instant:80ms;
-  --dur-fast:130ms;
-  --dur-base:200ms;
-  --dur-slow:320ms;
-  --dur-vamp:1200ms;
-  --transition-control:background-color var(--dur-fast) var(--ease-snap),border-color var(--dur-fast) var(--ease-snap),color var(--dur-fast) var(--ease-snap),box-shadow var(--dur-fast) var(--ease-snap);
-  --transition-surface:transform var(--dur-base) var(--ease-out),opacity var(--dur-base) var(--ease-out);
+/* tokens/motion.css */
+:root{
+  /* Quiet and quick. Nothing draws attention to itself. */
+  --ease-standard:cubic-bezier(.2,0,.2,1);/* @kind other */
+  --ease-out:cubic-bezier(.16,1,.3,1);/* @kind other */
+  --ease-inout:cubic-bezier(.6,0,.4,1);/* @kind other */
+  --ease-linear:linear;/* @kind other */
+  --ease-snap:var(--ease-standard);/* @kind other */
+
+  --dur-instant:90ms;/* @kind other */
+  --dur-fast:140ms;/* @kind other */
+  --dur-base:200ms;/* @kind other */
+  --dur-slow:300ms;/* @kind other */
+
+  --transition-control:background-color var(--dur-fast) var(--ease-standard),border-color var(--dur-fast) var(--ease-standard),color var(--dur-fast) var(--ease-standard),box-shadow var(--dur-fast) var(--ease-standard);/* @kind other */
+  --transition-surface:transform var(--dur-base) var(--ease-out),opacity var(--dur-base) var(--ease-out);/* @kind other */
 }
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --dur-instant:0ms;
-    --dur-fast:0ms;
-    --dur-base:0ms;
-    --dur-slow:0ms;
-    --dur-vamp:0ms;
-  }
+@media (prefers-reduced-motion:reduce){
+  :root{--dur-instant:0ms;/* @kind other */--dur-fast:0ms;/* @kind other */--dur-base:0ms;/* @kind other */--dur-slow:0ms;/* @kind other */}
 }
 
-/* src/tokens/keyframes.css */
-@keyframes cfx-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes cfx-dialog-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes cfx-toast-in {
-  from {
-    opacity: 0;
-    transform: translateX(12px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes cfx-led-pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .45;
-  }
-}
-@keyframes cfx-scan {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 24px;
-  }
-}
+/* tokens/base.css */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body);letter-spacing:var(--track-normal);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--text-link);text-decoration:none;border-bottom:1px solid rgba(46,211,192,.35);transition:var(--transition-control)}
+a:hover{color:var(--text-link-hover);border-bottom-color:var(--text-link-hover)}
+:focus-visible{outline:2px solid var(--line-focus);outline-offset:2px}
+::selection{background:var(--tide-500);color:var(--text-on-tide)}
+h1,h2,h3,h4{margin:0;color:var(--text-display);font-family:var(--font-ui);font-weight:var(--weight-semibold);line-height:var(--leading-tight);letter-spacing:var(--track-heading)}
+h1{font-size:var(--text-3xl)}h2{font-size:var(--text-2xl)}h3{font-size:var(--text-lg)}h4{font-size:var(--text-md)}
+p{margin:0;text-wrap:pretty}
+.cfx-overline{font:var(--type-caption);font-weight:var(--weight-medium);color:var(--text-muted)}
+.cfx-label{font:var(--type-label);color:var(--text-legend)}
+.cfx-value{font:var(--type-value);letter-spacing:var(--track-mono);color:var(--text-display);font-variant-numeric:tabular-nums}
+.cfx-caption{font:var(--type-caption);color:var(--text-faint)}
+.cfx-prose{font:var(--type-prose);max-width:var(--measure-prose);color:var(--text-body)}
+/* Deprecated: kept so older markup does not break. Do not use in new work. */
+.cfx-eyebrow{font:var(--type-caption);font-weight:var(--weight-medium);color:var(--text-muted)}
+.cfx-legend{font:var(--type-label);color:var(--text-legend)}
 
-/* src/tokens/a11y.css */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-:focus-visible {
-  outline: 2px solid var(--line-focus);
-  outline-offset: 2px;
-}
-
-/* src/tokens/index.css */
-/*# sourceMappingURL=carcharias.css.map */
+/* guidelines/keyframes.css */
+@keyframes cfx-spin{to{transform:rotate(360deg)}}
+@keyframes cfx-dialog-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes cfx-toast-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes cfx-fade-in{from{opacity:0}to{opacity:1}}

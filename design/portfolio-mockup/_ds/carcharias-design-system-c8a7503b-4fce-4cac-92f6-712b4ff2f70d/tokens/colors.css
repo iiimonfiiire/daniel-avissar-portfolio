@@ -1,0 +1,98 @@
+:root{
+  /* ---- Base ramp: ABYSS (cool near-black blues — every dark surface) ---- */
+  --abyss-900:#05080A; --abyss-850:#080C0F; --abyss-800:#0D1418; --abyss-700:#141D22;
+  --abyss-600:#1C272D; --abyss-500:#26343B; --abyss-400:#33444C;
+
+  /* ---- Base ramp: CHROME (neutral greys — borders and all text) ---- */
+  --chrome-500:#5B6B73; --chrome-400:#7C8D95; --chrome-300:#9FAEB4;
+  --chrome-200:#C3CFD3; --chrome-100:#DFE7E9; --chrome-050:#F2F5F6; --chrome-000:#FFFFFF;
+
+  /* ---- Accent: TIDE (teal — the primary brand colour) ---- */
+  --tide-700:#0E7A6E; --tide-600:#15A395; --tide-500:#2ED3C0; --tide-400:#6BE3D5; --tide-100:#D3F7F2;
+
+  /* ---- Accent: SIGNAL (orange — highlight, secondary emphasis, sparingly) ---- */
+  --signal-700:#B33C08; --signal-600:#E5510D; --signal-500:#FF6B1A; --signal-400:#FF8B4D; --signal-100:#FFE3D2;
+
+  /* ---- Status: DANGER ---- */
+  --danger-700:#A32218; --danger-600:#C92E22; --danger-500:#E84334; --danger-100:#FBDDDA;
+  /* ---- Status: WARNING ---- */
+  --warn-600:#C98600; --warn-500:#FFB020; --warn-100:#FFEECC;
+  /* ---- Status: INFO ---- */
+  --info-600:#2C7DB8; --info-500:#4EA8DE; --info-100:#DCEDF9;
+
+  /* Back-compat aliases for earlier token names */
+  --clip-500:var(--danger-500); --clip-600:var(--danger-600); --clip-700:var(--danger-700);
+  --bias-500:var(--warn-500); --bias-600:var(--warn-600);
+  --sonar-500:var(--info-500); --sonar-600:var(--info-600);
+
+  /* ---- Semantic surfaces (dark is the default mode) ---- */
+  --surface-page:var(--abyss-900);
+  --surface-panel:var(--abyss-800);
+  --surface-card:var(--abyss-700);
+  --surface-raised:var(--abyss-600);
+  --surface-inset:var(--abyss-850);
+  --surface-invert:var(--chrome-050);
+  --surface-overlay:rgba(5,8,10,.78);
+  --surface-selected:rgba(46,211,192,.1);
+
+  /* ---- Semantic text ---- */
+  --text-display:var(--chrome-000);
+  --text-body:var(--chrome-200);
+  --text-muted:var(--chrome-400);
+  --text-faint:var(--chrome-500);
+  --text-legend:var(--chrome-300);
+  --text-on-tide:#04211E;
+  --text-on-signal:#1A0800;
+  --text-on-invert:var(--abyss-900);
+  --text-link:var(--tide-500);
+  --text-link-hover:var(--tide-400);
+
+  /* ---- Semantic lines ---- */
+  --line-hairline:rgba(195,207,211,.14);
+  --line-strong:rgba(195,207,211,.28);
+  --line-focus:var(--tide-500);
+  --line-accent:var(--tide-500);
+
+  /* ---- Semantic intent ---- */
+  --intent-primary:var(--tide-500);
+  --intent-primary-hover:var(--tide-400);
+  --intent-primary-press:var(--tide-600);
+  --intent-active:var(--tide-500);
+  --intent-engaged:var(--tide-500);
+  --intent-highlight:var(--signal-500);
+  --intent-danger:var(--danger-500);
+  --intent-warn:var(--warn-500);
+  --intent-info:var(--info-500);
+  --intent-success:var(--tide-500);
+
+  /* ---- Rings ---- */
+  --ring-focus:0 0 0 3px rgba(46,211,192,.2);/* @kind shadow */
+  --ring-active:0 0 0 1px rgba(46,211,192,.45);/* @kind shadow */
+  --ring-danger:0 0 0 3px rgba(232,67,52,.2);/* @kind shadow */
+  --led-on:var(--ring-active);/* @kind shadow */
+  --led-signal:0 0 0 1px rgba(255,107,26,.45);/* @kind shadow */
+}
+
+/* Light scope — documents, print, and light marketing sections. */
+.cfx-light{
+  --surface-page:var(--chrome-050);
+  --surface-panel:var(--chrome-000);
+  --surface-card:var(--chrome-000);
+  --surface-raised:var(--chrome-000);
+  --surface-inset:var(--chrome-100);
+  --surface-invert:var(--abyss-800);
+  --surface-overlay:rgba(13,20,24,.6);
+  --surface-selected:rgba(21,163,149,.09);
+  --text-display:var(--abyss-900);
+  --text-body:var(--abyss-600);
+  --text-muted:var(--chrome-500);
+  --text-faint:var(--chrome-400);
+  --text-legend:var(--chrome-500);
+  --text-on-invert:var(--chrome-000);
+  --text-link:var(--tide-700);
+  --text-link-hover:var(--tide-600);
+  --line-hairline:rgba(13,20,24,.12);
+  --line-strong:rgba(13,20,24,.22);
+  --intent-primary:var(--tide-700);
+  --intent-primary-hover:var(--tide-600);
+}

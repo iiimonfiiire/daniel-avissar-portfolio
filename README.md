@@ -6,12 +6,13 @@ This replaces an earlier version hosted on Stonly. Content is anonymized through
 
 ## Structure
 
-- `docs/index.md` — hero, skill overview, links to each case study.
+- `docs/index.md` — hero, skill overview, links to each case study (listed most recent first).
+- `docs/case-studies/secyra-2025/` — a 2025 Senior Technical Writer application assignment for a data-security platform ("Secyra"/"the InsightEdge Platform").
 - `docs/case-studies/acme-2024/` — a 2024 Technical Writer application assignment for a compliance/eDiscovery platform ("Acme").
 - `docs/case-studies/webapi-2021/` — a 2021 technical writing sample explaining how APIs work, using a website-builder platform's client-side API as the worked example.
-- `docs/case-studies/secyra-2025/` — a 2025 Senior Technical Writer application assignment for a data-security platform ("Secyra"/"the InsightEdge Platform").
 - `docs/extras/perf-vero-board.md` — a guide from pedal-building (Carcharias Effects), kept in as a personality/bonus section.
 - `raw-stonly-export/` — raw JSON guide exports pulled from Stonly's editor preview API, the source material for the Acme case study and the Extras guide. Kept as an audit trail for `scripts/stonly_to_md.py`.
+- `design/portfolio-mockup/` — the Claude Design mockup (`.dc.html` + its bundled Carcharias design-system tokens) this site's styling was translated from. Not part of the build; kept as an audit trail for `docs/stylesheets/`.
 - `scripts/stonly_to_md.py` — one-off converter from the raw Stonly JSON exports to Markdown. Not part of the build; re-running it will overwrite hand-edited files in `docs/case-studies/acme-2024/` and `docs/extras/`.
 
 ## Local development

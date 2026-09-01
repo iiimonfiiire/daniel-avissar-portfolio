@@ -1,0 +1,13 @@
+/* Carcharias — webfonts.
+   PREFERRED FACE: DIN 2014 (Monotype, commercial licence) — NOT bundled here.
+   Shipped substitute: Barlow, which is metrically close and swaps without relayout.
+   Golos Text handles long-form prose; JetBrains Mono handles numerics.
+   Served from Google Fonts; drop licensed .woff2 files into assets/fonts/ and
+   uncomment the @font-face block to switch. */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+/* Local-file scaffold. Uncomment once licensed binaries exist in assets/fonts/.
+@font-face{font-family:"DIN 2014";src:url("../assets/fonts/DIN2014-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"DIN 2014";src:url("../assets/fonts/DIN2014-Demi.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"DIN 2014";src:url("../assets/fonts/DIN2014-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+*/

@@ -1,0 +1,13 @@
+:root{
+  /* Soft, quiet, consistent. Nothing sharp, nothing pill-shaped except tags. */
+  --radius-none:0px;
+  --radius-xs:4px;    /* badges, checkboxes, small chips */
+  --radius-sm:6px;    /* inputs, buttons */
+  --radius-md:8px;    /* cards, panels */
+  --radius-lg:12px;   /* dialogs, feature tiles */
+  --radius-pill:999px;
+  --radius-circle:50%;
+
+  --border-hair:1px;/* @kind spacing */
+  --border-thick:2px;/* @kind spacing */
+}
