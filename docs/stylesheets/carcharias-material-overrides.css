@@ -124,16 +124,13 @@
   font-family: var(--font-prose);
 }
 
-/* Headings: Barlow semibold, uppercase, tight tracking -- the mockup's
-   hero/section-title voice (h1 "AI Knowledge Architect", h2 "Case studies",
-   h3 skill-card titles all render this way in the signed-off mockup). */
+/* Headings: Barlow semibold, sentence case, tight tracking. */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4 {
   font-family: var(--font-ui);
   font-weight: var(--weight-semibold);
-  text-transform: uppercase;
   letter-spacing: var(--track-heading);
   color: var(--text-display);
 }
@@ -327,7 +324,6 @@
   display: block;
   font-family: var(--font-ui);
   font-weight: var(--weight-semibold);
-  text-transform: uppercase;
   letter-spacing: var(--track-heading);
   font-size: var(--text-md);
   color: var(--text-display);
