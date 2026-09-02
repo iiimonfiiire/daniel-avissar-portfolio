@@ -492,12 +492,40 @@
    without display: block the auto margins below would have no effect and
    the image would sit flush left instead. Every image in the article body
    sits alone on its own line (never mid-sentence), so blockifying every
-   .md-typeset img is safe sitewide. */
+   .md-typeset img is safe sitewide. NOTE: glightbox wraps almost every one
+   of these images in its own <a class="glightbox"> (see .md-typeset
+   .glightbox below) -- centering the img alone only centers it within that
+   inline anchor's own shrink-wrapped box, which has no spare width to
+   center into. The anchor is the box that actually needs the centering;
+   this rule stays too since a couple of things (the hero photo) opt out of
+   glightbox entirely and rely on it directly. */
 .md-typeset img {
   display: block;
   max-width: var(--cs-thumb-width);
   height: auto;
   margin-inline: auto;
+}
+
+/* The actual fix for image centering: glightbox's trigger anchor is inline
+   by default, so it shrink-wraps around the image and then sits flush left
+   (default text-align) instead of centering -- this is what was really
+   causing the "narrower band, left-aligned" look, not the img itself.
+   display: table shrink-wraps to the image's rendered size (unlike block,
+   which would stretch full-width) while still honoring margin-inline: auto
+   centering (unlike inline-block, which only centers via the parent's
+   text-align). */
+.md-typeset .glightbox {
+  display: table;
+  margin-inline: auto;
+}
+
+/* Full-width What-I-do screenshots need the opposite: the anchor has to
+   stay block-level and full-width, or wrapping it in a shrink-wrapped table
+   box breaks the image's own width: 100% (a percentage width is undefined
+   against a shrink-to-fit parent). */
+.cs-feature-figure .glightbox {
+  display: block;
+  width: 100%;
 }
 
 /* Screenshots inside skill cards: contained, rounded, hairline border --
