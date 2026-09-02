@@ -93,6 +93,7 @@
   /* Admonitions */
   --md-admonition-fg-color: var(--text-body);
   --md-admonition-bg-color: var(--surface-card);
+  --md-admonition-icon--idea: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A7 7 0 0 0 5 9c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>');
 
   /* Footer */
   --md-footer-bg-color: var(--abyss-850);
@@ -272,9 +273,18 @@
   margin-bottom: var(--space-6, 16px);
 }
 
-.cs-hero__photo {
+/* Two classes (.cs-hero .cs-hero__photo) so this out-specifies the sitewide
+   .md-typeset img rule below (max-width: var(--cs-thumb-width); height: auto)
+   -- a plain .cs-hero__photo selector is a single class and loses that fight,
+   letting the thumbnail cap shrink the circular headshot and stretch it out
+   of round via the competing height. max-width: none opts this image out of
+   the shared thumbnail-sizing variable entirely; it's a fixed-size portrait,
+   not a resizable body screenshot. */
+.cs-hero .cs-hero__photo {
   width: 132px;
   height: 132px;
+  max-width: none;
+  margin: 0;
   flex-shrink: 0;
   border-radius: var(--radius-circle, 50%);
   object-fit: cover;
@@ -325,12 +335,19 @@
  * the round-2 mockup) above the breakpoint, and stack to one column
  * below it.
  */
+/* align-items: stretch (grid's own default, spelled out here for clarity)
+   so the two cards sharing a row always match height -- "Knowledge
+   architecture" and "Feature development" have noticeably different copy
+   lengths, and align-items: start let each card size to its own content,
+   leaving them visibly mismatched side by side. .cs-skill-card p:last-of-type
+   below pushes the "Read more" link to the bottom of the now-stretched
+   card instead of leaving it stranded right under a short paragraph. */
 .cs-skill-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--space-6, 16px);
   margin: var(--space-8, 24px) 0;
-  align-items: start;
+  align-items: stretch;
 }
 
 @media (max-width: 900px) {
@@ -372,6 +389,14 @@
 .cs-skill-card p {
   margin: 0;
   color: var(--text-muted);
+}
+
+/* The "Read more ->" link is always the card's last paragraph -- anchor it
+   to the bottom so it lines up across a row once cards are stretched to
+   equal height, instead of sitting right under whatever line the card's
+   own (variable-length) summary text happens to end on. */
+.cs-skill-card p:last-of-type {
+  margin-top: auto;
 }
 
 .cs-skill-card ul {
@@ -461,10 +486,18 @@
    (already-narrow) card column instead of using this cap directly;
    .cs-feature-figure has its own --cs-feature-width below. This rule is
    the fallback for bare `![]()` screenshots elsewhere in the case-study
-   prose that aren't wrapped in either. */
+   prose that aren't wrapped in either.
+   display: block + margin-inline: auto center any image that renders
+   narrower than the full content column -- img is inline by default, so
+   without display: block the auto margins below would have no effect and
+   the image would sit flush left instead. Every image in the article body
+   sits alone on its own line (never mid-sentence), so blockifying every
+   .md-typeset img is safe sitewide. */
 .md-typeset img {
+  display: block;
   max-width: var(--cs-thumb-width);
   height: auto;
+  margin-inline: auto;
 }
 
 /* Screenshots inside skill cards: contained, rounded, hairline border --
@@ -517,8 +550,14 @@
   color: var(--text-body);
 }
 
+/* Fixed width (not shrink-to-fit) so every row's title column lines up at
+   the same x-position regardless of title length -- "Secyra (2025)" and
+   "How to Make Custom Layouts on Perf and Vero Board" otherwise each size
+   to their own text, pushing .cs-case-list__desc to a different starting
+   point per row. A long title (like the Extras one) wraps to two lines
+   inside this column instead of stretching it. */
 .cs-case-list__title {
-  flex-shrink: 0;
+  flex: 0 0 220px;
   font-family: var(--font-ui);
   font-size: var(--text-lg);
   font-weight: var(--weight-semibold);
@@ -718,6 +757,7 @@
 
 .md-typeset figure img {
   display: block;
+  margin-inline: auto;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-hairline);
 }
@@ -727,6 +767,7 @@
   font-family: var(--font-ui);
   font-size: var(--text-sm, 14px);
   color: var(--text-muted);
+  text-align: center;
 }
 
 /* Full-width screenshot on a dedicated What-I-do page -- deliberately large
@@ -747,6 +788,7 @@
 
 .cs-feature-figure img {
   display: block;
+  margin-inline: auto;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-hairline);
 }
@@ -760,4 +802,34 @@
 .cs-feature-figure img:not([width]) {
   width: 100%;
   max-width: var(--cs-feature-width);
+}
+
+
+/* Admonition overrides: Material's default "idea" admonition is a blue
+   border + tinted background with a lightbulb icon. The mockup calls for
+   a signal-orange border + wash instead, so the selectors below override
+   Material's defaults. */
+/* Border and accent color */
+.md-typeset .admonition.idea,
+.md-typeset details.idea {
+  border-color: rgb(234, 179, 8);
+}
+
+/* Title background color */
+.md-typeset .idea > .admonition-title,
+.md-typeset .idea > summary {
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+/* Title icon mask */
+.md-typeset .idea > .admonition-title::before,
+.md-typeset .idea > summary::before {
+  background-color: rgb(234, 179, 8);
+  -webkit-mask-image: var(--md-admonition-icon--idea);
+  mask-image: var(--md-admonition-icon--idea);
+}
+
+/* Title font weight */
+.md-typeset .admonition-title {
+  font-weight: var(--weight-medium);
 }

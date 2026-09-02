@@ -11,5 +11,4 @@ To manage classifications:
 3. In the database view, hover over a column and click **Edit Classification** to make changes.
 4. To revert edits, open **Classification Edits** and click **Restore**.
 
-!!! note
-    Classification updates are queued and may take several hours to appear.
+!!! note "Classification updates are queued and may take several hours to appear."

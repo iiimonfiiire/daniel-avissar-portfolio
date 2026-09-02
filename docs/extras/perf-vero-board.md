@@ -30,8 +30,7 @@ Bazz Fuss circuit post-breadboarding, with notes
 
 Next, open DIYLC on your computer, but before starting to layout a clean perf or vero board, take some time to do a few preparations. The first thing you should do is create a new project, and start **add all of the components** you will need.
 
-!!! tip
-    💡 This is a good time to fill in the **names** and **values** of the components corresponding to the schematic. This ensures your layout will be coordinated with the original schematic, making it easier to debug.
+!!! idea "This is a good time to fill in the **names** and **values** of the components corresponding to the schematic. This ensures your layout will be coordinated with the original schematic, making it easier to debug."
 
 Once you've added all your components to the new DIYLC layout, **recreate the original schematic** in DIYLC. This is an important step because it allows you to **color-code** all the different traces in the schematic, which helps debugging once the layout is finished. It may seem like an unnecessary step, but if you are an extremely visual learner like I am, then it really helps to have both the schematic and your PCB layout coordinated by color. Double-check that the original schematic and your new schematic are 1:1 before moving on.
 
@@ -130,6 +129,5 @@ Well, that's all I can think of for now. If you've got any tips or strategies th
 
 Happy building!
 
-!!! tip
-    💡 If you're interested in getting a production-ready version of the Bazz Fuss PCB, you can get one [here](/product/bazz-fuss-v2-pcb-diy).
+!!! idea "If you're interested in getting a production-ready version of the Bazz Fuss PCB, you can get one [here](/product/bazz-fuss-v2-pcb-diy)."
 

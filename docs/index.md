@@ -12,7 +12,7 @@ Good documentation is a product in its own right, and I build the systems, skill
 </div>
 </div>
 
-!!! tip "💡 Select an option below to browse my case studies."
+!!! idea "Select an option below to browse my case studies."
 
 ## What I do
 
@@ -58,11 +58,11 @@ Diving into diverse technical subjects across APIs, product guides, and AI assis
 
 <a class="cs-case-list__row" href="case-studies/secyra-2025/">
 <span class="cs-case-list__title">Secyra (2025)</span>
-<span class="cs-case-list__desc">Senior Technical Writer — knowledge base article, release note, microcopy, and troubleshooting guide for a data-security platform.</span>
+<span class="cs-case-list__desc">Full release cycle documentation for a data security SaaS platform. Includes knowledge base article, release note, microcopy definitions, and troubleshooting guide.</span>
 </a>
 <a class="cs-case-list__row" href="case-studies/acme-2024/">
 <span class="cs-case-list__title">Acme (2024)</span>
-<span class="cs-case-list__desc">Technical Writer — user guide and release notes for a new AI-powered search feature on a compliance and eDiscovery platform.</span>
+<span class="cs-case-list__desc">Example knowledge base guide and release notes for a new AI-powered search feature on a compliance and eDiscovery platform.</span>
 </a>
 <a class="cs-case-list__row" href="case-studies/webapi-2021/">
 <span class="cs-case-list__title">Website API (2021)</span>

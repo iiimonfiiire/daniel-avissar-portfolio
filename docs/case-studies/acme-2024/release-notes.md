@@ -16,4 +16,4 @@ The following is a summary of new and noteworthy updates to the Acme platform fo
 
 ## Release Notes archive
 
-!!! note "[This is where older release notes go]"
+!!! abstract "[Placeholder for older release notes]"

@@ -23,6 +23,9 @@ theme:
     - navigation.indexes
     - search.suggest
     - content.code.copy
+  icon:
+    admonition:
+      idea: octicons/light-bulb-16  # or fontawesome/solid/lightbulb
 
 extra_css:
   - stylesheets/carcharias.css
@@ -41,6 +44,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.blocks.caption
+  - pymdownx.details
 
 plugins:
    - glightbox:
@@ -53,7 +57,7 @@ plugins:
        zoomable: true
        draggable: true
        skip_classes:
-         - custom-skip-class-name
+         - cs-hero__photo
        auto_themed: false
        auto_caption: false
        caption_position: bottom

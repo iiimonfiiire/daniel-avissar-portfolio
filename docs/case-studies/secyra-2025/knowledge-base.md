@@ -6,8 +6,7 @@ The InsightEdge Platform automatically classifies sensitive data across your con
 
 **Managing classifications** lets you add, change, remove, or restore data classifications at the *column level* within a structured data table. Adjusting these assignments improves data accuracy and helps the InsightEdge Platform refine its automatic classification engine.
 
-!!! note
-    Classification updates are queued and may take several hours to appear.
+!!! note "Classification updates are queued and may take several hours to appear."
 
 ## Access the feature
 
@@ -28,8 +27,7 @@ If a column is unclassified, you can manually assign a data class.
 
 1. In the **Columns** table, locate a column whose **Data Class** is *Unclassified*.
 
-    !!! tip
-        Toggle **View entire schema** to display all columns.
+    !!! idea "Toggle **View entire schema** to display all columns."
 
 2. Hover over the column and click **Edit Classifications**.
 3. In the modal, select a data class from the **Data Class** dropdown.
