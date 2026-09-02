@@ -1,11 +1,15 @@
+<span class="cs-page-kicker">Case Studies > Acme (2024) > Knowledge base article</span>
+
 # Find your risk data with Acme Discover
 
 Acme's **Discover** features a robust search capability that allows you to quickly access your risk and compliance data. Through advanced, structured search querying, you can discover, analyze, and make informed decisions about non-compliance risks in your organization. Newly upgraded with generative AI technology, Acme now offers unparalleled access to your data through natural conversation.
 
-!!! tip
-    Choose a topic below to learn more about Acme Discover.
+!!! idea "Choose a topic below to learn more about Acme Discover."
 
 ![Acme Discover overview](../../assets/images/acme/discover-overview.png)
+/// caption
+Acme Discover platform overview
+///
 
 ## ✨ Acme AI Assistant
 
@@ -19,41 +23,45 @@ To get started with Acme AI Assistant, follow these steps:
 
 The assistant will respond in conversational English, occasionally offering additional steps you can take to pinpoint your search. You can provide it feedback, or refine your prompt to create even more pinpointed searches.
 
-!!! tip
-    💡 **Tip:** The assistant works best with natural-language prompts. Feel free to write as naturally as you would in a conversation. For example:
+!!! example "The assistant works best with natural-language prompts."
+    Feel free to write as naturally as you would in a conversation. For example:
 
     - *Show me my most critical non-compliance risks.*
     - *I want to see instances of market abuse in our org from 2020-2022.*
     - *Can you find my new high-alert hits?*
 
-!!! warning
-    ☝️ **Note:** Acme AI Assistant is only available for the **Enterprise Plan**. [Learn more.](https://link-to.pricing)
+!!! info "Acme AI Assistant is only available for the **Enterprise Plan**. [Learn more.](https://link-to.pricing)"
 
-![Ask the new Acme AI Assistant a question in natural, conversational English.](../../assets/images/acme/ai-assistant-question.png)
+![Acme AI Assistant prompt](../../assets/images/acme/ai-assistant-question.png)
+/// caption
+Ask the new Acme AI Assistant a question in natural, conversational English.
+///
 
-![The assistant provides actionable responses to help follow up on your request.](../../assets/images/acme/ai-assistant-response.png)
+![Acme AI Assistant response](../../assets/images/acme/ai-assistant-response.png)
+/// caption
+The assistant provides actionable responses to help follow up on your request.
+///
 
 ## Classic query-based search
 
-!!! note "TODO (placeholder from original guide)"
-    [Insert existing documentation of the "structured search query" feature here]
+!!! abstract "[Placeholder for structured search query KB]"
 
 ![Classic query-based search interface](../../assets/images/acme/search-classic.jpg)
 
 ## Search with Acme Discover
 
-!!! note "TODO (placeholder from original guide)"
-    Searching with Acme's Discover is easy. To get started... [add existing documentation here]
+!!! abstract "[Placeholder for search KB]"
+    Searching with Acme's Discover is easy. To get started...
 
-```
-/* Examples: */
+    ```
+    /* Examples: */
 
-// Helps you find... 
-Price NEAR 2S 'Favor'
+    // Helps you find... 
+    Price NEAR 2S 'Favor'
 
-// Another example
-Email CONTAINS 'acmecorporation.com'
-```
+    // Another example
+    Email CONTAINS 'acmecorporation.com'
+    ```
 
 ## Frequently asked questions
 
@@ -87,5 +95,3 @@ We can also monitor the guide's usage data to determine the amount of engagement
 - User flow and drop-off steps (i.e., how far into the guide users go)
 - Obsolescence (i.e., content age vs. traffic)
 - Common search terms, search success rate (i.e., whether users who search for the topic successfully land on the guide)
-
-![FAQ](../../assets/images/acme/faq-icon.svg)

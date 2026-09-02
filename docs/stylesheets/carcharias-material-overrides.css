@@ -93,6 +93,7 @@
   /* Admonitions */
   --md-admonition-fg-color: var(--text-body);
   --md-admonition-bg-color: var(--surface-card);
+  --md-admonition-icon--idea: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A7 7 0 0 0 5 9c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>');
 
   /* Footer */
   --md-footer-bg-color: var(--abyss-850);
@@ -108,6 +109,21 @@
    */
   --md-text-font: var(--font-ui);
   --md-code-font: var(--font-mono);
+
+  /*
+   * IMAGE THUMBNAIL SIZES -- edit these two to resize images in the
+   * article body. Both are just a max-width; each image still scales
+   * down further on narrow screens, and glightbox always opens the
+   * original full-res file on click regardless of these values.
+   *   --cs-thumb-width       Case-study/blog screenshots and skill-card
+   *                          images (most images on the site).
+   *   --cs-feature-width     What I Do page screenshots specifically --
+   *                          kept larger by default so they stay legible
+   *                          without a click; set to a length (e.g. 480px)
+   *                          to shrink them to match everything else.
+   */
+  --cs-thumb-width: 50%;
+  --cs-feature-width: 50%;
 }
 
 /* Sticky header: translucent Abyss panel + blur, per brand's header spec,
@@ -152,6 +168,30 @@
  * normal tracking -- these are what the reader actually clicks).
  */
 .md-nav__title {
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: var(--weight-medium);
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+/* Top-level nav groups with no page of their own ("Case Studies", "Extras")
+   -- restyled to match the muted-uppercase-caption look .md-nav__title gave
+   them under navigation.sections. That feature was dropped so "Home" (a
+   top-level entry with its own attached page) can get the same chevron/
+   toggle affordance as nested sections like Secyra/Acme -- Material only
+   ever grants top-level items a chevron when navigation.sections is off,
+   and there's no per-item override. A group with an attached index page
+   renders as `<div class="md-nav__link md-nav__container">` wrapping a
+   real `<a>` plus a separate icon-only chevron `<label>` -- note the
+   wrapper div itself carries `.md-nav__link` too, so it needs excluding
+   explicitly. A group with NO attached page (nothing to navigate to, e.g.
+   Case Studies) skips that wrapper and renders as a single bare
+   `<label class="md-nav__link">` holding both the text and the chevron --
+   that bare-label shape (no `.md-nav__container`) is what this selector
+   targets, so Home/Secyra/Acme/Website API (real links) are unaffected. */
+.md-nav__item--nested > .md-nav__link:not(.md-nav__container) {
   font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -233,9 +273,18 @@
   margin-bottom: var(--space-6, 16px);
 }
 
-.cs-hero__photo {
+/* Two classes (.cs-hero .cs-hero__photo) so this out-specifies the sitewide
+   .md-typeset img rule below (max-width: var(--cs-thumb-width); height: auto)
+   -- a plain .cs-hero__photo selector is a single class and loses that fight,
+   letting the thumbnail cap shrink the circular headshot and stretch it out
+   of round via the competing height. max-width: none opts this image out of
+   the shared thumbnail-sizing variable entirely; it's a fixed-size portrait,
+   not a resizable body screenshot. */
+.cs-hero .cs-hero__photo {
   width: 132px;
   height: 132px;
+  max-width: none;
+  margin: 0;
   flex-shrink: 0;
   border-radius: var(--radius-circle, 50%);
   object-fit: cover;
@@ -286,12 +335,19 @@
  * the round-2 mockup) above the breakpoint, and stack to one column
  * below it.
  */
+/* align-items: stretch (grid's own default, spelled out here for clarity)
+   so the two cards sharing a row always match height -- "Knowledge
+   architecture" and "Feature development" have noticeably different copy
+   lengths, and align-items: start let each card size to its own content,
+   leaving them visibly mismatched side by side. .cs-skill-card p:last-of-type
+   below pushes the "Read more" link to the bottom of the now-stretched
+   card instead of leaving it stranded right under a short paragraph. */
 .cs-skill-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--space-6, 16px);
   margin: var(--space-8, 24px) 0;
-  align-items: start;
+  align-items: stretch;
 }
 
 @media (max-width: 900px) {
@@ -327,11 +383,20 @@
   letter-spacing: var(--track-heading);
   font-size: var(--text-md);
   color: var(--text-display);
+  text-transform: uppercase;
 }
 
 .cs-skill-card p {
   margin: 0;
   color: var(--text-muted);
+}
+
+/* The "Read more ->" link is always the card's last paragraph -- anchor it
+   to the bottom so it lines up across a row once cards are stretched to
+   equal height, instead of sitting right under whatever line the card's
+   own (variable-length) summary text happens to end on. */
+.cs-skill-card p:last-of-type {
+  margin-top: auto;
 }
 
 .cs-skill-card ul {
@@ -414,12 +479,43 @@
   color: var(--text-body);
 }
 
+/* Inline article images, sitewide default -- size controlled by
+   --cs-thumb-width above. glightbox opens the original full-res file
+   regardless of how small it renders here, since it reads the <img>'s
+   src/href, not its on-page display size. .cs-skill-card fills its own
+   (already-narrow) card column instead of using this cap directly;
+   .cs-feature-figure has its own --cs-feature-width below. This rule is
+   the fallback for bare `![]()` screenshots elsewhere in the case-study
+   prose that aren't wrapped in either. */
+.md-typeset img {
+  max-width: var(--cs-thumb-width);
+  height: auto;
+}
+
+/* Centers any image (and glightbox's <a class="glightbox"> wrapper around
+   it, when present) that renders narrower than its paragraph/figure.
+   text-align: center on the container -- NOT display/margin tricks on the
+   img or its anchor -- because img is a replaced element and stays sized
+   by its own width/max-width regardless of display, so centering it via
+   text-align has no side effects on that sizing. Earlier attempts tried
+   display: block + margin-inline: auto (no-op: the img centers inside its
+   own already-tight anchor box, which is what's actually flush left) and
+   then display: table on the anchor (broke box-model/layout outright --
+   an anonymous table-cell's percentage-based sizing for the img inside it
+   is circular/undefined). :has() is required since a plain `.md-typeset p`
+   selector would also center ordinary text paragraphs. */
+.md-typeset p:has(> img),
+.md-typeset p:has(> a.glightbox) {
+  text-align: center;
+}
+
 /* Screenshots inside skill cards: contained, rounded, hairline border --
    matches the card's own treatment so a screenshot reads as supporting
    evidence, not a random inline image. */
 .cs-skill-card img {
   display: block;
   width: 100%;
+  max-width: 100%;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-hairline);
   margin: var(--space-3, 6px) 0;
@@ -431,42 +527,58 @@
  * nudges right on hover -- matches the mockup's case-study list
  * treatment (artboard 1).
  */
-.cs-case-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.cs-case-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.cs-case-list li {
-  border-top: 1px solid var(--line-strong);
-}
-
-.cs-case-list li:last-child {
-  border-bottom: 1px solid var(--line-strong);
-}
-
-.cs-case-list a {
+/* Title and description are each a single element on purpose. .cs-case-list__row
+   is a flex container, and flex (like grid) auto-splits every inline-element
+   boundary inside it into its own flex item -- not just <strong>. With two
+   content children (title, description) that's invisible; the moment a
+   description contains its own inline markup (e.g. `scrollTo()`), that
+   markup becomes a THIRD flex item and space-between scatters it away from
+   the surrounding text instead of letting it flow inline. Wrapping the
+   description in .cs-case-list__desc keeps it as exactly one flex item
+   regardless of what inline markup lives inside it. */
+.cs-case-list__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-8, 24px);
   padding: var(--space-7, 20px) 0;
-  border-bottom: none;
+  border-top: 1px solid var(--line-strong);
   color: var(--text-body);
 }
 
-.cs-case-list a:hover {
+.cs-case-list__row:last-child {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.cs-case-list__row:hover {
   color: var(--text-body);
 }
 
-.cs-case-list a strong {
+/* Fixed width (not shrink-to-fit) so every row's title column lines up at
+   the same x-position regardless of title length -- "Secyra (2025)" and
+   "How to Make Custom Layouts on Perf and Vero Board" otherwise each size
+   to their own text, pushing .cs-case-list__desc to a different starting
+   point per row. A long title (like the Extras one) wraps to two lines
+   inside this column instead of stretching it. */
+.cs-case-list__title {
+  flex: 0 0 220px;
   font-family: var(--font-ui);
   font-size: var(--text-lg);
   font-weight: var(--weight-semibold);
   color: var(--text-display);
 }
 
-.cs-case-list a::after {
+.cs-case-list__desc {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.cs-case-list__row::after {
   content: "\2192";
   flex-shrink: 0;
   color: var(--intent-primary);
@@ -474,7 +586,7 @@
   transition: var(--transition-control), transform var(--dur-fast) var(--ease-standard);
 }
 
-.cs-case-list a:hover::after {
+.cs-case-list__row:hover::after {
   transform: translateX(4px);
 }
 
@@ -517,4 +629,224 @@
   font: var(--type-value);
   color: var(--text-faint);
   letter-spacing: var(--track-mono);
+}
+
+/* In-content prev/next pager. Deliberately NOT the global sticky
+   .md-footer (disabled via theme.features) -- that element spans the full
+   viewport width outside .md-main, so it visually runs under the sidebar
+   nav too. Rendering this inside partials/content.html instead keeps it
+   inside .md-content__inner, so it's naturally constrained to the article
+   column at every breakpoint with no manual sidebar-width math. Scope is
+   computed from page.parent.children (siblings within the same case-study
+   section), not the global flattened nav -- see overrides/partials/content.html. */
+.cs-doc-pager {
+  display: flex;
+  gap: var(--space-5, 12px);
+  margin: var(--space-11, 56px) 0 0;
+  padding-top: var(--space-7, 20px);
+  border-top: 1px solid var(--line-hairline);
+}
+
+.cs-doc-pager__link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 45%;
+  padding: var(--space-5, 12px) var(--space-7, 20px);
+  border: 1px solid var(--line-hairline);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.cs-doc-pager__link:hover {
+  border-color: var(--tide-500);
+  background: var(--surface-selected);
+}
+
+.cs-doc-pager__link--next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.cs-doc-pager__label {
+  font-family: var(--font-ui);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.cs-doc-pager__title {
+  font-family: var(--font-ui);
+  color: var(--text-body);
+  font-weight: var(--weight-semibold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Sibling-page list on a case-study/What-I-do overview -- "jump to a
+   format" cards, title above a one-line teaser. Distinct from the home
+   page's .cs-case-list (title beside description) because this list sits
+   inside a narrower content column, where a side-by-side layout would
+   cramp the teaser text. */
+.cs-sibling-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-sibling-list__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8, 24px);
+  padding: var(--space-6, 16px) 0;
+  border-top: 1px solid var(--line-strong);
+  color: var(--text-body);
+}
+
+.cs-sibling-list__row:last-child {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.cs-sibling-list__row:hover {
+  color: var(--text-body);
+}
+
+.cs-sibling-list__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cs-sibling-list__title {
+  font-family: var(--font-ui);
+  font-weight: var(--weight-semibold);
+  color: var(--text-display);
+}
+
+.cs-sibling-list__desc {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm, 14px);
+  color: var(--text-muted);
+}
+
+.cs-sibling-list__row::after {
+  content: "\2192";
+  flex-shrink: 0;
+  color: var(--intent-primary);
+  font-size: var(--text-xl);
+  transition: var(--transition-control), transform var(--dur-fast) var(--ease-standard);
+}
+
+.cs-sibling-list__row:hover::after {
+  transform: translateX(4px);
+}
+
+/* Eyebrow label above an H1 -- e.g. "What I do" above "Knowledge architecture". */
+.cs-page-kicker {
+  display: block;
+  font: var(--type-label);
+  color: var(--text-faint);
+  /* text-transform: uppercase; */
+  letter-spacing: 0.06em;
+}
+
+/* Captioned images anywhere else in the article body (case studies, extras)
+   -- pymdownx.blocks.caption's /// caption ... /// syntax used on a bare
+   image, with no cs-feature-figure wrapper. The image itself still falls
+   through to the sitewide .md-typeset img cap (--cs-thumb-width) above;
+   this only styles the <figure>/<figcaption> pymdownx generates so the
+   caption text reads as a caption instead of a second paragraph.
+   Material's own bundled CSS already centers <figure> correctly (width:
+   fit-content + margin: 1em auto, so the figure shrink-wraps to the image
+   and centers itself in the column) -- margin here MUST keep auto on the
+   left/right, only overriding the vertical spacing, or it silently cancels
+   that centering. This is what was actually causing images to render
+   left-aligned in a "narrower band": margin: ... 0 here zeroed out
+   Material's auto margins, not anything about the img or its glightbox
+   anchor (both of those were red herrings chased in earlier attempts). */
+.md-typeset figure {
+  margin: var(--space-6, 16px) auto;
+}
+
+.md-typeset figure img {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-hairline);
+}
+
+.md-typeset figcaption {
+  margin-top: var(--space-3, 6px);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm, 14px);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Full-width screenshot on a dedicated What-I-do page -- deliberately large
+   (unlike the tiny thumbnails inside the old home-page <details> toggles),
+   with a caption label above matching the mockup's per-image labels. */
+.cs-feature-figure {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5, 12px);
+  margin: var(--space-8, 24px) 0;
+}
+
+/* Override the generic figure margin above -- .cs-feature-figure's own flex
+   gap already handles spacing, so the <figure> itself should sit flush. */
+.cs-feature-figure figure {
+  margin: 0;
+}
+
+.cs-feature-figure img {
+  /* display: block is fine (unlike .md-typeset figure img above) because
+     these images are always width: 100% -- centering never applies, so
+     there's no text-align dependency to preserve. */
+  display: block;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-hairline);
+}
+
+/* Size controlled by --cs-feature-width above (default "none" = full
+   width -- these exist specifically to be legible, not thumbnails). An
+   explicit `{ width="…" }` on an individual image (Material's own
+   per-image sizing syntax, see
+   https://squidfunk.github.io/mkdocs-material/reference/images/#image-alignment-left)
+   overrides this default instead of being silently fought by it. */
+.cs-feature-figure img:not([width]) {
+  width: 100%;
+  max-width: var(--cs-feature-width);
+}
+
+
+/* Admonition overrides: Material's default "idea" admonition is a blue
+   border + tinted background with a lightbulb icon. The mockup calls for
+   a signal-orange border + wash instead, so the selectors below override
+   Material's defaults. */
+/* Border and accent color */
+.md-typeset .admonition.idea,
+.md-typeset details.idea {
+  border-color: rgb(234, 179, 8);
+}
+
+/* Title background color */
+.md-typeset .idea > .admonition-title,
+.md-typeset .idea > summary {
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+/* Title icon mask */
+.md-typeset .idea > .admonition-title::before,
+.md-typeset .idea > summary::before {
+  background-color: rgb(234, 179, 8);
+  -webkit-mask-image: var(--md-admonition-icon--idea);
+  mask-image: var(--md-admonition-icon--idea);
+}
+
+/* Title font weight */
+.md-typeset .admonition-title {
+  font-weight: var(--weight-medium);
 }

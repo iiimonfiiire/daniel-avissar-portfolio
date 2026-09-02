@@ -12,8 +12,7 @@ Good documentation is a product in its own right, and I build the systems, skill
 </div>
 </div>
 
-!!! tip
-    💡 Select an option below to browse my case studies.
+!!! idea "Select an option below to browse my case studies."
 
 ## What I do
 
@@ -24,42 +23,15 @@ Good documentation is a product in its own right, and I build the systems, skill
 
 I create and manage the knowledge base infrastructure, tailoring it to match the needs and complexity of your product.
 
-<details markdown>
-<summary>Details</summary>
-
-![A knowledge base homepage with a search bar and category tiles for Getting Started, Product Areas, and Updates and Releases](assets/images/home/knowledge-base-overview.png)
-
-- Identifying and organizing content corresponding to logical product areas
-- Helping users find the information they need by ensuring searchability
-- Providing assistance when and where it is needed most by integrating knowledge features with your platform
-- Optimizing content for multiple formats—web, guides, announcements, banners, etc.
-
-![Knowledge integrated in-app: an overview panel with interactive KPIs, explained in a contextual help tooltip](assets/images/home/kb-integrated-in-app.png)
-
-</details>
+[Read more →](what-i-do/knowledge-architecture.md)
 </div>
 
 <div class="cs-skill-card cs-skill-card--span-7" markdown>
 <span class="cs-skill-card__title">Feature development</span>
 
-Interdepartmental collaborations delivering exciting new features:
+Interdepartmental collaborations delivering exciting new features, from AI-powered search to an in-app help menu.
 
-<details markdown>
-<summary>Details</summary>
-
-![An AI search assistant translating a natural-language question into a structured query, with an explanation of the query logic](assets/images/home/ai-search-query.png)
-
-![A contextual help-center menu offering What's New, Search the Knowledge Base, Support, and other options](assets/images/home/help-center-menu.png)
-
-- **AI-powered knowledge search:** Building and maintaining a RAG-based agent that provides answers directly from the knowledge base; automation script design for processing JSON exported from third-party platforms into machine-readable documentation; prompt definition; usage analysis
-- **AI search:** Translation agent that converts user-entered natural language prompts into proprietary querying language syntax; prompt engineering; KB optimization; usage data analysis and model improvement
-- **Internal knowledge bot:** Internal Slackbot that accesses knowledge silos across an entire organization and provides a unified answer to any employee about any internal knowledge
-- **Help menu:** In-app help menu project with the Support team, fully integrated with a Zendesk-based platform. 3-month KPIs included:
-    - Reduced email-based ticket submissions from 30% to 19%
-    - Increased customer engagement (+11% total guide views)
-    - More frequent user interaction with help resources (+8% active sessions)
-
-</details>
+[Read more →](what-i-do/feature-development.md)
 </div>
 
 <div class="cs-skill-card cs-skill-card--span-5" markdown>
@@ -67,15 +39,15 @@ Interdepartmental collaborations delivering exciting new features:
 
 Writing smart, helpful UX microcopy, focused on engaging and empowering users to adopt features more quickly.
 
-![A setup wizard for adding a new cloud connector, with plain-language instructions and inline field help](assets/images/home/ux-writing-wizard.png)
+[Read more →](what-i-do/ux-writing.md)
 </div>
 
 <div class="cs-skill-card cs-skill-card--span-7" markdown>
 <span class="cs-skill-card__title">Technical versatility</span>
 
-I engage my creative and engineering backgrounds equally in executing my product vision. Whether writing for APIs, product guides, or AI assistants, I dive into highly diverse technical subjects with enthusiasm and a hunger to learn, which I always try to relay to colleagues and users.
+Diving into diverse technical subjects across APIs, product guides, and AI assistants with equal enthusiasm.
 
-![API reference documentation listing response codes and descriptions](assets/images/home/api-reference.png)
+[Read more →](what-i-do/technical-versatility.md)
 </div>
 
 </div>
@@ -84,9 +56,18 @@ I engage my creative and engineering backgrounds equally in executing my product
 
 <div class="cs-case-list" markdown>
 
-- [__Secyra (2025)__ — Senior Technical Writer — knowledge base article, release note, microcopy, and troubleshooting guide for a data-security platform.](case-studies/secyra-2025/index.md)
-- [__Acme (2024)__ — Technical Writer — user guide and release notes for a new AI-powered search feature on a compliance and eDiscovery platform.](case-studies/acme-2024/index.md)
-- [__Website API (2021)__ — A blog-style explainer on how APIs work, using a website-builder platform's `scrollTo()` function as the worked example.](case-studies/webapi-2021/index.md)
+<a class="cs-case-list__row" href="case-studies/secyra-2025/">
+<span class="cs-case-list__title">Secyra (2025)</span>
+<span class="cs-case-list__desc">Full release cycle documentation for a data security SaaS platform. Includes knowledge base article, release note, microcopy definitions, and troubleshooting guide.</span>
+</a>
+<a class="cs-case-list__row" href="case-studies/acme-2024/">
+<span class="cs-case-list__title">Acme (2024)</span>
+<span class="cs-case-list__desc">Example knowledge base guide and release notes for a new AI-powered search feature on a compliance and eDiscovery platform.</span>
+</a>
+<a class="cs-case-list__row" href="case-studies/webapi-2021/">
+<span class="cs-case-list__title">Website API (2021)</span>
+<span class="cs-case-list__desc">A blog-style explainer on how APIs work, using a website-builder platform's `scrollTo()` function as the worked example.</span>
+</a>
 
 </div>
 
@@ -94,7 +75,10 @@ I engage my creative and engineering backgrounds equally in executing my product
 
 <div class="cs-case-list" markdown>
 
-- [__How to Make Custom Layouts on Perf and Vero Board__ — A guide from building guitar pedals, on laying out custom circuits on perfboard and vero board.](extras/perf-vero-board.md)
+<a class="cs-case-list__row" href="extras/perf-vero-board/">
+<span class="cs-case-list__title">How to Make Custom Layouts on Perf and Vero Board</span>
+<span class="cs-case-list__desc">A guide from building guitar pedals, on laying out custom circuits on perfboard and vero board.</span>
+</a>
 
 </div>
 

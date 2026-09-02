@@ -1,4 +1,6 @@
-# September 2025
+<span class="cs-page-kicker">Case Studies > Acme (2024) > Release Note</span>
+
+# September 2024
 
 The following is a summary of new and noteworthy updates to the Acme platform for the month of September 2025.
 
@@ -14,5 +16,4 @@ The following is a summary of new and noteworthy updates to the Acme platform fo
 
 ## Release Notes archive
 
-!!! note "TODO (placeholder from original guide)"
-    [This is where older release notes go]
+!!! abstract "[Placeholder for older release notes]"

@@ -91,13 +91,18 @@
               <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Home</span>
             </div>
 
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">What I do</div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Knowledge architecture</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Feature development</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">UX writing</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Technical versatility</span></div>
+
             <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Case studies</div>
 
             <div style="display:flex; align-items:center; gap:8px; padding:7px 20px;">
               <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--text-muted)" hint-size="14px,14px"></x-import>
               <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
             </div>
-            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Overview</span></div>
             <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Knowledge base article</span></div>
             <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
             <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span></div>
@@ -143,55 +148,34 @@
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="network" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
                   <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">Knowledge architecture</span>
                   <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">I create and manage the knowledge base infrastructure, tailoring it to match the needs and complexity of your product.</span>
-                  <details style="margin-top:2px;">
-                    <summary style="cursor:pointer; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; padding:4px 0;">Details</summary>
-                    <ul style="margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:6px; font:var(--type-body-sm); color:var(--text-muted); line-height:1.5;">
-                      <li>Identifying and organising content corresponding to logical product areas</li>
-                      <li>Helping users find the information they need by ensuring searchability</li>
-                      <li>Providing assistance when and where it is needed most by integrating knowledge features with your platform</li>
-                      <li>Optimising content for multiple formats — web, guides, announcements, banners, etc.</li>
-                    </ul>
-                  </details>
+                  <a href="#" style="display:inline-flex; align-items:center; gap:6px; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; margin-top:2px;">Read more <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import></a>
                 </div>
               </x-import>
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 7;" hint-size="100%,170px">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 3;" hint-size="100%,140px">
                 <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="git-merge" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
                   <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">Feature development</span>
-                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">Interdepartmental collaborations delivering exciting new features:</span>
-                  <details style="margin-top:2px;">
-                    <summary style="cursor:pointer; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; padding:4px 0;">Details</summary>
-                    <ul style="margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:10px; font:var(--type-body-sm); color:var(--text-muted); line-height:1.5;">
-                      <li><strong style="color:var(--text-body);">AI-powered knowledge search:</strong> building and maintaining a RAG-based agent that provides answers directly from the knowledge base; automation script design for processing JSON exported from third-party platforms into machine-readable documentation; prompt definition; usage analysis.</li>
-                      <li><strong style="color:var(--text-body);">AI search:</strong> translation agent that converts user-entered natural language prompts into proprietary querying language syntax; prompt engineering; KB optimisation; usage data analysis and model improvement.</li>
-                      <li><strong style="color:var(--text-body);">Internal knowledge bot:</strong> an internal Slackbot that accesses knowledge silos across an entire organisation and provides a unified answer to any employee about any internal knowledge.</li>
-                      <li>
-                        <strong style="color:var(--text-body);">Help menu:</strong> an in-app help menu project with the Support team, fully integrated with a Zendesk-based platform. 3-month KPIs included:
-                        <ul style="margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:4px;">
-                          <li>Reduced email-based ticket submissions from 30% to 19%</li>
-                          <li>Increased customer engagement (+11% total guide views)</li>
-                          <li>More frequent user interaction with help resources (+8% active sessions)</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </details>
+                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">Interdepartmental collaborations delivering exciting new features, from AI-powered search to an in-app help menu.</span>
+                  <a href="#" style="display:inline-flex; align-items:center; gap:6px; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; margin-top:2px;">Read more <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import></a>
                 </div>
               </x-import>
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 5;" hint-size="100%,120px">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 3;" hint-size="100%,140px">
                 <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="pen-tool" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
                   <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">UX writing</span>
                   <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">Writing smart, helpful UX microcopy, focused on engaging and empowering users to adopt features more quickly.</span>
+                  <a href="#" style="display:inline-flex; align-items:center; gap:6px; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; margin-top:2px;">Read more <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import></a>
                 </div>
               </x-import>
 
-              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 7;" hint-size="100%,150px">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Card" style="grid-column:span 3;" hint-size="100%,140px">
                 <div style="display:flex; flex-direction:column; gap:12px; padding:24px;">
                   <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="code-2" size="20" color="var(--intent-primary)" hint-size="20px,20px"></x-import>
                   <span style="font:var(--type-h3); color:var(--text-display); font-size:16px;">Technical versatility</span>
-                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">I engage my creative and engineering backgrounds equally in executing my product vision. Whether writing for APIs, product guides, or AI assistants, I dive into highly diverse technical subjects with enthusiasm and a hunger to learn, which I always try to relay to colleagues and users.</span>
+                  <span style="font:var(--type-body-sm); color:var(--text-muted); line-height:1.55;">Diving into diverse technical subjects across APIs, product guides, and AI assistants with equal enthusiasm.</span>
+                  <a href="#" style="display:inline-flex; align-items:center; gap:6px; font:var(--type-body-sm); color:var(--intent-primary); font-weight:600; margin-top:2px;">Read more <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import></a>
                 </div>
               </x-import>
             </div>
@@ -246,7 +230,7 @@
 
     <!-- ============ ARTBOARD 2: CASE STUDY OVERVIEW ============ -->
     <div style="display:flex; flex-direction:column; gap:14px;">
-      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">02 · Case study overview — Secyra (2025)</div>
+      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">02 · Case study — Secyra (2025) — Overview tab</div>
       <div class="{{ themeClass }}" style="width:1440px; background:var(--surface-page); border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-panel); {{ accentVars }}">
 
         <div style="height:60px; display:flex; align-items:center; gap:24px; padding:0 32px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong);">
@@ -272,14 +256,17 @@
               <span style="font:var(--type-body-sm); color:var(--text-body);">Home</span>
             </div>
 
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">What I do</div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Knowledge architecture</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Feature development</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">UX writing</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Technical versatility</span></div>
+
             <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Case studies</div>
 
             <div style="display:flex; align-items:center; gap:8px; padding:8px 20px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);">
               <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import>
               <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Secyra (2025)</span>
-            </div>
-            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);">
-              <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Overview</span>
             </div>
             <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Knowledge base article</span></div>
             <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
@@ -308,28 +295,154 @@
             <h1 style="font:var(--weight-semibold) 36px/1.15 var(--font-ui); color:var(--text-display); letter-spacing:-.015em; margin:0;">Secyra (2025)</h1>
             <p style="font-family:var(--font-prose); font-size:18px; line-height:1.65; color:var(--text-body); max-width:68ch; margin:0;">A Senior Technical Writer take-home assignment for a data-security platform ("Secyra"/the InsightEdge Platform below), covering a real feature end-to-end across four documentation formats: a knowledge base article, a release note, UX microcopy, and a troubleshooting guide.</p>
 
-            <div style="display:flex; gap:32px; border-bottom:1px solid var(--line-strong); margin-top:8px; overflow-x:auto;">
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid var(--intent-primary); flex-shrink:0;">
-                <a href="#" style="font:var(--type-body); color:var(--intent-primary); font-weight:600; white-space:nowrap;">Overview</a>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
-                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Knowledge base article</a>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
-                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Release note</a>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
-                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Microcopy</a>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:12px; padding-bottom:12px; border-bottom:2px solid transparent; flex-shrink:0;">
-                <a href="#" style="font:var(--type-body); color:var(--text-muted); white-space:nowrap;">Troubleshooting guide</a>
-              </div>
+            <div style="display:flex; gap:2px; padding:4px; background:var(--surface-inset); border:1px solid var(--line-strong); border-radius:999px; width:fit-content; overflow-x:auto;">
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-on-tide); font-weight:600; padding:8px 16px; border-radius:999px; background:var(--intent-primary); white-space:nowrap;">Overview</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Knowledge base article</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Release note</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Microcopy</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Troubleshooting guide</a>
             </div>
 
-            <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
-              <span style="font:var(--type-label); color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;">On this page</span>
-              <div style="display:flex; flex-direction:column; gap:6px; padding-left:16px; border-left:1px solid var(--line-hairline);">
-                <span style="font:var(--type-body-sm); color:var(--text-muted);">Placeholder — overview body content compiled separately.</span>
+            <div style="display:flex; flex-direction:column; gap:2px; margin-top:8px;">
+              <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:16px 0; border-top:1px solid var(--line-strong);">
+                <div style="display:flex; flex-direction:column; gap:2px;"><span style="font:var(--type-body); color:var(--text-display); font-weight:600;">Knowledge base article</span><span style="font:var(--type-body-sm); color:var(--text-muted);">How to set up automated threat alerts in InsightEdge.</span></div>
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="16" color="var(--intent-primary)" hint-size="16px,16px"></x-import>
+              </a>
+              <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:16px 0; border-top:1px solid var(--line-strong);">
+                <div style="display:flex; flex-direction:column; gap:2px;"><span style="font:var(--type-body); color:var(--text-display); font-weight:600;">Release note</span><span style="font:var(--type-body-sm); color:var(--text-muted);">Announcing the feature to existing customers.</span></div>
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="16" color="var(--intent-primary)" hint-size="16px,16px"></x-import>
+              </a>
+              <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:16px 0; border-top:1px solid var(--line-strong);">
+                <div style="display:flex; flex-direction:column; gap:2px;"><span style="font:var(--type-body); color:var(--text-display); font-weight:600;">Microcopy</span><span style="font:var(--type-body-sm); color:var(--text-muted);">In-product strings for the alert policy flow.</span></div>
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="16" color="var(--intent-primary)" hint-size="16px,16px"></x-import>
+              </a>
+              <a href="#" style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:16px 0; border-top:1px solid var(--line-strong); border-bottom:1px solid var(--line-strong);">
+                <div style="display:flex; flex-direction:column; gap:2px;"><span style="font:var(--type-body); color:var(--text-display); font-weight:600;">Troubleshooting guide</span><span style="font:var(--type-body-sm); color:var(--text-muted);">Diagnosing missed or delayed alerts.</span></div>
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="arrow-right" size="16" color="var(--intent-primary)" hint-size="16px,16px"></x-import>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ARTBOARD 2B: CASE STUDY — KNOWLEDGE BASE ARTICLE ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">03 · Case study — Secyra (2025) — Knowledge base article tab</div>
+      <div class="{{ themeClass }}" style="width:1440px; background:var(--surface-page); border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-panel); {{ accentVars }}">
+
+        <div style="height:60px; display:flex; align-items:center; gap:24px; padding:0 32px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ logoIconName }}" size="26" color="var(--intent-primary)" hint-size="26px,26px"></x-import>
+            <div style="display:flex; flex-direction:column; line-height:1.1;">
+              <span style="font:var(--type-h3); color:var(--text-display); letter-spacing:-.012em;">Daniel Avissar</span>
+              <span style="font:var(--type-caption); color:var(--text-faint);">AI Knowledge Architect</span>
+            </div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="display:flex; align-items:center; gap:8px; width:280px; height:36px; padding:0 12px; background:var(--surface-inset); border:1px solid var(--line-hairline); border-radius:var(--radius-sm);">
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="search" size="15" color="var(--text-faint)" hint-size="15px,15px"></x-import>
+            <span style="font:var(--type-body-sm); color:var(--text-faint);">Search</span>
+          </div>
+          <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="github" size="20" color="var(--text-muted)" hint-size="20px,20px"></x-import>
+        </div>
+
+        <div style="display:flex;">
+          <div style="width:260px; flex-shrink:0; background:var(--surface-panel); border-right:1px solid var(--line-strong); padding:20px 0; display:flex; flex-direction:column; gap:2px; min-height:1400px;">
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 20px; border-left:2px solid transparent;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="home" size="16" color="var(--text-muted)" hint-size="16px,16px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Home</span>
+            </div>
+
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">What I do</div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Knowledge architecture</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Feature development</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">UX writing</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Technical versatility</span></div>
+
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Case studies</div>
+
+            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--intent-primary)" hint-size="14px,14px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Secyra (2025)</span>
+            </div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);"><span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Knowledge base article</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span></div>
+            <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Troubleshooting guide</span></div>
+
+            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent; margin-top:6px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Acme (2024)</span>
+            </div>
+            <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Website API (2021)</span>
+            </div>
+
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Extras</div>
+            <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Perf &amp; vero board</span>
+            </div>
+          </div>
+
+          <div style="flex:1; padding:64px 72px; display:flex; flex-direction:column; gap:32px; max-width:900px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Badge" tone="info" hint-size="auto,22px">Senior technical writer</x-import>
+              <span style="font:var(--type-value); color:var(--text-faint); letter-spacing:.01em;">2025</span>
+            </div>
+            <h1 style="font:var(--weight-semibold) 36px/1.15 var(--font-ui); color:var(--text-display); letter-spacing:-.015em; margin:0;">Secyra (2025)</h1>
+
+            <div style="display:flex; gap:2px; padding:4px; background:var(--surface-inset); border:1px solid var(--line-strong); border-radius:999px; width:fit-content; overflow-x:auto;">
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Overview</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-on-tide); font-weight:600; padding:8px 16px; border-radius:999px; background:var(--intent-primary); white-space:nowrap;">Knowledge base article</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Release note</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Microcopy</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Troubleshooting guide</a>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:24px; margin-top:8px;">
+              <h1 style="font:var(--weight-semibold) 26px/1.3 var(--font-ui); color:var(--text-display); letter-spacing:-.012em; margin:0;">Set up automated threat alerts in InsightEdge</h1>
+              <p style="font-family:var(--font-prose); font-size:17px; line-height:1.65; color:var(--text-body); max-width:68ch; margin:0;">Automated threat alerts notify your security team the moment InsightEdge detects a risk that matches your policy. This article covers how to create an alert policy and connect it to a notification channel.</p>
+
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <h3 style="font:var(--weight-semibold) 15px/1.3 var(--font-ui); color:var(--text-display); margin:0;">Before you start</h3>
+                <ul style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:6px; font-family:var(--font-prose); font-size:15px; line-height:1.6; color:var(--text-body);">
+                  <li>You need Admin or Security Lead permissions on the workspace.</li>
+                  <li>At least one data source must be connected and actively scanning.</li>
+                  <li>To receive alerts by Slack or email, connect the channel first in Settings &gt; Integrations.</li>
+                </ul>
+              </div>
+
+              <h2 style="font:var(--weight-semibold) 20px/1.3 var(--font-ui); color:var(--text-display); margin:8px 0 0;">Create an alert policy</h2>
+              <ol style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; font-family:var(--font-prose); font-size:15px; line-height:1.6; color:var(--text-body);">
+                <li>In the left sidebar, select Threat Detection &gt; Alert Policies.</li>
+                <li>Select New policy.</li>
+                <li>Name the policy and choose a severity threshold: Critical, High, or Medium and above.</li>
+                <li>Under Scope, select the data sources the policy applies to.</li>
+                <li>Select Save to activate the policy.</li>
+              </ol>
+
+              <div style="width:100%; border-radius:var(--radius-sm); overflow:hidden;">
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.ImagePlate" label="Screenshot — Alert Policies screen: new policy form with severity threshold and scope selector" ratio="16 / 9" dark="{{ true }}" hint-size="100%,auto"</x-import>
+              </div>
+
+              <h2 style="font:var(--weight-semibold) 20px/1.3 var(--font-ui); color:var(--text-display); margin:8px 0 0;">Configure notification channels</h2>
+              <ol style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; font-family:var(--font-prose); font-size:15px; line-height:1.6; color:var(--text-body);">
+                <li>Open the policy you created and select Notifications.</li>
+                <li>Select Add channel and choose Email, Slack, or Webhook.</li>
+                <li>Enter the destination — an email address, Slack channel, or webhook URL.</li>
+                <li>Select Send test alert to confirm delivery.</li>
+                <li>Select Save.</li>
+              </ol>
+
+              <div style="width:100%; border-radius:var(--radius-sm); overflow:hidden;">
+                <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.ImagePlate" label="Screenshot — notification channel setup: Slack channel selected, test alert sent confirmation" ratio="16 / 9" dark="{{ true }}" hint-size="100%,auto"</x-import>
+              </div>
+
+              <h2 style="font:var(--weight-semibold) 20px/1.3 var(--font-ui); color:var(--text-display); margin:8px 0 0;">Related articles</h2>
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                <a href="#" style="font:var(--type-body-sm); color:var(--text-link);">Understanding alert severity levels</a>
+                <a href="#" style="font:var(--type-body-sm); color:var(--text-link);">Muting alerts during maintenance windows</a>
               </div>
             </div>
           </div>
@@ -337,9 +450,100 @@
       </div>
     </div>
 
-    <!-- ============ ARTBOARD 3: SIDEBAR NAV SPEC ============ -->
+    <!-- ============ ARTBOARD 4: WHAT I DO — KNOWLEDGE ARCHITECTURE ============ -->
     <div style="display:flex; flex-direction:column; gap:14px;">
-      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">03 · Left sidebar — full nav tree</div>
+      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">04 · What I do — Knowledge architecture</div>
+      <div class="{{ themeClass }}" style="width:1440px; background:var(--surface-page); border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-panel); {{ accentVars }}">
+
+        <div style="height:60px; display:flex; align-items:center; gap:24px; padding:0 32px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong);">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ logoIconName }}" size="26" color="var(--intent-primary)" hint-size="26px,26px"></x-import>
+            <div style="display:flex; flex-direction:column; line-height:1.1;">
+              <span style="font:var(--type-h3); color:var(--text-display); letter-spacing:-.012em;">Daniel Avissar</span>
+              <span style="font:var(--type-caption); color:var(--text-faint);">AI Knowledge Architect</span>
+            </div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="display:flex; align-items:center; gap:8px; width:280px; height:36px; padding:0 12px; background:var(--surface-inset); border:1px solid var(--line-hairline); border-radius:var(--radius-sm);">
+            <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="search" size="15" color="var(--text-faint)" hint-size="15px,15px"></x-import>
+            <span style="font:var(--type-body-sm); color:var(--text-faint);">Search</span>
+          </div>
+          <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="github" size="20" color="var(--text-muted)" hint-size="20px,20px"></x-import>
+        </div>
+
+        <div style="display:flex;">
+          <div style="width:260px; flex-shrink:0; background:var(--surface-panel); border-right:1px solid var(--line-strong); padding:20px 0; display:flex; flex-direction:column; gap:2px; min-height:1500px;">
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 20px; border-left:2px solid transparent;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="home" size="16" color="var(--text-muted)" hint-size="16px,16px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Home</span>
+            </div>
+
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">What I do</div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px; border-left:2px solid var(--intent-primary); background:var(--surface-selected);"><span style="font:var(--type-body-sm); color:var(--intent-primary); font-weight:600;">Knowledge architecture</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Feature development</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">UX writing</span></div>
+            <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Technical versatility</span></div>
+
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Case studies</div>
+            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; padding:8px 20px 8px 20px; border-left:2px solid transparent;">
+              <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-right" size="14" color="var(--text-faint)" hint-size="14px,14px"></x-import>
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Acme (2024)</span>
+            </div>
+            <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Website API (2021)</span>
+            </div>
+
+            <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:20px 20px 6px;">Extras</div>
+            <div style="display:flex; align-items:center; padding:8px 20px 8px 26px; border-left:2px solid transparent;">
+              <span style="font:var(--type-body-sm); color:var(--text-body);">Perf &amp; vero board</span>
+            </div>
+          </div>
+
+          <div style="flex:1; padding:64px 72px; display:flex; flex-direction:column; gap:28px; max-width:1180px;">
+            <span style="font:var(--type-label); color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;">What I do</span>
+            <h1 style="font:var(--weight-semibold) 36px/1.15 var(--font-ui); color:var(--text-display); letter-spacing:-.015em; margin:0;">Knowledge architecture</h1>
+
+            <div style="display:flex; gap:2px; padding:4px; background:var(--surface-inset); border:1px solid var(--line-strong); border-radius:999px; width:fit-content; overflow-x:auto;">
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-on-tide); font-weight:600; padding:8px 16px; border-radius:999px; background:var(--intent-primary); white-space:nowrap;">Knowledge architecture</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Feature development</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">UX writing</a>
+              <a href="#" style="font:var(--type-body-sm); color:var(--text-muted); padding:8px 16px; border-radius:999px; white-space:nowrap;">Technical versatility</a>
+            </div>
+
+            <p style="font-family:var(--font-prose); font-size:18px; line-height:1.65; color:var(--text-body); max-width:68ch; margin:8px 0 0;">I create and manage the knowledge base infrastructure, tailoring it to match the needs and complexity of your product.</p>
+            <ul style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; font-family:var(--font-prose); font-size:16px; line-height:1.6; color:var(--text-body); max-width:68ch;">
+              <li>Identifying and organising content corresponding to logical product areas</li>
+              <li>Helping users find the information they need by ensuring searchability</li>
+              <li>Providing assistance when and where it is needed most by integrating knowledge features with your platform</li>
+              <li>Optimising content for multiple formats — web, guides, announcements, banners, etc.</li>
+            </ul>
+
+            <div style="display:flex; flex-direction:column; gap:32px; margin-top:16px;">
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <span style="font:var(--type-label); color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;">Knowledge base homepage</span>
+                <div style="width:100%; height:640px; border-radius:var(--radius-sm); overflow:hidden;">
+                  <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.ImagePlate" label="Knowledge base homepage — search bar and category tiles" ratio="16 / 9" dark="{{ true }}" hint-size="100%,640px"></x-import>
+                </div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <span style="font:var(--type-label); color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;">In-app help panel</span>
+                <div style="width:100%; height:640px; border-radius:var(--radius-sm); overflow:hidden;">
+                  <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.ImagePlate" label="In-app help panel with a contextual tooltip" ratio="16 / 9" dark="{{ true }}" hint-size="100%,640px"></x-import>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ARTBOARD 5: SIDEBAR NAV SPEC ============ -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font:var(--type-label); color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em;">05 · Left sidebar — full nav tree</div>
       <div class="{{ themeClass }}" style="width:300px; background:var(--surface-page); border:1px solid var(--line-strong); border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-panel); {{ accentVars }}">
         <div style="height:60px; display:flex; align-items:center; gap:10px; padding:0 20px; background:var(--surface-raised); border-bottom:1px solid var(--line-strong);">
           <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="{{ logoIconName }}" size="24" color="var(--intent-primary)" hint-size="24px,24px"></x-import>
@@ -352,13 +556,18 @@
             <span style="font:var(--type-body-sm); color:var(--text-body);">Home</span>
           </div>
 
+          <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:18px 20px 6px;">What I do</div>
+          <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Knowledge architecture</span></div>
+          <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Feature development</span></div>
+          <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">UX writing</span></div>
+          <div style="display:flex; align-items:center; padding:7px 20px 7px 26px;"><span style="font:var(--type-body-sm); color:var(--text-body);">Technical versatility</span></div>
+
           <div style="font:var(--type-caption); color:var(--text-faint); text-transform:uppercase; letter-spacing:.08em; padding:18px 20px 6px;">Case studies</div>
 
           <div style="display:flex; align-items:center; gap:8px; padding:7px 20px;">
             <x-import component-from-global-scope="CarchariasDesignSystem_c8a750.Icon" name="chevron-down" size="14" color="var(--text-muted)" hint-size="14px,14px"></x-import>
             <span style="font:var(--type-body-sm); color:var(--text-body);">Secyra (2025)</span>
           </div>
-          <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Overview</span></div>
           <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Knowledge base article</span></div>
           <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Release note</span></div>
           <div style="display:flex; align-items:center; padding:6px 20px 6px 42px;"><span style="font:var(--type-body-sm); color:var(--text-muted);">Microcopy</span></div>
