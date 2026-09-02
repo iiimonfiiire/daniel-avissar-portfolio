@@ -486,46 +486,27 @@
    (already-narrow) card column instead of using this cap directly;
    .cs-feature-figure has its own --cs-feature-width below. This rule is
    the fallback for bare `![]()` screenshots elsewhere in the case-study
-   prose that aren't wrapped in either.
-   display: block + margin-inline: auto center any image that renders
-   narrower than the full content column -- img is inline by default, so
-   without display: block the auto margins below would have no effect and
-   the image would sit flush left instead. Every image in the article body
-   sits alone on its own line (never mid-sentence), so blockifying every
-   .md-typeset img is safe sitewide. NOTE: glightbox wraps almost every one
-   of these images in its own <a class="glightbox"> (see .md-typeset
-   .glightbox below) -- centering the img alone only centers it within that
-   inline anchor's own shrink-wrapped box, which has no spare width to
-   center into. The anchor is the box that actually needs the centering;
-   this rule stays too since a couple of things (the hero photo) opt out of
-   glightbox entirely and rely on it directly. */
+   prose that aren't wrapped in either. */
 .md-typeset img {
-  display: block;
   max-width: var(--cs-thumb-width);
   height: auto;
-  margin-inline: auto;
 }
 
-/* The actual fix for image centering: glightbox's trigger anchor is inline
-   by default, so it shrink-wraps around the image and then sits flush left
-   (default text-align) instead of centering -- this is what was really
-   causing the "narrower band, left-aligned" look, not the img itself.
-   display: table shrink-wraps to the image's rendered size (unlike block,
-   which would stretch full-width) while still honoring margin-inline: auto
-   centering (unlike inline-block, which only centers via the parent's
-   text-align). */
-.md-typeset .glightbox {
-  display: table;
-  margin-inline: auto;
-}
-
-/* Full-width What-I-do screenshots need the opposite: the anchor has to
-   stay block-level and full-width, or wrapping it in a shrink-wrapped table
-   box breaks the image's own width: 100% (a percentage width is undefined
-   against a shrink-to-fit parent). */
-.cs-feature-figure .glightbox {
-  display: block;
-  width: 100%;
+/* Centers any image (and glightbox's <a class="glightbox"> wrapper around
+   it, when present) that renders narrower than its paragraph/figure.
+   text-align: center on the container -- NOT display/margin tricks on the
+   img or its anchor -- because img is a replaced element and stays sized
+   by its own width/max-width regardless of display, so centering it via
+   text-align has no side effects on that sizing. Earlier attempts tried
+   display: block + margin-inline: auto (no-op: the img centers inside its
+   own already-tight anchor box, which is what's actually flush left) and
+   then display: table on the anchor (broke box-model/layout outright --
+   an anonymous table-cell's percentage-based sizing for the img inside it
+   is circular/undefined). :has() is required since a plain `.md-typeset p`
+   selector would also center ordinary text paragraphs. */
+.md-typeset p:has(> img),
+.md-typeset p:has(> a.glightbox) {
+  text-align: center;
 }
 
 /* Screenshots inside skill cards: contained, rounded, hairline border --
@@ -778,14 +759,20 @@
    image, with no cs-feature-figure wrapper. The image itself still falls
    through to the sitewide .md-typeset img cap (--cs-thumb-width) above;
    this only styles the <figure>/<figcaption> pymdownx generates so the
-   caption text reads as a caption instead of a second paragraph. */
+   caption text reads as a caption instead of a second paragraph.
+   Material's own bundled CSS already centers <figure> correctly (width:
+   fit-content + margin: 1em auto, so the figure shrink-wraps to the image
+   and centers itself in the column) -- margin here MUST keep auto on the
+   left/right, only overriding the vertical spacing, or it silently cancels
+   that centering. This is what was actually causing images to render
+   left-aligned in a "narrower band": margin: ... 0 here zeroed out
+   Material's auto margins, not anything about the img or its glightbox
+   anchor (both of those were red herrings chased in earlier attempts). */
 .md-typeset figure {
-  margin: var(--space-6, 16px) 0;
+  margin: var(--space-6, 16px) auto;
 }
 
 .md-typeset figure img {
-  display: block;
-  margin-inline: auto;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-hairline);
 }
@@ -815,8 +802,10 @@
 }
 
 .cs-feature-figure img {
+  /* display: block is fine (unlike .md-typeset figure img above) because
+     these images are always width: 100% -- centering never applies, so
+     there's no text-align dependency to preserve. */
   display: block;
-  margin-inline: auto;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-hairline);
 }
