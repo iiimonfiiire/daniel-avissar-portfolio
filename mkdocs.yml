@@ -4,6 +4,7 @@ repo_name: daniel-avissar-portfolio
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/images/logo.svg
   favicon: assets/images/favicon.png
   palette:
@@ -17,9 +18,9 @@ theme:
       primary: red
       accent: red
   features:
-    - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - content.code.copy
 
@@ -29,6 +30,7 @@ extra_css:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - tables
   - md_in_html
   - toc:
@@ -38,20 +40,46 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.blocks.caption
+
+plugins:
+   - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_themed: false
+       auto_caption: false
+       caption_position: bottom
+       background: white
+       shadow: true
+       manual: false
 
 nav:
-  - Home: index.md
+  - Home: 
+      - index.md
+      - Knowledge Architecture: what-i-do/knowledge-architecture.md
+      - Feature Development: what-i-do/feature-development.md
+      - UX Writing: what-i-do/ux-writing.md
+      - Technical Versatility: what-i-do/technical-versatility.md
   - Case Studies:
       - Secyra (2025):
-          - Overview: case-studies/secyra-2025/index.md
-          - Knowledge Base Article: case-studies/secyra-2025/knowledge-base.md
+          - case-studies/secyra-2025/index.md
           - Release Note: case-studies/secyra-2025/release-note.md
+          - Knowledge Base Article: case-studies/secyra-2025/knowledge-base.md
           - Microcopy: case-studies/secyra-2025/microcopy.md
           - Troubleshooting Guide: case-studies/secyra-2025/troubleshooting-guide.md
       - Acme (2024):
-          - Overview: case-studies/acme-2024/index.md
-          - Release Notes: case-studies/acme-2024/release-notes.md
-          - Discover: case-studies/acme-2024/discover.md
-      - Website API (2021): case-studies/webapi-2021/index.md
+          - case-studies/acme-2024/index.md
+          - Release Note: case-studies/acme-2024/release-notes.md
+          - Knowledge Base Article: case-studies/acme-2024/discover.md
+      - Website API (2021):
+          - case-studies/webapi-2021/index.md
   - Extras:
       - Perf & Vero Board: extras/perf-vero-board.md

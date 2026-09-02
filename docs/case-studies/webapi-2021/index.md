@@ -1,3 +1,5 @@
+<span class="cs-page-kicker">Case Studies > Website API (2021)</span>
+
 # What is an API?
 
 *A technical writing sample, April 2021 — an explainer aimed at developers just starting to work with a website-builder platform's client-side API.*
@@ -6,7 +8,10 @@ All programmers will need to work with an API at one point or another in their c
 
 APIs can mean many things to many different people and organizations. However, we can try to understand APIs and how they work in a more general sense through examples from popular culture. Take, for instance, [this classic scene](https://youtu.be/S1i5coU-0_Q?t=16) from the popular film *Back to the Future*. As you watch, pay particular attention to how Marty McFly addresses the members of the band behind him before breaking into song.
 
-![Marty McFly playing "Johnny B. Goode" with Marvin Berry and the Starlighters](../../assets/images/webapi/band-analogy.jpg)
+![Marty McFly and the band](../../assets/images/webapi/band-analogy.jpg)
+/// caption
+Marty McFly playing "Johnny B. Goode" with Marvin Berry and the Starlighters
+///
 
 ## Alright, guys. Listen...
 

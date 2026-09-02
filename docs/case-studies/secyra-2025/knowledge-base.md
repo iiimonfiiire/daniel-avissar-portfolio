@@ -1,8 +1,6 @@
-# Task 1A: Knowledge Base (KB) Article
+<span class="cs-page-kicker">Case Studies > Secyra (2025) > Knowledge base article</span>
 
-**Title:** Managing Classifications
-
-## Overview
+# Managing Classifications
 
 The InsightEdge Platform automatically classifies sensitive data across your connected datastores. You can manually manage and update these classifications to ensure accuracy and align with your organization's policies.
 
@@ -65,5 +63,5 @@ You can restore a previous classification if a recent change was made in error o
 
 ## Additional resources
 
-- **Classification** – About the InsightEdge Platform's classification engine
-- **Data Class** – Learn more about Data Class types in the InsightEdge Platform
+- [Classification](https://link-to-kb/classification) – About the InsightEdge Platform's classification engine
+- [Data Class](https://link-to-kb/data-class) – Learn more about Data Class types in the InsightEdge Platform

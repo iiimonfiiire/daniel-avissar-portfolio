@@ -1,6 +1,6 @@
-# Task 1B: Release Note
+<span class="cs-page-kicker">Case Studies > Secyra (2025) > Release note</span>
 
-## Managing Data Classifications
+# Managing Data Classifications
 
 You can now add, change, remove, or restore data classifications at the column level for structured datastores—directly in the InsightEdge Platform. This capability gives you precise control over how sensitive data is categorized, allowing you to correct or refine automatic classifications and improve data accuracy across your environment. [Read more.](knowledge-base.md)
 

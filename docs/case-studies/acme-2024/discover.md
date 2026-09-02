@@ -1,3 +1,5 @@
+<span class="cs-page-kicker">Case Studies > Acme (2024) > Knowledge base article</span>
+
 # Find your risk data with Acme Discover
 
 Acme's **Discover** features a robust search capability that allows you to quickly access your risk and compliance data. Through advanced, structured search querying, you can discover, analyze, and make informed decisions about non-compliance risks in your organization. Newly upgraded with generative AI technology, Acme now offers unparalleled access to your data through natural conversation.
@@ -6,6 +8,9 @@ Acme's **Discover** features a robust search capability that allows you to quick
     Choose a topic below to learn more about Acme Discover.
 
 ![Acme Discover overview](../../assets/images/acme/discover-overview.png)
+/// caption
+Acme Discover platform overview
+///
 
 ## ✨ Acme AI Assistant
 
@@ -29,9 +34,15 @@ The assistant will respond in conversational English, occasionally offering addi
 !!! warning
     ☝️ **Note:** Acme AI Assistant is only available for the **Enterprise Plan**. [Learn more.](https://link-to.pricing)
 
-![Ask the new Acme AI Assistant a question in natural, conversational English.](../../assets/images/acme/ai-assistant-question.png)
+![Acme AI Assistant prompt](../../assets/images/acme/ai-assistant-question.png)
+/// caption
+Ask the new Acme AI Assistant a question in natural, conversational English.
+///
 
-![The assistant provides actionable responses to help follow up on your request.](../../assets/images/acme/ai-assistant-response.png)
+![Acme AI Assistant response](../../assets/images/acme/ai-assistant-response.png)
+/// caption
+The assistant provides actionable responses to help follow up on your request.
+///
 
 ## Classic query-based search
 

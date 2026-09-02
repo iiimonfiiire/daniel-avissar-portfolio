@@ -1,10 +1,6 @@
-# Task 3: Troubleshooting Guide
+<span class="cs-page-kicker">Case Studies > Secyra (2025) > Troubleshooting guide</span>
 
-## Title
-
-**No data appears after connecting Snowflake**
-
-## Overview
+# Troubleshooting: No data appears after connecting Snowflake
 
 After connecting your Snowflake data source, you may notice that data is not populating in the InsightEdge Platform. This usually means the dedicated Snowflake role or service account used for the integration lacks the required privileges.
 
@@ -55,7 +51,7 @@ After connecting your Snowflake data source, you may notice that data is not pop
 
 ## Additional resources
 
-- Snowflake Integration
-- System Health
-- Alerts
-- Integration Best Practices
+- [Snowflake Integration](https://link-to-kb/snowflake-integration)
+- [System Health](https://link-to-kb/system-health)
+- [Alerts](https://link-to-kb/alerts)
+- [Integration Best Practices](https://link-to-kb/integration-best-practices)
