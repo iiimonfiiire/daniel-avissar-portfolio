@@ -23,12 +23,32 @@ python3 -m venv .venv
 .venv/bin/mkdocs serve
 ```
 
+## Making changes
+
+```
+git checkout main && git pull
+git checkout -b your-branch-name
+# edit files, preview with `.venv/bin/mkdocs serve` at http://localhost:8000
+git add -A && git commit -m "..."
+git push -u origin your-branch-name
+gh pr create
+# review the diff, then merge the PR into main
+```
+
+Merging (or pushing directly) to `main` auto-deploys — see Deploy below.
+Branch + PR is just for a review step / change history; pushing straight to
+`main` works exactly the same for small tweaks.
+
 ## Deploy
 
 Deploys are automatic: pushing to `main` triggers
 `.github/workflows/deploy.yml`, which builds the site with MkDocs and
 publishes it via GitHub Pages (Actions-based Pages source, not a
 `gh-pages` branch). No manual `mkdocs gh-deploy` step is needed.
+
+Watch the run with `gh run watch`, then check
+[the live site](https://iiimonfiiire.github.io/daniel-avissar-portfolio/) to
+confirm.
 
 To build locally without deploying:
 
