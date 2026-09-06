@@ -25,6 +25,9 @@ python3 -m venv .venv
 
 ## Making changes
 
+`main` is protected — direct pushes are rejected, including for the repo
+owner. Every change goes through a PR:
+
 ```
 git checkout main && git pull
 git checkout -b your-branch-name
@@ -32,12 +35,12 @@ git checkout -b your-branch-name
 git add -A && git commit -m "..."
 git push -u origin your-branch-name
 gh pr create
-# review the diff, then merge the PR into main
+# wait for the Test check to pass, then merge the PR into main
 ```
 
-Merging (or pushing directly) to `main` auto-deploys — see Deploy below.
-Branch + PR is just for a review step / change history; pushing straight to
-`main` works exactly the same for small tweaks.
+No approving review is required, just a green **Test** check
+(`.github/workflows/test.yml`, runs `mkdocs build --strict`) before the
+merge button unlocks.
 
 ## Deploy
 
