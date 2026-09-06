@@ -6,7 +6,7 @@ The following is a summary of new and noteworthy updates to the Acme platform fo
 
 #### **Features**
 
-**✨ Acme AI Assistant** – Easily search your communications data using natural language! [Read more.](https://edit.me)
+**✨ Acme AI Assistant** – Easily search your communications data using natural language! [Read more.](/case-studies/acme-2024/discover/)
 
 #### **Bug fixes**
 
