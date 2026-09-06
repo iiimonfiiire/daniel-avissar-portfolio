@@ -76,14 +76,14 @@ nav:
   - Case Studies:
       - Secyra (2025):
           - case-studies/secyra-2025/index.md
-          - Release Note: case-studies/secyra-2025/release-note.md
-          - Knowledge Base Article: case-studies/secyra-2025/knowledge-base.md
+          - Release note: case-studies/secyra-2025/release-note.md
+          - Knowledge base article: case-studies/secyra-2025/knowledge-base.md
           - Microcopy: case-studies/secyra-2025/microcopy.md
-          - Troubleshooting Guide: case-studies/secyra-2025/troubleshooting-guide.md
+          - Troubleshooting guide: case-studies/secyra-2025/troubleshooting-guide.md
       - Acme (2024):
           - case-studies/acme-2024/index.md
-          - Release Note: case-studies/acme-2024/release-notes.md
-          - Knowledge Base Article: case-studies/acme-2024/discover.md
+          - Release note: case-studies/acme-2024/release-notes.md
+          - Knowledge base article: case-studies/acme-2024/discover.md
       - Website API (2021):
           - case-studies/webapi-2021/index.md
   - Extras:
