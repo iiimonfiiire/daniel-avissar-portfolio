@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Secyra (2025)</span>
+---
+title: Case study | Secyra (2025)
+---
+
+<span class="cs-page-kicker">Case studies > Secyra (2025)</span>
 
 # Secyra (2025)
 

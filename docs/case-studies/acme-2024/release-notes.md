@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Acme (2024) > Release Note</span>
+---
+title: Acme (2024) | Release note
+---
+
+<span class="cs-page-kicker">Case studies > Acme (2024) > Release note</span>
 
 # September 2024
 

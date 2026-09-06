@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 <div class="cs-hero" markdown>
 <img class="cs-hero__photo" src="assets/images/profile/headshot.jpg" alt="Daniel Avissar">
 

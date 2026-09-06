@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Secyra (2025) > Knowledge base article</span>
+---
+title: Secyra (2025) | Knowledge base article
+---
+
+<span class="cs-page-kicker">Case studies > Secyra (2025) > Knowledge base article</span>
 
 # Managing Classifications
 

@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Acme (2024) > Knowledge base article</span>
+---
+title: Acme (2024) | Knowledge base article
+---
+
+<span class="cs-page-kicker">Case studies > Acme (2024) > Knowledge base article</span>
 
 # Find your risk data with Acme Discover
 

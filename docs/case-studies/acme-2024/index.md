@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Acme (2024)</span>
+---
+title: Case study | Acme (2024)
+---
+
+<span class="cs-page-kicker">Case studies > Acme (2024)</span>
 
 # Acme (2024)
 
