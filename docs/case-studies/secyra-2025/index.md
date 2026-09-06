@@ -2,7 +2,7 @@
 
 # Secyra (2025)
 
-A Senior Technical Writer take-home assignment for a data-security platform ("Secyra"/the InsightEdge Platform below), covering a real feature end-to-end across four documentation formats: a knowledge base article, a release note, UX microcopy, and a troubleshooting guide.
+*A technical writing sample, 2025 — a data-security platform ("Secyra"/the InsightEdge Platform below), covering a real feature end-to-end across four documentation formats: a knowledge base article, a release note, UX microcopy, and a troubleshooting guide.*
 
 <div class="cs-sibling-list" markdown>
 

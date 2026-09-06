@@ -2,7 +2,7 @@
 
 # Acme (2024)
 
-This guide provides an interactive experience fulfilling the requirements for the assignment for a compliance/eDiscovery platform's Technical Writer position.
+*A technical writing sample, 2024 — an interactive knowledge base guide and release notes for a new AI-powered search feature on a compliance/eDiscovery platform ("Acme").*
 
 <div class="cs-sibling-list" markdown>
 
