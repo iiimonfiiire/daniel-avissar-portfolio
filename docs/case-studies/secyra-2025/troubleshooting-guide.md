@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Secyra (2025) > Troubleshooting Guide</span>
+---
+title: Secyra (2025) | Troubleshooting guide
+---
+
+<span class="cs-page-kicker">Case studies > Secyra (2025) > Troubleshooting guide</span>
 
 # Troubleshooting: No data appears after connecting Snowflake
 

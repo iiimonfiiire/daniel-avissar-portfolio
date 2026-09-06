@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Secyra (2025) > Release note</span>
+---
+title: Secyra (2025) | Release note
+---
+
+<span class="cs-page-kicker">Case studies > Secyra (2025) > Release note</span>
 
 # Managing Data Classifications
 

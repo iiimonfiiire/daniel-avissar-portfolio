@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Secyra (2025) > Microcopy for alert</span>
+---
+title: Secyra (2025) | Microcopy
+---
+
+<span class="cs-page-kicker">Case studies > Secyra (2025) > Microcopy for alert</span>
 
 # Missing Google OAuth 2.0 Scopes
 
