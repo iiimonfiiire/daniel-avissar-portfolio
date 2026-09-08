@@ -1,4 +1,8 @@
-<span class="cs-page-kicker">Case Studies > Website API (2021)</span>
+---
+title: Case study | Website API (2021)
+---
+
+<span class="cs-page-kicker">Case studies > Website API (2021)</span>
 
 # What is an API?
 
