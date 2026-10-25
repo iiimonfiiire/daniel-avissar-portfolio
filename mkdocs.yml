@@ -28,6 +28,11 @@ theme:
     admonition:
       idea: octicons/light-bulb-16  # or fontawesome/solid/lightbulb
 
+# GoatCounter site code, read from the GOATCOUNTER_CODE env var (a repo
+# variable in CI). Left unset, no analytics script is rendered.
+extra:
+  goatcounter: !ENV [GOATCOUNTER_CODE, ""]
+
 extra_css:
   - stylesheets/carcharias.css
   - stylesheets/carcharias-material-overrides.css
