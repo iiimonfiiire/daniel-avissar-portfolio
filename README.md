@@ -58,3 +58,14 @@ To build locally without deploying:
 ```
 .venv/bin/mkdocs build --strict
 ```
+
+## Analytics
+
+Visitor stats are collected with [GoatCounter](https://www.goatcounter.com/)
+(no cookies, no consent banner) and viewable on
+[the dashboard](https://iiimonfiiire.goatcounter.com).
+
+The script is only rendered when `GOATCOUNTER_CODE` is set. In CI it comes
+from the `GOATCOUNTER_CODE` repo variable (Settings → Secrets and variables
+→ Actions → Variables). Local builds leave it unset, so local previews
+aren't counted.
