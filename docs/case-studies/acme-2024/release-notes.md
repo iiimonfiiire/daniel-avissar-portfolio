@@ -6,18 +6,19 @@ title: Acme (2024) | Release note
 
 # September 2024
 
-The following is a summary of new and noteworthy updates to the Acme platform for the month of September 2025.
+These are the new and noteworthy updates to the Acme platform for September 2024.
 
-#### **Features**
+## New features
 
-**✨ Acme AI Assistant** – Easily search your communications data using natural language! [Read more.](/case-studies/acme-2024/discover/)
+- **✨ Acme AI Assistant** – You can now search your communications data in natural language. To get started, see [the guide to Acme AI Assistant](discover.md#acme-ai-assistant).
 
-#### **Bug fixes**
+## Improvements
+
+- Clearer microcopy in **Compliance** > **Rule management**.
+- An updated knowledge base guide to Acme Discover.
+
+## Bug fixes
 
 - Fixed several minor visual bugs.
-- Updated microcopy in Compliance > Rule management.
-- Improved knowledge base guide about Discovery
 
-## Release Notes archive
-
-!!! abstract "[Placeholder for older release notes]"
+!!! abstract "Release notes archive [placeholder for older release notes]"

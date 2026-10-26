@@ -6,7 +6,10 @@ title: Case study | Acme (2024)
 
 # Acme (2024)
 
-A technical writing sample from 2024 for a new AI-powered search feature on compliance/eDiscovery platform ("**Acme**"). The sample contains a **release note** that points to a **knowledge base article**.
+This 2024 technical writing sample covers a new AI-powered search feature on a compliance and eDiscovery platform, called "**Acme**" here. The sample contains a **release note** that points to a **knowledge base article**.
+
+!!! note "Written to Signal"
+    This sample was revised in 2026 to follow the [Signal style guide](../../what-i-do/style-as-code.md), then checked with PAKT.
 
 <div class="cs-sibling-list" markdown>
 

@@ -36,6 +36,6 @@ A team can swap Signal for its own guide without touching any skill.
 - **Faster reviews** – Writers fix mechanical issues before a person ever reads the draft.
 - **Measurable quality** – A content audit ranks a whole docs folder worst-first, so you know where to start.
 
-This page follows Signal, and PAKT checked it before it went live.
+This page follows Signal, and PAKT checked it before it went live. So do the [Secyra](../case-studies/secyra-2025/index.md) and [Acme](../case-studies/acme-2024/index.md) case studies.
 
 [Try PAKT on your own docs](https://github.com/iiimonfiiire/pakt#quickstart){ .md-button }

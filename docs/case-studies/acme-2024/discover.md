@@ -6,7 +6,7 @@ title: Acme (2024) | Knowledge base article
 
 # Find your risk data with Acme Discover
 
-Acme's **Discover** features a robust search capability that allows you to quickly access your risk and compliance data. Through advanced, structured search querying, you can discover, analyze, and make informed decisions about non-compliance risks in your organization. Newly upgraded with generative AI technology, Acme now offers unparalleled access to your data through natural conversation.
+Acme **Discover** gives you fast search across your risk and compliance data. Structured queries help you find, analyze, and act on non-compliance risks in your organization. With the new generative AI assistant, you can also search your data in plain conversation.
 
 !!! idea "Choose a topic below to learn more about Acme Discover."
 
@@ -17,24 +17,28 @@ Acme Discover platform overview
 
 ## ✨ Acme AI Assistant
 
-**Acme AI Assistant** is a new assistant in the Acme platform that helps you query your data by writing in free, conversational language, as easily as you would with any assistant. It simplifies the search process, giving you quicker access to the data you need, no matter how complex your query may be.
+**Acme AI Assistant** lets you query your data in free, conversational language. It simplifies search and gets you to the data you need, however complex the query.
 
-To get started with Acme AI Assistant, follow these steps:
+### Before you begin
 
-1. Navigate to the Home page in the Acme platform.
+Acme AI Assistant is available on the **Enterprise Plan** only. To compare plans, see [Acme pricing](https://link-to.pricing).
+
+### Ask the assistant
+
+1. In the Acme platform, go to the **Home** page.
 2. Under the **Conduct** tab, go to the new **Acme AI Assistant** module at the right of the dashboard.
 3. Enter your question or request.
 
-The assistant will respond in conversational English, occasionally offering additional steps you can take to pinpoint your search. You can provide it feedback, or refine your prompt to create even more pinpointed searches.
+### Check the result
+
+The assistant responds in conversational English and sometimes suggests next steps to narrow your search. Give it feedback, or refine your prompt for a more precise search.
 
 !!! example "The assistant works best with natural-language prompts."
-    Feel free to write as naturally as you would in a conversation. For example:
+    Write as you would in a conversation. For example:
 
     - *Show me my most critical non-compliance risks.*
-    - *I want to see instances of market abuse in our org from 2020-2022.*
+    - *Show instances of market abuse in the organization from 2020 to 2022.*
     - *Can you find my new high-alert hits?*
-
-!!! info "Acme AI Assistant is only available for the **Enterprise Plan**. [Learn more.](https://link-to.pricing)"
 
 ![Acme AI Assistant prompt](../../assets/images/acme/ai-assistant-question.png)
 /// caption
@@ -55,7 +59,7 @@ The assistant provides actionable responses to help follow up on your request.
 ## Search with Acme Discover
 
 !!! abstract "[Placeholder for search KB]"
-    Searching with Acme's Discover is easy. To get started...
+    To get started with Acme Discover search...
 
     ```
     /* Examples: */
@@ -67,32 +71,32 @@ The assistant provides actionable responses to help follow up on your request.
     Email CONTAINS 'acmecorporation.com'
     ```
 
-## Frequently asked questions
+## Documentation approach
 
-#### **How would a user access the user guide?**
+### How users reach this guide
 
-Users can access the guide in a variety of ways:
+Users reach the guide through three channels:
 
-- **In-app**, by clicking on a widget trigger within the context of the app (e.g., next to the search bar or within the Assistant UI). The widget guides users directly to how they should interact with the Acme app's UI, while providing tips on how best to leverage this feature.
-- **Web-based**, by visiting the KB's subdomain on the Acme platform (e.g., https://app.acme.com/help).
-- **In-platform release notes**, which will announce the deployed feature with a summary and helpful links.
+- **In-app** – A widget trigger sits in context, such as next to the search bar or in the assistant UI. It shows users how to work with the interface and how to get the most from the feature.
+- **Web** – The knowledge base subdomain on the Acme platform hosts the guide, such as `https://app.acme.com/help`.
+- **In-platform release notes** – The release note announces the feature with a summary and links to this guide.
 
-#### **What approach would you take to ensure the documentation is structured logically and easy to navigate?**
+### Keeping the structure logical and easy to navigate
 
-- **Short answer:** Through rigorous writing, rewriting, reviewing, and more rewriting.
-- **Long answer:** We should establish a content style guide that clearly defines the Acme tone and voice and provides guidelines for content creation in the Knowledge Base.
+- **Short answer** – Rigorous writing, rewriting, reviewing, and more rewriting.
+- **Long answer** – A content style guide that defines the Acme tone and voice. It also sets the rules for creating knowledge base content.
 
-#### **How would you validate the [guide] is searchable?**
+### Validating that the guide is searchable
 
-We can ensure the guide is searchable by implementing common SEO practices and effectively applying search tags.
+Common SEO practices and well-applied search tags make the guide findable.
 
-Furthermore, I think it would be an excellent idea to develop an AI assistant with access to the KB, and use it to determine whether it can successfully generate helpful user-facing content. If the AI is confused or hallucinates, there is a good chance that the language in the KB needs to be reviewed.
+A second test is an AI assistant with access to the knowledge base. Check whether it can generate helpful user-facing answers from the content. Treat AI confusion or hallucination as a sign that the knowledge base language needs a review.
 
-#### **How would you measure the effectiveness of the user guide?**
+### Measuring the guide's effectiveness
 
-This can be achieved through data-driven practices. For example, we can track adoption and monitor user behavior between two test segments of beta users—those with and without access to the KB content (both in-app and web-based).
+Data-driven practices measure effectiveness best. One method compares adoption across two segments of beta users. One segment can open the knowledge base content in-app and on the web. The other segment cannot.
 
-We can also monitor the guide's usage data to determine the amount of engagement. Here are some common KPIs we could look out for:
+Usage data shows how much users engage with the guide. Common key performance indicators (KPIs) include:
 
 - View count, number of active sessions
 - Session duration, drop-off times, bounce rate

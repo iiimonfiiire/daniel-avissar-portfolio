@@ -4,13 +4,16 @@ title: Secyra (2025) | Knowledge base article
 
 <span class="cs-page-kicker">Case studies > Secyra (2025) > Knowledge base article</span>
 
-# Managing Classifications
+# Manage classifications
 
-The InsightEdge Platform automatically classifies sensitive data across your connected datastores. You can manually manage and update these classifications to ensure accuracy and align with your organization's policies.
+The InsightEdge Platform automatically classifies sensitive data across your connected datastores. You can manage these classifications by hand to keep them accurate and aligned with your organization's policies.
 
 **Managing classifications** lets you add, change, remove, or restore data classifications at the *column level* within a structured data table. Adjusting these assignments improves data accuracy and helps the InsightEdge Platform refine its automatic classification engine.
 
-!!! note "Classification updates are queued and may take several hours to appear."
+## Before you begin
+
+- **Structured datastore** – Connect at least one structured datastore to the InsightEdge Platform. You can only manage classifications in structured data tables.
+- **Processing time** – The InsightEdge Platform queues classification updates, so they can take several hours to appear.
 
 ## Access the feature
 
@@ -20,14 +23,14 @@ The InsightEdge Platform automatically classifies sensitive data across your con
 
 The classification view contains two panes:
 
-- **Table Details** — shows metadata such as *Datastore*, *Database*, *Creation date*, *Created by*, *Last accessed*, and *Sensitive records*.
-- **Columns table** — lists each column and its *Column Name*, *Data Class*, *Record count*, and *Sample Data*.
+- **Table Details** – Shows metadata such as *Datastore*, *Database*, *Creation date*, *Created by*, *Last accessed*, and *Sensitive records*.
+- **Columns table** – Lists each column and its *Column Name*, *Data Class*, *Record count*, and *Sample Data*.
 
 From here, you can **add**, **change**, **remove**, or **restore** a classification.
 
 ## Add a classification
 
-If a column is unclassified, you can manually assign a data class.
+Assign a data class by hand to any column that has no classification yet.
 
 1. In the **Columns** table, locate a column whose **Data Class** is *Unclassified*.
 
@@ -39,7 +42,7 @@ If a column is unclassified, you can manually assign a data class.
 
 ## Change a classification
 
-You can update an existing classification when a column's data type or sensitivity has changed, or when a previous classification was incorrect.
+Update a classification when a column's data type or sensitivity changes. Also update it when the previous classification is wrong.
 
 1. In the **Columns** table, hover over the column whose classification you want to change.
 2. Click **Edit Classifications**.
@@ -48,7 +51,7 @@ You can update an existing classification when a column's data type or sensitivi
 
 ## Remove a classification
 
-You can remove a classification if the column no longer contains sensitive data or has been deprecated.
+Remove a classification when the column no longer contains sensitive data, or when your team retires the column.
 
 1. In the **Columns** table, hover over the column whose classification you want to remove.
 2. Click **Edit Classifications**.
@@ -57,11 +60,15 @@ You can remove a classification if the column no longer contains sensitive data 
 
 ## Restore a classification
 
-You can restore a previous classification if a recent change was made in error or to compare the dataset's previous classification state.
+Restore a previous classification to undo a mistaken change. You can also restore one to compare the dataset with its earlier classification state.
 
 1. At the top of the classification view, click **Classification Edits** to open the edit history.
 2. Review the list of changes made to the object's classifications.
 3. Locate the record you want to revert and click **Restore**.
+
+## Verify your changes
+
+After the update completes, check the **Data Class** column in the **Columns** table for the new value. To review every change, click **Classification Edits**.
 
 ## Additional resources
 

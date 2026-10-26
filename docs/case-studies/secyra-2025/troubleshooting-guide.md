@@ -6,14 +6,20 @@ title: Secyra (2025) | Troubleshooting guide
 
 # Troubleshooting: No data appears after connecting Snowflake
 
-After connecting your Snowflake data source, you may notice that data is not populating in the InsightEdge Platform. This usually means the dedicated Snowflake role or service account used for the integration lacks the required privileges.
+This guide helps you fix a Snowflake integration that connects but shows no data.
 
-## Possible Causes
+## Symptom
+
+After you connect your Snowflake data source, no data appears in the InsightEdge Platform.
+
+## Cause
+
+The Snowflake role or service account for the integration usually lacks the required privileges. Two causes are common:
 
 - The InsightEdge Platform service user does not exist in Snowflake.
 - The service user exists but is missing the `USAGE` or `SELECT` privileges required to access your data.
 
-## Resolution Steps
+## Resolution
 
 1. In the InsightEdge Platform, go to **System Health** and look for a **Missing Permission** alert related to the Snowflake integration. If one exists, open the alert and follow the remediation steps.
 2. Go to **Integrations** and confirm that the Snowflake integration displays a **Connected** status in the top-right corner. If it is not connected, re-authenticate before continuing.
@@ -25,13 +31,13 @@ After connecting your Snowflake data source, you may notice that data is not pop
 
     If no record appears, create the user according to your organization's configuration standards.
 
-4. In Snowflake, run one of the following queries to confirm that the service user has `USAGE` privileges on all relevant schemas:
+4. In Snowflake, run this query to confirm that the service user has `USAGE` privileges on all relevant schemas:
 
     ```sql
     SHOW GRANTS TO USER <secyra_service_user>;
     ```
 
-    If `USAGE` is missing from the output of a schema, the InsightEdge Platform cannot scan or classify data in that schema.
+    If a schema lacks `USAGE` in the output, the InsightEdge Platform cannot scan or classify its data.
 
 5. Grant the necessary privileges to enable the InsightEdge Platform to access and read your data:
 
@@ -55,7 +61,7 @@ After connecting your Snowflake data source, you may notice that data is not pop
 
 ## Additional resources
 
-- [Snowflake Integration](https://link-to-kb/snowflake-integration)
+- [Snowflake integration](https://link-to-kb/snowflake-integration)
 - [System Health](https://link-to-kb/system-health)
 - [Alerts](https://link-to-kb/alerts)
-- [Integration Best Practices](https://link-to-kb/integration-best-practices)
+- [Integration best practices](https://link-to-kb/integration-best-practices)

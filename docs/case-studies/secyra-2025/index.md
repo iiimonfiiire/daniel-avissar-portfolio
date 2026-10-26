@@ -6,14 +6,17 @@ title: Case study | Secyra (2025)
 
 # Secyra (2025)
 
-A technical writing sample, 2025 — a data-security platform ("Secyra"/the InsightEdge Platform below), covering a real feature end-to-end across four documentation formats: a **release note** that points to a **knowledge base article**, **UX microcopy**, and a **troubleshooting guide**.
+This 2025 technical writing sample covers a data-security platform, called "Secyra" and the InsightEdge Platform here. It documents one real feature end to end in four formats. A **release note** points to a **knowledge base article**, alongside **UX microcopy** and a **troubleshooting guide**.
+
+!!! note "Written to Signal"
+    This sample was revised in 2026 to follow the [Signal style guide](../../what-i-do/style-as-code.md), then checked with PAKT.
 
 <div class="cs-sibling-list" markdown>
 
 <a class="cs-sibling-list__row" href="release-note/">
 <span class="cs-sibling-list__text">
 <span class="cs-sibling-list__title">Release note</span>
-<span class="cs-sibling-list__desc">A short, engaging announcement of the same feature for a What's New feed.</span>
+<span class="cs-sibling-list__desc">A short, engaging announcement of the same feature for a product updates feed.</span>
 </span>
 </a>
 <a class="cs-sibling-list__row" href="knowledge-base/">
