@@ -13,7 +13,7 @@ Signal covers the rules behind clear product writing. Examples include short sen
 
 Each rule has an ID, a summary, a fix, and optional overrides per content type. The same rules file feeds both human writers and automated checks.
 
-[Read the Signal guide](https://github.com/iiimonfiiire/signal-style-guide){ .md-button }
+[:fontawesome-brands-github: Read the Signal guide](https://github.com/iiimonfiiire/signal-style-guide){ .md-button }
 
 ## PAKT: a reviewer for every content type
 
@@ -28,7 +28,7 @@ Every reviewer returns the same report: four scores, a verdict, and line-level f
 
 A team can swap Signal for its own guide without touching any skill.
 
-[Explore PAKT on GitHub](https://github.com/iiimonfiiire/pakt){ .md-button }
+[:fontawesome-brands-github: Explore PAKT on GitHub](https://github.com/iiimonfiiire/pakt){ .md-button }
 
 ## Why this matters for knowledge teams
 
@@ -38,4 +38,4 @@ A team can swap Signal for its own guide without touching any skill.
 
 This page follows Signal, and PAKT checked it before it went live.
 
-[Try PAKT on your own docs](https://github.com/iiimonfiiire/pakt#quickstart){ .md-button }
+[:fontawesome-brands-github: Try PAKT on your own docs](https://github.com/iiimonfiiire/pakt#quickstart){ .md-button }
