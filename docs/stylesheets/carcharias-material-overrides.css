@@ -256,9 +256,19 @@
   background-color: var(--signal-400);
   border-color: var(--signal-400);
 }
+.md-typeset .md-button:not(.md-button--primary) {
+  color: var(--text-body);
+  border-color: var(--chrome-500);
+}
+/* Hover fills with tide, so the text takes the Carcharias "engaged"
+   pairing: --text-on-tide on --tide-500. */
 .md-typeset .md-button:not(.md-button--primary):hover {
-  color: var(--chrome-000);
-  border-color: var(--line-strong);
+  background-color: var(--tide-500);
+  color: var(--text-on-tide);
+  border-color: var(--tide-500);
+}
+.md-typeset .md-button .twemoji {
+  margin-right: 0.4em;
 }
 
 /*
