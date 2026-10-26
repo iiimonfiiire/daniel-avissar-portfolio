@@ -75,6 +75,25 @@ Diving into diverse technical subjects across APIs, product guides, and AI assis
 
 </div>
 
+## Open-source tools
+
+<div class="cs-case-list" markdown>
+
+<a class="cs-case-list__row" href="what-i-do/style-as-code/">
+<span class="cs-case-list__title">Style as code: Signal and PAKT</span>
+<span class="cs-case-list__desc">How a machine-readable style guide and an agentic review toolkit keep every content type consistent, from tooltips to launch briefs.</span>
+</a>
+<a class="cs-case-list__row" href="https://github.com/iiimonfiiire/signal-style-guide">
+<span class="cs-case-list__title">Signal style guide</span>
+<span class="cs-case-list__desc">A public style guide for clear, concise, and easy-to-scan product writing, with a rules file that tools can read.</span>
+</a>
+<a class="cs-case-list__row" href="https://github.com/iiimonfiiire/pakt">
+<span class="cs-case-list__title">PAKT</span>
+<span class="cs-case-list__desc">A Claude Code plugin and CLI with eleven skills that review KB articles, release notes, microcopy, API docs, and GTM briefs against one guide.</span>
+</a>
+
+</div>
+
 ## Extras
 
 <div class="cs-case-list" markdown>

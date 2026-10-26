@@ -1,6 +1,6 @@
 # Style as code: Signal and PAKT
 
-A style guide only works when people follow it. Most guides live in a wiki that nobody opens after onboarding. I built two open-source projects to close that gap.
+A style guide only works when people follow it. Most guides live in a wiki that nobody opens after onboarding. Two open-source projects close that gap.
 
 - **[Signal](https://github.com/iiimonfiiire/signal-style-guide)** – A style guide for clear, concise, and easy-to-scan product writing. It ships with a machine-readable rules file.
 - **[PAKT](https://github.com/iiimonfiiire/pakt)** – The Portable Agentic Knowledge Toolkit. It checks KB articles, release notes, UI microcopy, API docs, and GTM briefs against one style guide.
@@ -9,9 +9,9 @@ Signal sets the standard. PAKT enforces it.
 
 ## Signal: a guide that a machine can read
 
-Signal covers the rules I apply in every case study on this site. Examples include short sentences, sentence-case headings, the Oxford comma, and one term per concept.
+Signal covers the rules behind clear product writing. Examples include short sentences, sentence-case headings, the Oxford comma, and one term per concept.
 
-Each rule has an ID, a plain-language explanation, and a threshold per content type. The same rules file feeds both human writers and automated checks.
+Each rule has an ID, a summary, a fix, and optional overrides per content type. The same rules file feeds both human writers and automated checks.
 
 [Read the Signal guide](https://github.com/iiimonfiiire/signal-style-guide){ .md-button }
 
@@ -36,4 +36,6 @@ A team can swap Signal for its own guide without touching any skill.
 - **Faster reviews** – Writers fix mechanical issues before a person ever reads the draft.
 - **Measurable quality** – A content audit ranks a whole docs folder worst-first, so you know where to start.
 
-The writing samples on this site follow Signal. Every one of them would pass a PAKT review.
+This page follows Signal, and PAKT checked it before it went live.
+
+[Try PAKT on your own docs](https://github.com/iiimonfiiire/pakt#quickstart){ .md-button }
