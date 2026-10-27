@@ -62,8 +62,7 @@ To build locally without deploying:
 ## Analytics
 
 Visitor stats are collected with [GoatCounter](https://www.goatcounter.com/)
-(no cookies, no consent banner) and viewable on
-[the dashboard](https://iiimonfiiire.goatcounter.com).
+(no cookies, no consent banner).
 
 The script is only rendered when `GOATCOUNTER_CODE` is set. In CI it comes
 from the `GOATCOUNTER_CODE` repo variable (Settings → Secrets and variables
@@ -80,19 +79,3 @@ event marker on the dashboard):
 | `outbound/<host><path>` | Any click on a link to another site, e.g. `outbound/github.com/iiimonfiiire/pakt` |
 | `contact/email-link` | A click on a `mailto:` link |
 | `contact/copy-email` | The **Copy email** button on the homepage |
-
-### Tagged links
-
-GoatCounter reads campaign tags from the URL with no setup: `utm_campaign`
-sets the campaign, `utm_source` (or `ref`) sets the source. Both show in
-the dashboard's Campaigns widget. Use a tagged link per channel when sharing
-the portfolio:
-
-| Channel | Link |
-|---|---|
-| LinkedIn profile | `https://iiimonfiiire.github.io/daniel-avissar-portfolio/?utm_source=linkedin&utm_campaign=profile` |
-| LinkedIn post | `https://iiimonfiiire.github.io/daniel-avissar-portfolio/?utm_source=linkedin&utm_campaign=post` |
-| Job application | `https://iiimonfiiire.github.io/daniel-avissar-portfolio/?utm_source=application&utm_campaign=<company>` |
-| CV | `https://iiimonfiiire.github.io/daniel-avissar-portfolio/?utm_source=cv&utm_campaign=cv` |
-| Outreach email | `https://iiimonfiiire.github.io/daniel-avissar-portfolio/?utm_source=email&utm_campaign=outreach` |
-| Email signature | `https://iiimonfiiire.github.io/daniel-avissar-portfolio/?utm_source=email&utm_campaign=signature` |
