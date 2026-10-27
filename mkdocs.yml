@@ -33,6 +33,9 @@ theme:
 extra:
   goatcounter: !ENV [GOATCOUNTER_CODE, ""]
 
+extra_javascript:
+  - javascripts/site.js
+
 extra_css:
   - stylesheets/carcharias.css
   - stylesheets/carcharias-material-overrides.css

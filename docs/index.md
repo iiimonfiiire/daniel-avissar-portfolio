@@ -108,3 +108,5 @@ Diving into diverse technical subjects across APIs, product guides, and AI assis
 ---
 
 Thank you for viewing! If you have any questions or comments, feel free to [email me](mailto:daniel.avissar@gmail.com).
+
+<button class="md-button cs-copy-email" type="button" data-email="daniel.avissar@gmail.com">Copy email</button>
