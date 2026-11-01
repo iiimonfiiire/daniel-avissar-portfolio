@@ -86,6 +86,7 @@ nav:
       - Technical Versatility: what-i-do/technical-versatility.md
       - Style as Code: what-i-do/style-as-code.md
   - Case Studies:
+      - AI Search (2024): case-studies/ai-search-2024/index.md
       - Secyra (2025):
           - case-studies/secyra-2025/index.md
           - Release note: case-studies/secyra-2025/release-note.md

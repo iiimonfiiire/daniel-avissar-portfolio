@@ -60,6 +60,10 @@ Diving into diverse technical subjects across APIs, product guides, and AI assis
 
 <div class="cs-case-list" markdown>
 
+<a class="cs-case-list__row" href="case-studies/ai-search-2024/">
+<span class="cs-case-list__title">AI Search (2024)</span>
+<span class="cs-case-list__desc">UX writing for an AI feature, from the problem through launch and iteration: the copy on the screen, how it refuses, and what usage changed.</span>
+</a>
 <a class="cs-case-list__row" href="case-studies/secyra-2025/">
 <span class="cs-case-list__title">Secyra (2025)</span>
 <span class="cs-case-list__desc">Full release cycle documentation for a data security SaaS platform. Includes knowledge base article, release note, microcopy definitions, and troubleshooting guide.</span>
