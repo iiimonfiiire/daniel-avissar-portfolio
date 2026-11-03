@@ -69,6 +69,7 @@ The refusal itself followed three rules:
 The work continued after launch, because real use showed what the first version missed.
 
 - **Usage review** – I reviewed prompts and results, to find where answers failed and why.
+- **Negative ratings** – I reviewed more than 110 negative ratings and turned them into 20 fixes, most of them shipped.
 - **Test sets** – I graded test sets of 50 to 200 questions by hand. I then iterated on the prompts to cut wrong and hallucinated answers.
 - **The field** – Colleagues knew what customers search for, and sometimes ran searches live with them. Their inputs mattered, and we reviewed each failure.
 
