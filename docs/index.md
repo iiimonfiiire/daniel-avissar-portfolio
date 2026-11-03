@@ -95,6 +95,10 @@ Diving into diverse technical subjects across APIs, product guides, and AI assis
 <span class="cs-case-list__title">PAKT</span>
 <span class="cs-case-list__desc">A Claude Code plugin and CLI with eleven skills that review KB articles, release notes, microcopy, API docs, and GTM briefs against one guide.</span>
 </a>
+<a class="cs-case-list__row" href="what-i-do/kb-stack-detector/">
+<span class="cs-case-list__title">KB Stack Detector</span>
+<span class="cs-case-list__desc">A Chrome extension that shows what a help center or docs site is built on, from the platform to AI search and AI-readiness.</span>
+</a>
 
 </div>
 
