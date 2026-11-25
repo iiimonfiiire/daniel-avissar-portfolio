@@ -32,6 +32,16 @@ theme:
 # variable in CI). Left unset, no analytics script is rendered.
 extra:
   goatcounter: !ENV [GOATCOUNTER_CODE, ""]
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/iiimonfiiire
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/danielavissar
+      name: LinkedIn
+    - icon: simple/obsidian
+      link: https://community.obsidian.md/users/iiimonfiiire
+      name: Obsidian
 
 extra_javascript:
   - javascripts/site.js
