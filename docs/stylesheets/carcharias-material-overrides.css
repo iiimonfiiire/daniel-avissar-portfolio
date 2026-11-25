@@ -312,6 +312,20 @@
   margin: 0;
 }
 
+.cs-hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5, 12px) var(--space-7, 20px);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+}
+
+.cs-hero__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .cs-hero__kicker {
   display: block;
   margin-top: -8px;
@@ -598,6 +612,16 @@
 
 .cs-case-list__row:hover::after {
   transform: translateX(4px);
+}
+
+/* A row with two links (repo title, store link in the description) is a
+   div, since links cannot nest inside the row's own <a>. No row arrow. */
+.cs-case-list__row--static::after {
+  content: none;
+}
+
+.cs-case-list__row--static .cs-case-list__title a {
+  color: var(--text-display);
 }
 
 /*

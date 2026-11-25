@@ -13,6 +13,8 @@ title: Home
 
 Good documentation is a product in its own right, and I build the systems, skills, and plugins that make it work. This site is an interactive portfolio demonstrating my capabilities in AI knowledge architecture, technical and UX microcopy writing, and product management.
 
+<span class="cs-hero__links">[:fontawesome-brands-github: GitHub](https://github.com/iiimonfiiire) [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/danielavissar) [:simple-obsidian: Obsidian](https://community.obsidian.md/users/iiimonfiiire)</span>
+
 </div>
 </div>
 
@@ -99,6 +101,14 @@ Diving into diverse technical subjects across APIs, product guides, and AI assis
 <span class="cs-case-list__title">KB Stack Detector</span>
 <span class="cs-case-list__desc">A Chrome extension that shows what a help center or docs site is built on, from the platform to AI search and AI-readiness.</span>
 </a>
+<span class="cs-case-list__row cs-case-list__row--static">
+<span class="cs-case-list__title"><a href="https://github.com/iiimonfiiire/obsidian-cv-live-preview">CV Live Preview</a></span>
+<span class="cs-case-list__desc">An <a href="https://community.obsidian.md/plugins/cv-live-preview">official Obsidian plugin</a> that renders a Markdown CV live, checks lint and page fit, and exports the PDF.</span>
+</span>
+<span class="cs-case-list__row cs-case-list__row--static">
+<span class="cs-case-list__title"><a href="https://github.com/iiimonfiiire/obsidian-tk">TK Comments</a></span>
+<span class="cs-case-list__desc">An <a href="https://community.obsidian.md/plugins/tk-comments">official Obsidian plugin</a> that marks gaps to fill later with [TK: ...], shows them as chips, and tracks every open one in a side panel.</span>
+</span>
 
 </div>
 
